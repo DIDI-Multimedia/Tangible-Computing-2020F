@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title> DIDI Tangible Computing - 2019 </title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src = 'examples/4_asteroid.js'></script>
+  <link href="http://fonts.googleapis.com/css?family=Walter+Turncoat&.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/prism/1.2.0/themes/prism.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-twilight.css" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/prism/1.2.0/prism.js"></script>
+  <link rel="stylesheet" type="text/css" href="../style.css"> 
+
+</head>
+
+<body>
+
+  <div class="topnav">
+    <h3> MuW201 Tangible Computing &nbsp; &#8226; &nbsp; Fall 2019</h3>
+    <button class="openbtn" onclick= "openNav()" >&#9776;</button> 
+    <!-- <a href="#contact"> Lessons </a>  -->
+
+  </div>
+
+
+  <div id="mySidebar" class="sidebar">
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+    
+
+
+    <a href="syllabus.html" id ="content"> Course Syllabus </a>
+    <a href="Chapter_One.html" id ="content"> Project One </a>
+    <a href="Chapter_Two.html" id ="content"> Project Two </a>
+    <a href="week_01.html" id ="content"> Week 01 - Introduction </a>
+    <a href="week_02.html" id ="content"> Week 02 - Functions </a>
+    <a href="week_03.html" id ="content"> Week 03 - Algorithms </a>
+    <a href="week_04.html" id ="content"> Week 04 - Coupling </a>
+    <a href="week_05.html" id ="content"> Week 05 - Spky Szn </a>
+    <a href="week_05_5.html" id ="content"> Week 05.5 - Patterns </a>
+    <a href="week_06.html" id ="content"> Week 06 - Hyperspace </a>
+    <a href="week_07.html" id ="content"> Week 07 - Refactoring </a>
+    <a href="week_08.html" id ="content"> Week 08 - Mid-Term </a>
+    <a href="week_09.html" id ="content"> Week 09 - APIs </a>
+    <a href="week_10.html" id ="content"> Week 10 - Bots </a>
+
+    <a href="students.html" id ="content"> Ghosts and Ghouls </a>
+
+  </div>
+
+  <div id="main">
+  <h1> Coupling </h1>
+  <div id="myContainer"></div>
+
+  <h2> Summary </h2>
+  <p> This week we will explore how different external devices, including mic, camera, sensors, can be used as inputs. </p>
+
+  <h2> Note: Make up session - October 3, 2019 </h2>
+  <p> This week's class is post-poned however You will start to explore 'coupling' by experimenting with one of the following examples.</p> 
+
+  <h2> Examples - Try at least one </h2>
+  <p> Get aquainted with inputs / outputs. We will build on these examples during the make-up session. </p>
+
+  <ul>
+
+    <li><a href="https://p5js.org/examples/sound-mic-input.html"> Mic Input </a></li> 
+    <li><a href="https://p5js.org/examples/dom-video-capture.html"> Video Input </a></li> 
+    <li><a href="https://medium.com/@yyyyyyyuan/tutorial-serial-communication-with-arduino-and-p5-js-cd39b3ac10ce"> Arduino Serial Communication </a></li>
+
+
+
+  </ul>
+
+  <h2> Other tutorials </h2>
+
+  <ul>
+
+    <li><a href="https://www.youtube.com/watch?v=VIQoUghHSxU&vl=en"> 7.1 What is an array? - p5.js Tutorial</a></li> 
+    <li><a href="https://www.youtube.com/watch?v=RXWO3mFuW-I"> 7.2: Arrays and Loops - p5.js Tutorial</a></li> 
+    <li><a href="https://medium.com/jsguru/javascript-functional-programming-map-filter-and-reduce-846ff9ba492d"> JavaScript Functional Programming — map, filter and reduce </a></li> 
+    <li><a href="https://www.youtube.com/watch?v=Xal65C7pxVM"> Top Eight JavaScript Objects And Array Functions You Should Know! </a></li>
+
+
+
+  </ul>
+
+  <!-- <hr> -->
+
+  <h2> Readings </h2>
+
+    <ul  style="list-style-type:disc;">
+
+
+
+      <p> <a href="http://web.media.mit.edu/~ishii/RadicalAtoms_ACM_Interactios.pdf/" target="open">"Radical Atoms: Beyond Tangible Bits, Toward Transformable Materials"</a> by Hiroshi Isshi et al (2012).</p>
+      <p> <i> Alternate readings </i></p>
+      <p> <a href="https://www.researchgate.net/publication/328462785_Yuru-kyara_and_Mascot_Characters_Cute_Aesthetics_and_the_Empathic_Effect_of_Kawaii_in_Japanese_Commercials" target="open">"
+      Yuru-kyara and Mascot Characters: Cute Aesthetics and the Empathic Effect of Kawaii in Japanese Commercials"</a></p>
+      <p>  <a href="https://www.researchgate.net/publication/329359289_Postdigital_aesthetics_-_an_art_of_imperfection_disturbances_and_disintegration" target="open">"
+      Postdigital aesthetics - an art of imperfection, disturbances and disintegration</a></p>
+
+<!--       <p>Visit verardo Reyes website about <a href="http://ereyes.net/ms/#about" target="open"> Motion Structure</a>. Check out the examples.</p>
+      <p> Read <a href="https://www.academia.edu/14883310/2015_-_Aesthetics_of_temporal_and_spatial_transformations_in_virtual_environments" target="open">"Aesthetics of temporal and spatial transformations in virtual environments"</a> by  Everardo Reyes (2015).</p>
+ -->
+
+
+
+    </ul>
+
+
+      
+    <h2> Deliverables </h2>
+
+    <ul  style="list-style-type:disc;">
+    
+      <li> <b> Reflection 300-400 words </b> Reflecting on the reading "Radical Atoms: Beyond Tangible Bits, Toward Transformable Materials" consider the future of user interfaces, imagine how your P1 project could look as a tangible interface. Feel free to include any relevant sketches or images. Alternatively, discuss the aesthetic descisions related to your personal website citing academic references. </li>
+
+      <li> <b>Daily Practice:</b> Every day you will code a new p5 sketch <b>related to your P1 Project Development</b>. This is an opportunity to explore p5.js and practice working with objects and animation. On the "Week 4" page on your personal website add links for each day. Here are some suggestions:
+
+        <ul style="list-style-type:hiragana ;">
+
+          <li> Use the "p5 template" file as a starting point</li>
+          <li> Only spend  20 - 40 minutes per sketch</li>
+          <li> Focus on creating <b>simple</b> programs</li>
+          <li> Explore elements of your P1 project</li>
+          <li> If you get stuck ask for help </li>
+          <li> Draw out what you want your program to do, using flow charts before writing a single line of code</li>
+
+        </ul>
+
+      </li>
+
+      <li> <b> Bring an Arduino to next class! </b> </li>
+
+      <br>
+
+
+    </ul>
+  <div id="footer">
+    <br>
+    <br>
+    <hr>
+    <br>
+    <img src="assets/didi-logo.png" style="width:200px;align-content: left"></img>
+
+
+  </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>

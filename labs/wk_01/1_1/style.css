@@ -1,0 +1,20 @@
+
+
+
+/* div class based on id */
+
+#content {
+
+	font-family: 'arial';
+	color: #592C5F; 
+	padding: 5%;
+	/*background-color: #000;*/
+
+}
+
+
+p {
+
+	color: #000 !important; 
+
+}
