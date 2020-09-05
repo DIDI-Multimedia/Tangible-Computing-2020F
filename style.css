@@ -1,7 +1,62 @@
 
 /* Viewport Units: https://www.w3schools.com/cssref/css_units.asp*/
 
+/* CSS HEX */
+--international-klein-blue: #022e96ff;
+--green-pigment: #30a648ff;
+--erin: #05ed33ff;
+--byzantine: #cf13a9ff;
+--goldenrod: #dead3cff;
+--green-pantone: #1aab37ff;
 
+/* CSS HSL */
+--international-klein-blue: hsla(222, 97%, 30%, 1);
+--green-pigment: hsla(132, 55%, 42%, 1);
+--erin: hsla(132, 96%, 47%, 1);
+--byzantine: hsla(312, 83%, 44%, 1);
+--goldenrod: hsla(42, 71%, 55%, 1);
+--green-pantone: hsla(132, 74%, 39%, 1);
+
+/* SCSS HEX */
+$international-klein-blue: #022e96ff;
+$green-pigment: #30a648ff;
+$erin: #05ed33ff;
+$byzantine: #cf13a9ff;
+$goldenrod: #dead3cff;
+$green-pantone: #1aab37ff;
+
+/* SCSS HSL */
+$international-klein-blue: hsla(222, 97%, 30%, 1);
+$green-pigment: hsla(132, 55%, 42%, 1);
+$erin: hsla(132, 96%, 47%, 1);
+$byzantine: hsla(312, 83%, 44%, 1);
+$goldenrod: hsla(42, 71%, 55%, 1);
+$green-pantone: hsla(132, 74%, 39%, 1);
+color="#05ed33ff"
+/* SCSS RGB */
+$international-klein-blue: rgba(2, 46, 150, 1);
+$green-pigment: rgba(48, 166, 72, 1);
+$erin: rgba(5, 237, 51, 1);
+$byzantine: rgba(207, 19, 169, 1);
+$goldenrod: rgba(222, 173, 60, 1);
+$green-pantone: rgba(26, 171, 55, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #022e96ff, #30a648ff, #05ed33ff, #cf13a9ff, #dead3cff, #1aab37ff);
+$gradient-right: linear-gradient(90deg, #022e96ff, #30a648ff, #05ed33ff, #cf13a9ff, #dead3cff, #1aab37ff);
+$gradient-bottom: linear-gradient(180deg, #022e96ff, #30a648ff, #05ed33ff, #cf13a9ff, #dead3cff, #1aab37ff);
+$gradient-left: linear-gradient(270deg, #022e96ff, #30a648ff, #05ed33ff, #cf13a9ff, #dead3cff, #1aab37ff);
+$gradient-top-right: linear-gradient(45deg, #022e96ff, #30a648ff, #05ed33ff, #cf13a9ff, #dead3cff, #1aab37ff);
+$gradient-bottom-right: linear-gradient(135deg, #022e96ff, #30a648ff, #05ed33ff, #cf13a9ff, #dead3cff, #1aab37ff);
+$gradient-top-left: linear-gradient(225deg, #022e96ff, #30a648ff, #05ed33ff, #cf13a9ff, #dead3cff, #1aab37ff);
+$gradient-bottom-left: linear-gradient(315deg, #022e96ff, #30a648ff, #05ed33ff, #cf13a9ff, #dead3cff, #1aab37ff);
+$gradient-radial: radial-gradient(#022e96ff, #30a648ff, #05ed33ff, #cf13a9ff, #dead3cff, #1aab37ff);
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: grey;
+}
 .threeCity {
   /*position: fixed;*/
   width: 100% !important;
@@ -108,12 +163,18 @@ header {
   /*color: rgb(240,78,48);*/
 }
 
+
+
+
+
 body {
 
   min-width: 290px;
   /*color: #4d4e53;*/
-  background-color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  /*background-color: #ffffff;*/
+
+/*  font-family: "Open Sans", Arial, sans-serif;*/
+  font-family: 'Space Mono', monospace;
   line-height: 1.5;
   padding-right: 5;
   overflow-x:hidden;
@@ -122,8 +183,9 @@ body {
 
 h1{
   font-size: 3.6em;
-  font-family: "Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
-  /*color: #00A17B*/
+  /*font-family: "Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;*/
+  font-family: 'BioRhyme', serif;
+  color: #05ed33ff;
 
 }
 
@@ -293,8 +355,18 @@ code {
 
 
 /* Add a black background color to the top navigation */
+
+.botnav {
+  /*background-color: #000;*/
+  overflow: hidden;
+  z-index: 1;
+  text-align: right;
+  padding: vh;
+  /*height: 10%;*/
+}
+
 .topnav {
-  background-color: #000;
+  /*background-color: #000;*/
   overflow: hidden;
   z-index: 1;
 }
@@ -311,14 +383,14 @@ code {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  /*background-color: #ddd;*/
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #00A17B;
-  color: white;
+  /*background-color: #00A17B;*/
+  color: black;
 }
 
 
@@ -330,8 +402,8 @@ code {
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  /*background-color: #00A17B; /* Black*/
-    background-color: #0391BB; /* Black*/
+     background-image: linear-gradient(white,#05ed33ff);
+  /*background-color: #05ed33ff; /* Black*/*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -352,7 +424,8 @@ code {
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #f1f1f1;
+  /*color: #f1f1f1;*/
+  color:#022e96ff;
 }
 
 /* Position and style the close button (top right corner) */
@@ -368,7 +441,7 @@ code {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: #05ed33ff;
   color: white;
   padding: 10px 15px;
   border: none;
