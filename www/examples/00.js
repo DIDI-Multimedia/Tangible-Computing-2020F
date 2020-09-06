@@ -65,3 +65,7 @@ function mousePressed() {
   console.log('mousePressed',rot)
   rot -= 0.05
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth*0.5,25);
+}
