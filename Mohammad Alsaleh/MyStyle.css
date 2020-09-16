@@ -1,12 +1,51 @@
 /*==edaskdm : #FFEEDB;*/
+aside  {
+  width: 30%;
+  padding-left: 20px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+ 	.dot {
+  height: 120px;
+  width: 120px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  border-bottom-style: all;
+}
+ 	.Homepage{
+
+ 		background-color: tomato;
+ 		color: white;
+ 		border: 2px solid black;
+  		margin: 20px;
+  		padding: 20px;
+
+ 	}
+ 	.name{
+
+ 		background-color: green;
+ 		color: white;
+ 		border: 2px solid black;
+  		margin: 20px;
+  		padding: 20px;
+  	}
 
 
 body {
 
-	padding:  111px;
 
-	
 
+	font-family: 'arial';
+	color: #592C2F;
 	background-color: #FFEEDB;
-	color: green; 
+	padding: 5%;
+
+	/*padding:  111vw:;
+	background-color: #FFEEDB;
+	color: green; */
+
 }
