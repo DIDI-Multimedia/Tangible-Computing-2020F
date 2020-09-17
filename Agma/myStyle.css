@@ -1,0 +1,24 @@
+/*
+
+font-family: 'Grenze Gotisch', cursive;
+*/
+
+/*
+--royal-blue-dark: #001853ff;
+--english-violet: #3b3355ff;
+--medium-turquoise: #55dde0ff;
+--blue-bell: #998fc7ff;
+--tufts-blue: #1a8fe3ff;
+
+*/
+
+
+body {
+	font-family: 'Grenze Gotisch', cursive;
+
+    padding: 200px;
+ 	color: #001853ff;
+ 	background-color: : #55dde0ff;
+}
+
+
