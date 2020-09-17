@@ -18,22 +18,20 @@
 	<h2> Product / Multimedia Student </h2>
 	<p>This is my first website and Im HAPPY :) </p>
 	<img src="https://cdn.tourcms.com/a/10181/58/1/large.jpg" width="300">
-
 	
-	
-<!-- 
- -->
-<div style="text-align:center;">
+	<div id = "Test"></div>
+		<p>Mohammad Al-Saleh </p>
+<div id = "p5_example"></div>
 
-        <br><br><h2> Contents </h2><br><br>
+		<h2> Contents </h2>
 
-         <span class="dot" style="text-align: center "><br><br><p><a href="index.html"> Home Page</a></p></span>
+		<ul>
+			<p><a href="Week1.html"> First Week </a></p>
+			<!-- <p><a href="Page3.html"> Week 3 </a></p> -->
+		</ul>
 
-        <span class="dot" style="text-align: center "><br><br><p><a href="Week1.html"> First 
-        Week </a></p></span>
 
-         <span class="dot" style="text-align: center "><br><br><p><a href="Week2.html"> Second Week </a></p></span>
-    </div>
+
 
 </body>
 
