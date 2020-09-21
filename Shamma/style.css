@@ -7,19 +7,19 @@
 
 }
 body{
-	color: #e5c1bdff;
 
 	background-color: #5e747fff;
+		color: #e5c1bdff;
+
+
 }
-
-
-
 
 
 
 p {
 
-	color: #5e747fff !important; 
+
+	/*color: #5e747fff !important; */
 
 }
 
