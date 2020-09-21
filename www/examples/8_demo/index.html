@@ -1,0 +1,378 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Three.js 101</title>
+  <!--  Simple reset to delete the margins  -->
+  
+  <!--  Three.js CDN  -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.2/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style type="text/css">
+      
+      button {
+
+    position: absolute;
+    display: block;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+
+}
+    </style>
+</head>
+<body>
+
+  <!-- defining a button -->
+  <!-- <button type="button" id="resetBtn"> Do you feel lucky? </button> -->
+
+
+  <!-- <script src="app.js"></script> -->
+
+  <script type="text/javascript">
+        
+    var container;
+    var threeCamera, scene, raycaster, renderer;
+    var mouse = new THREE.Vector2(), INTERSECTED;
+    var radius = 100, theta = 0;
+    var frustumSize = 5
+    var p5Video,poses
+
+    function setup(){
+
+      initializePoseNet()
+      init();
+      animate();
+
+    }
+
+    function initializePoseNet(){
+
+      createCanvas(640, 480);
+      p5Video = createCapture(VIDEO);
+      p5Video.size(width, height);
+      // Hide the video element, and just show the canvas
+      // p5Video.hide();
+    
+
+      // Create a new poseNet method with a single detection
+      poseNet = ml5.poseNet(p5Video, modelReady);
+      
+      // This sets up an event that fills the global variable "poses"
+      // with an array every time new poses are detected
+      poseNet.on('pose', function(results) {
+
+        poses = results;
+
+      
+      });
+
+      p5Video.hide()
+      
+    
+    }
+
+    function draw() {
+      background(255)
+  // image(p5Video, 0, 0, width, height);
+
+  if (poses){
+      // We can call both functions to draw all keypoints and the skeletons
+  drawKeypoints();
+  drawSkeleton();
+  }
+
+
+}
+
+// A function to draw ellipses over the detected keypoints
+function drawKeypoints()  {
+  // Loop through all the poses detected
+  for (let i = 0; i < poses.length; i++) {
+    // For each pose detected, loop through all the keypoints
+    let pose = poses[i].pose;
+    for (let j = 0; j < pose.keypoints.length; j++) {
+      // A keypoint is an object describing a body part (like rightArm or leftShoulder)
+      let keypoint = pose.keypoints[j];
+      // Only draw an ellipse is the pose probability is bigger than 0.2
+      if (keypoint.score > 0.2) {
+        fill(255, 0, 0);
+        noStroke();
+        //ellipse(keypoint.position.x, keypoint.position.y, 10, 10);
+        text(j, keypoint.position.x, keypoint.position.y);
+        // /console.log(keypoint.position.x, keypoint.position.y)
+        
+        if (j == 0) {
+          push();
+          imageMode(CENTER);
+          //image(nose,keypoint.position.x, keypoint.position.y, 50, 50);
+          pop();
+          //text("NOSE", keypoint.position.x + -15, keypoint.position.y + 15);
+        }
+      }
+    }
+  }
+}
+
+// A function to draw the skeletons
+function drawSkeleton() {
+  // Loop through all the skeletons detected
+  for (let i = 0; i < poses.length; i++) {
+    let skeleton = poses[i].skeleton;
+    // For every skeleton, loop through all body connections
+    for (let j = 0; j < skeleton.length; j++) {
+      let partA = skeleton[j][0];
+      let partB = skeleton[j][1];
+      stroke(255, 0, 0);
+      line(partA.position.x, partA.position.y, partB.position.x, partB.position.y);
+    }
+  }
+}
+
+    function modelReady() {
+
+      console.log('posenet model loaded')
+
+    }
+
+    var cubes 
+
+    function init() {
+
+      container = document.createElement( 'div' );
+
+      document.body.appendChild( container ); // place three.js in body of file
+      var aspect = window.innerWidth / window.innerHeight;
+      threeCamera = new THREE.OrthographicCamera( frustumSize * aspect / - 2, frustumSize * aspect / 2, frustumSize / 2, frustumSize / - 2, 1, 1000 );
+      scene = new THREE.Scene();
+      // scene.background = new THREE.Color( 0xf0f0f0 );
+
+      renderer = new THREE.WebGLRenderer({alpha: true });
+      renderer.setClearColor( 0x000000, 0 ); // the default
+      renderer.shadowMapEnabled = true;
+      renderer.shadowMapSoft = true;
+      
+      renderer.setPixelRatio( window.devicePixelRatio );
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      container.appendChild( renderer.domElement );
+
+      initEvents()
+      addLights()
+
+      cubes = addRndCubeArr()
+      addPlane()
+      // test02()
+      // console.log(cubes)
+
+    }
+
+    function addPlane(){
+
+       // add a spotlight to illuminate the cube and cause shadows            
+       var spotLight = new THREE.SpotLight(0xffffff);
+       spotLight.position.set(1, 2, 2);
+       spotLight.castShadow = true; 
+       spotLight.intensity = 1;
+       spotLight.shadowthreeCameraNear = 1;
+       // scene.add(spotLight);
+
+      var ambientLight = new THREE.AmbientLight( 0x404040 ); // soft white light
+      scene.add( ambientLight );
+
+    // draw a floor (plane) for the cube to sit on 
+      var planeGeometry = new THREE.PlaneGeometry(50, 50);
+      // var planeMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000}); 
+      var planeMaterial = new THREE.ShadowMaterial();
+      planeMaterial.opacity = 0.5; 
+      var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+
+      // make the plane recieve shadow from the cube
+      plane.receiveShadow = true;
+      plane.side = THREE.DoubleSide
+      plane.rotation.x = -0.5 * Math.PI;
+      plane.position.y = -0.1
+      scene.add(plane);
+
+    }
+
+    function addLights(){
+      
+      var light = new THREE.DirectionalLight( 0xffffff, 1 );
+      // light.position.set( 1, 1, 1 ).normalize();
+      light.position.set(1, 2, 2);
+            light.castShadow = true; 
+            light.intensity = 1;
+            light.shadowthreeCameraNear = 1;
+      scene.add( light );
+
+      var light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 0.1 );
+                 light.castShadow = true; 
+            // light.intensity = 1;
+            // light.shadowthreeCameraNear = 1;
+      scene.add( light );
+
+
+    }
+
+
+    function initEvents(){
+
+      // document.getElementById("resetBtn").onclick = reset 
+      // document.addEventListener( 'mousemove', onDocumentMouseDown, false );
+
+    }
+
+    function onDocumentMouseDown( event ){
+
+      event.preventDefault(); // function that presents default event from taking place 
+      mouse.x = ( event.clientX / window.innerWidth ) ;
+      mouse.y = ( event.clientY / window.innerHeight ) ;
+
+    }
+
+
+
+
+    function addRndCubeArr(){
+
+
+      let dimX = Math.floor(Math.random()*12+4)
+      let dimY = Math.floor(Math.random()*12+4)
+      let dimZ = Math.floor(Math.random()*12+4)
+
+      let space = Math.random()/10+.1
+      let scale = Math.random()/50+.01
+      let length = Math.random()*50+1
+
+      var geo = new THREE.BoxBufferGeometry( 1,1,1)
+
+      let cubes = []
+
+
+      for (var x = 0; x < dimX; x ++){
+
+        let row = []
+
+        for (var y = 0; y < dimY; y++){
+
+          let col = []
+
+          for (var z = 0; z < dimZ; z++){
+
+            let material = new THREE.MeshPhongMaterial()
+            let r = Math.floor(x/dimX*255)
+            let g = Math.floor(y/dimX*255)
+            let b = Math.floor(z/dimX*255)
+            let rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+
+
+            var object = new THREE.Mesh( geo, material)
+
+            object.castShadow = true;
+            object.receiveShadow = true;  
+            object.material.color.set(rgb)  
+            object.position.set(x*space,y*space,z*space)
+            object.scale.set(scale,scale,scale*length)
+            scene.add( object )
+
+            col.push(object)
+
+          }
+
+          row.push(col)
+
+        }
+
+        cubes.push(row)
+
+      }
+
+      return cubes
+
+    }
+
+    function rotateCubes(cubes){
+
+      // rotate cubes 
+      for (var x = 0; x < cubes.length; x++){
+
+        let row = cubes[x]
+
+        for (var y = 0; y < row.length; y++){
+
+          let col = row[y]
+
+          for (var z = 0; z < col.length; z++){
+
+            let cube = cubes[x][y][z]
+            cube.rotation.x += 0.0004*x
+            cube.rotation.y += 0.0008*y
+            cube.rotation.z += 0.0012*z
+
+
+          }
+
+        }
+
+      }
+
+
+    }
+
+
+    function animate() {
+
+      requestAnimationFrame( animate );
+      rotateCubes( cubes )
+      render();
+
+    }
+
+    function render() {
+
+      theta += 1;
+      threeCamera.position.x = radius * Math.sin( THREE.Math.degToRad( theta ) );
+      threeCamera.position.y = radius * Math.sin( THREE.Math.degToRad( theta ) );
+      threeCamera.position.z = radius * Math.cos( THREE.Math.degToRad( theta ) );
+      threeCamera.lookAt( scene.position );
+      threeCamera.updateMatrixWorld();
+
+      renderer.render( scene, threeCamera );
+
+    }
+
+
+
+    function reset(){
+
+      console.log('reset scene')
+
+      while(scene.children.length > 0){ 
+
+          scene.remove(scene.children[0]); 
+      
+      }
+
+      addLights()
+
+      cubes = addRndCubeArr()
+
+    }
+
+  </script>
+
+
+  
+
+  <!-- </div> -->
+
+
+
+</body>
+</html>

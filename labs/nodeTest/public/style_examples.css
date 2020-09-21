@@ -1,0 +1,50 @@
+/* style.css */
+#content{
+	
+	text-align: center;
+	font-family: 'Verdana';
+ 	font-style: oblique;
+}
+
+html, body {
+
+  height: 50%;
+  background-image: url("../../../pictures/r1.jpg");
+  background-repeat: repeat-y;
+
+
+
+}
+
+h1 {
+	text-align: center;
+}
+
+body {
+	background-image: url("r1.jpg");
+	text-align: center;
+	font-family: 'Verdana';
+ 	font-style: oblique;
+
+
+}
+#sketch-holder{
+	padding-top: 5%;
+	width: 100%;
+	position:center;
+	left:37.5vw;
+}
+
+
+a:link, a:visited {
+  background-color: #B195E0;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #8556D3;
+}

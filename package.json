@@ -1,0 +1,30 @@
+{
+  "name": "tangible-computing-2019",
+  "version": "1.0.0",
+  "description": "GitHub Repository for Activities of DIDI",
+  "main": "index.html",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIDI-Multimedia/Tangible-Computing-2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DIDI-Multimedia/Tangible-Computing-2019/issues"
+  },
+  "homepage": "https://github.com/DIDI-Multimedia/Tangible-Computing-2019#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "i": "^0.3.6",
+    "npm": "^6.12.1",
+    "request": "^2.88.0",
+    "twit": "^2.2.11"
+
+  }
+}

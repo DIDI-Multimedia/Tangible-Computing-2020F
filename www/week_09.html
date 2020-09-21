@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title> DIDI Tangible Computing - 2019 </title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=Walter+Turncoat&.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/prism/1.2.0/themes/prism.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-twilight.css" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/prism/1.2.0/prism.js"></script>
+  <link rel="stylesheet" type="text/css" href="../style.css"> 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.js"></script>
+
+
+      <!-- <script src="js/SimplexNoise.js"></script> -->
+<!-- 
+
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/shaders/SSAOShader.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/shaders/CopyShader.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/SSAOPass.js"></script -->
+    <!-- <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/shaders/CopyShader.js"></script> -->
+    <!-- <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/shaders/FXAAShader.js"></script> -->
+ <!--    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/ShaderPass.js"></script> -->
+    <script src="assets/three/FirstPersonControls-0.0.0.js"></script>
+
+    <!-- <script src = 'examples/7_refactor/app.js'></script> -->
+
+
+</head>
+
+<body>
+
+  <div class="topnav">
+    <h3> MuW201 Tangible Computing &nbsp; &#8226; &nbsp; Fall 2019</h3>
+    <button class="openbtn" onclick= "openNav()" >&#9776;</button> 
+    <!-- <a href="#contact"> Lessons </a>  -->
+
+  </div>
+
+
+  <div id="mySidebar" class="sidebar">
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+    
+
+    <a href="syllabus.html" id ="content"> Course Syllabus </a>
+    <a href="Chapter_One.html" id ="content"> Project One </a>
+    <a href="Chapter_Two.html" id ="content"> Project Two </a>
+    <a href="week_01.html" id ="content"> Week 01 - Introduction </a>
+    <a href="week_02.html" id ="content"> Week 02 - Functions </a>
+    <a href="week_03.html" id ="content"> Week 03 - Algorithms </a>
+    <a href="week_04.html" id ="content"> Week 04 - Coupling </a>
+    <a href="week_05.html" id ="content"> Week 05 - Spky Szn </a>
+    <a href="week_05_5.html" id ="content"> Week 05.5 - Patterns </a>
+    <a href="week_06.html" id ="content"> Week 06 - Hyperspace </a>
+    <a href="week_07.html" id ="content"> Week 07 - Refactoring </a>
+    <a href="week_08.html" id ="content"> Week 08 - Mid-Term </a>
+    <a href="week_09.html" id ="content"> Week 09 - APIs </a>
+    <a href="week_10.html" id ="content"> Week 10 - Bots </a>
+        <a href="week_11.html" id ="content"> Week 11 - Hardware </a>
+
+    <a href="students.html" id ="content"> Ghosts and Ghouls </a>
+
+
+  </div>
+
+  <div id="main">
+  <h1> APIs </h1>
+  <h2> Happy Halloween! </h2>
+  
+  <img src="https://i.pinimg.com/originals/83/92/89/8392891b87e1b477a45c7b9cd4979cc8.jpg">
+
+  <h2> Summary </h2>
+
+  <p> Today we will introduce NodeJS. We will learn how to create a basic web server on our machines and make a call to an API. </p>
+
+  </ul>
+
+
+    <h2> Housework </h2>
+    
+    <li> Make sure to add 'node_modules/' to the .gitignore file in your tangible-computing directory </li>
+    
+
+    </ul>
+
+    
+    <h2> Homework (2% of Final Grade) </h2>
+    
+    <li> Research different APIs and choose one for your project 2 - (ie. social media, weather, maps, AI) </li>
+    <li> Using NodeJS, create a simple program that perform an API call and logs the data to the console </li>
+    <h2> Deliverable (Due 9:59 on Monday November 4) </h2>
+
+    <li> Create a post for week 9 about your API.  </li>
+    <li> In 100-200 words describe the API and how you intend to use it </li>
+    <li> Copy and paste the code you wrote into the page. <a href=
+    "https://www.w3schools.com/tags/tag_code.asp"> Use the html code tag to format it</a> </li>
+    <li> Copy and paste the data logged from the API call you wrote into the page in JSON format.<a href=
+    "https://www.w3schools.com/tags/tag_code.asp"> Use the html code tag to format it</a> 
+    <li> Include any links to articles or posts you used as references </li>
+    <li> Grading Criteria - appropriateness of API choosen for project and completeness of documentation </li>
+    
+
+    </ul>
+
+    <div id="footer">
+    <br>
+    <br>
+    <hr>
+    <br>
+    <img src="assets/didi-logo.png" style="width:200px;align-content: left"></img>
+    </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
