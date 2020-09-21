@@ -1,0 +1,36 @@
+/* div class based on id */
+
+#content {
+
+	font-family: 'helvetica';
+	padding: 5%;
+
+}
+body{
+	color: #e5c1bdff;
+
+	background-color: #5e747fff;
+}
+
+
+
+
+
+
+p {
+
+	color: #5e747fff !important; 
+
+}
+
+
+
+/*
+
+--baby-pink: #e5c1bdff;
+--bone: #d2d0baff;
+--laurel-green: #b6be9cff;
+--morning-blue: #7b9e87ff;
+--cadet: #5e747fff;
+
+*/
