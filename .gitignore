@@ -694,3 +694,5 @@ node_modules/.bin/mime
 labs/wk_09/whatisnode.js
 labs/wk_09/package.json
 labs/wk_09/package-lock.json
+.DS_Store
+.DS_Store
