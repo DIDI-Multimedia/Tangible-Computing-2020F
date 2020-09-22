@@ -17,6 +17,14 @@ aside  {
   display: inline-block;
   border-bottom-style: all;
 }
+.info {
+  font-family: monospace;
+  position: absolute;
+  line-height: 20px;
+  font-size: 14px;
+  left: 20px;
+  top: 20px;
+}
 	.Homepage{
 
  		background-color: tomato;
@@ -50,3 +58,4 @@ body {
 	color: green; */
 
 }
+]
