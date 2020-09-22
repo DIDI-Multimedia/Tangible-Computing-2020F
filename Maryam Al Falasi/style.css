@@ -1,0 +1,131 @@
+/* div class based on id */
+
+#content {
+
+	font-family: 'VT323', monospace;
+	padding: 0.1%;
+
+}
+
+
+p {
+
+	color: black !important; 
+	font-family: 'VT323', monospace;
+
+}
+
+body {
+	background-color: #008080;
+}
+
+h1 {
+
+	color: #ffffff !important; 
+	font-family: 'VT323', monospace;
+	text-align: center;
+	background-image: url("C:maryambinsuloom/Desktop/   /Workshop/Tangible-Computing-2020F/template/header.png");
+	
+
+}
+
+h2 {
+	color: #dfe300 !important; 
+	font-family: 'VT323', monospace;
+	font-size: 30px;
+}
+
+h3 {
+	font-family: 'VT323', monospace;
+}
+
+ul{
+	font-family: 'VT323', monospace;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 330px;
+  left: 35px;
+  color: black;
+  font-family: 'VT323', monospace;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.weeks {
+	position: absolute;
+  top: 100px;
+  right: 60px;
+font-size: 30px;
+text-align: left;
+color: #dfe300;
+}
+
+.weeks2 {
+	position: absolute;
+  top: 65px;
+  left: 100px;
+font-size: 25px;
+text-align: right;
+}
+
+.icons
+{
+	position: absolute;
+  top: 43px;
+  right: 110px;
+}
+
+.icons2
+{
+	position: absolute;
+  top: -45px;
+  right: 110px;
+}
+
+h5 {
+	color: #ffffff !important; 
+	font-family: 'VT323', monospace;
+	font-size: 80px;
+	margin: -18px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.c1 {
+
+	position: absolute;
+  top: 220px;
+  left: 65px;
+  color: black;
+  font-family: 'VT323', monospace;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h6 {
+	color: #dfe300 !important; 
+	font-family: 'VT323', monospace;
+	font-size: 40px;
+	padding: 1px;
+	margin: 5px;
+	padding: 5px;
+}
+
+#weekcontent {
+
+padding: 1%;
+padding-top: -5%px;
+
+}
+
+.gohome {
+	font-family: 'VT323', monospace;
+	text-align: left;
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	font-size: 30px;
+
+}
