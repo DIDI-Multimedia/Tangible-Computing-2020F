@@ -1,0 +1,94 @@
+/*
+--dark-slate-gray: #3e4e50ff;
+--peach-crayola: #facfadff;
+--mellow-apricot: #f8bd7fff;
+--sandy-brown: #f5ac72ff;
+--tumbleweed: #f2aa7eff;
+
+
+--black: #000000ff;
+--dodger-blue: #1098f7ff;
+--white: #ffffffff;
+--silver-pink: #b89e97ff;
+--pale-silver: #deccccff;
+
+*/
+
+h1{                            /* Title */
+	color: #deccccff
+	font-size: 0px
+}
+
+.welcome{                     /*Subtitle*/
+	font-size: 24px
+}
+
+/* The sidebar menu */
+.sidebar {
+  /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 60px; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #b89e97ff;
+  display: block;
+  background: #deccccff 
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  margin-right: 1050px
+  padding: 0px 10px;
+}
+
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+body{
+
+	font-family: 'Open Sans', sans-serif;
+	background: #ffffffff;
+		color: #3e4e50ff
+
+
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 750px 180px;
+  grid-gap: 10px;
+  
+  padding: 10px;
+}
+
+.grid-container > div {
+  border: none;
+  text-align: center;
+  font-size: 30px;
+
+
