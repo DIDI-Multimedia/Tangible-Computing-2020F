@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title> DIDI Tangible Computing - 2019 </title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src = 'examples/3_flowerpower.js'></script>
+  <link href="http://fonts.googleapis.com/css?family=Walter+Turncoat&.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/prism/1.2.0/themes/prism.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-twilight.css" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/prism/1.2.0/prism.js"></script>
+  <link rel="stylesheet" type="text/css" href="../style.css"> 
+
+</head>
+
+<body>
+
+  <div class="topnav">
+    <h3> MuW201 Tangible Computing &nbsp; &#8226; &nbsp; Fall 2019</h3>
+    <button class="openbtn" onclick= "openNav()" >&#9776;</button> 
+    <!-- <a href="#contact"> Lessons </a>  -->
+
+  </div>
+
+
+  <div id="mySidebar" class="sidebar">
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+    
+
+
+    <a href="syllabus.html" id ="content"> Course Syllabus </a>
+    <a href="Chapter_One.html" id ="content"> Project One </a>
+    <a href="Chapter_Two.html" id ="content"> Project Two </a>
+    <a href="week_01.html" id ="content"> Week 01 - Introduction </a>
+    <a href="week_02.html" id ="content"> Week 02 - Functions </a>
+    <a href="week_03.html" id ="content"> Week 03 - Algorithms </a>
+    <a href="week_04.html" id ="content"> Week 04 - Coupling </a>
+    <a href="week_05.html" id ="content"> Week 05 - Spky Szn </a>
+    <a href="week_05_5.html" id ="content"> Week 05.5 - Patterns </a>
+    <a href="week_06.html" id ="content"> Week 06 - Hyperspace </a>
+    <a href="week_07.html" id ="content"> Week 07 - Refactoring </a>
+    <a href="week_08.html" id ="content"> Week 08 - Mid-Term </a>
+    <a href="week_09.html" id ="content"> Week 09 - APIs </a>
+    <a href="week_10.html" id ="content"> Week 10 - Bots </a>
+
+    <a href="students.html" id ="content"> Ghosts and Ghouls </a>
+
+  </div>
+
+  <div id="main">
+  <h1> Algorithms </h1>
+  <div id="myContainer"></div>
+
+  <h2> Summary </h2>
+  <p> This week we will explore Javascript objects and animation. </p>
+
+  <h2> Examples </h2>
+  <p> Creating an object and setting its properties, option 1 </p>
+  
+  <pre><code class="language-javascript">
+
+    // double curly brackets is shorthand for an object
+    let car = {} // This method creates a new object extending the prototype object passed as a parameter.
+    car.type = BMW
+    car.color = 'green'
+    car.speed = 50 
+
+  </code></pre>
+
+ <p> Creating an object and setting its properties, option 2 </p>
+
+   <pre><code class="language-javascript">
+
+      // same as option one 
+
+      let car = {
+
+        type: BMW,
+        color: 'green',
+        speed: 50
+      
+      }
+
+      // or 
+
+      let car = {type:'BMW',color:'green',speed:50}
+
+  </code></pre>
+
+
+   <p> Returning values from an object </p>
+   
+   <pre><code class="language-javascript">
+
+      // same as option one 
+
+      console.log(car.type) // prints 'BMW' to console
+      console.log(car['type']) // also, prints 'BMW' to console
+
+  </code></pre>
+
+
+   <p> Returning values from an object </p>
+   
+
+<!--     <li> <a href="examples/2_1_loops/index.html" target="open"> loops </a> </li>
+    <li> <a href="examples/2_4_objects/index.html" target="open"> objects </a> </li> -->
+
+  <h2> References </h2>
+
+  <ul>
+
+    <li><a href="https://coderwall.com/p/p5cf5w/different-ways-of-creating-an-object-in-javascript"> Different way to create Objects</a></li> 
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects"> Working with Objects</a></li> 
+    <li><a href="https://www.youtube.com/watch?v=-e5h4IGKZRY"> Coding Train, JavaScript Objects - p5.js Tutorial </a></li>
+
+    <li><a href="https://www.youtube.com/watch?v=wRHAitGzBrg"> Coding Train, Function Basics - p5.js Tutorial </a></li>
+    <li><a href="https://www.youtube.com/watch?v=riDVvXZ_Kb4"> Prototypes in JavaScript - FunFunFunction #16</a></li> 
+
+
+  </ul>
+
+
+  <!-- <hr> -->
+
+  <h2> Readings </h2>
+
+    <ul  style="list-style-type:disc;">
+
+<!-- 
+
+      <p> Read <a href="http://www.publicseminar.org/2017/02/cognisphere/" target="open">"Citizens of the Cognisphere"</a> by Daniel Sauter (2017).</p> -->
+
+      <p>Visit verardo Reyes website about <a href="http://ereyes.net/ms/#about" target="open"> Motion Structure</a>. Check out the examples.</p>
+      <p> Read <a href="https://www.academia.edu/14883310/2015_-_Aesthetics_of_temporal_and_spatial_transformations_in_virtual_environments" target="open">"Aesthetics of temporal and spatial transformations in virtual environments"</a> by  Everardo Reyes (2015).</p>
+
+
+
+
+    </ul>
+
+
+      
+    <h2> Deliverables </h2>
+
+    <ul  style="list-style-type:disc;">
+    
+      <li> <b> P1:</b> You will continue to develop your proposal for <a href="Chapter_One.html">Project 1</a>. Include sketches, references, and any other research.</li>
+
+      <li> <b>Daily Practice:</b> Every day you will code a new p5 sketch <b>related to your P1 proposal</b>. This is an opportunity to explore p5.js and practice working with objects and animation. On the "Week 2" page on your personal website add links for each day. Here are some suggestions:
+
+      <li> <b>Daily Practice:</b> Every day you will code a new p5 sketch <b>related to your P1 proposal</b>. This is an opportunity to explore p5.js and practice working with objects and animation. On the "Week 3" page on your personal website add links for each day. Here are some suggestions:
+
+
+        <ul style="list-style-type:hiragana ;">
+
+          <li> Use the "p5 template" file as a starting point</li>
+          <li> Review the <a href="https://p5js.org/examples/input-clock.html">p5 Clock Examples</a></li>
+          
+          <li> Only spend  20 - 40 minutes per sketch</li>
+          <li> Focus on creating <b>simple</b> programs</li>
+          <!-- <li> Each day try 10 different p5 functions from this <a href="https://p5js.org/reference/">list</a></li> -->
+          <li> Explore elements that you might like incorperate in P1</li>
+          <li> If you get stuck ask for help </li>
+          <li> Draw out what you want your program to do, using flow charts before writing a single line of code</li>
+
+        </ul>
+
+      </li>
+
+
+      <li> <b> Bring an Arduino to next class! qqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</b> </li>
+
+      <li> <b> Bring an Arduino to next class! </b> </li>
+
+
+      <br>
+
+
+    </ul>
+
+  <div id="footer">
+    <br>
+    <br>
+    <hr>
+    <br>
+    <img src="assets/didi-logo.png" style="width:200px;align-content: left"></img>
+
+
+  </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>

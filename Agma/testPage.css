@@ -15,59 +15,74 @@ font-family: 'Crimson Text', serif;
 
 */
 
-a{
-	font-family: 'Crimson Text', serif;
-	color: #001853ff;
-	font-size: 25px;
-
-}
-
-h1 {
-	font-family: 'Crimson Text', serif;  
-	padding: 10px;
-	color: #998fc7ff;
-	font-size: 7vw;
-	
-}
-
-h2{
-	font-family: 'Crimson Text', serif;  
-	padding: 5px;
-	color: #001853ff;
-	font-size: 30px;
-}
-
-p{
-	font-family: 'ABeeZee', sans-serif;  
-	padding: 5px;
-	color: #04724dff;
-	font-size: 20px;
-}
-
-div{
-
-	padding: 10px;
-	border: solid black;
-}
-
-h3 {
-	font-family: 'ABeeZee', sans-serif; 
-	padding: 20px;
-	color: #04724dff;
-	font-size: 15px;
-
-}
-
-h4 {
-	font-family: 'ABeeZee', sans-serif;  
-	padding: 20px;
-	color: #04724dff;
-	font-size: 15px;
-
-}
-
 body {
-
-    padding: 300px;
- 	background-color: #55dde0ff;
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
 }
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+

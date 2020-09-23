@@ -16,7 +16,7 @@ font-family: 'Scada', sans-serif;
 .disco {
 
 	color: #a0ced9ff;
-	font-size: 10vw;
+	font-size: 2vw;
 
 }
 
@@ -28,7 +28,7 @@ font-family: 'Scada', sans-serif;
 }
 
 a {
-	color: #ffee93ff;
+	/*color: #ffee93ff;*/
 }
 
 h1 { 
