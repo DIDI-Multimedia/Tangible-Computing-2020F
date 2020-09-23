@@ -1,0 +1,49 @@
+/*
+
+font-family: 'Catamaran', sans-serif;
+font-family: 'Scada', sans-serif;
+*/
+
+/*
+--peach-crayola: #ffc09fff;
+--yellow-crayola: #ffee93ff;
+--lemon-chiffon: #fcf5c7ff;
+--light-blue: #a0ced9ff;
+--granny-smith-apple: #adf7b6ff;
+
+*/
+
+.disco {
+
+	color: #a0ced9ff;
+	font-size: 2vw;
+
+}
+
+.content{
+
+	padding: 40px;
+	border: solid black; 
+
+}
+
+a {
+	/*color: #ffee93ff;*/
+}
+
+h1 { 
+
+	font-family: 'Scada', sans-serif;
+
+}
+
+body {
+
+	font-family: 'Catamaran', sans-serif;
+
+	padding: 100px;
+	background-color: #adf7b6ff;
+	/*color: #ffc09fff;*/
+}
+
+
