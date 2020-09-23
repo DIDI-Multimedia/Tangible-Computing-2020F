@@ -1,5 +1,22 @@
+
 /*==edaskdm : #FFEEDB;*/
 
+/*Template*/
+
+
+#content {
+
+	font-family: 'arial';
+	padding: 5%;
+
+}
+
+
+p {
+
+	color: #000 !important; 
+
+}
 aside  {
   width: 30%;
   padding-left: 20px;
@@ -13,7 +30,7 @@ aside  {
  	.dot {
   height: 120px;
   width: 120px;
-  background-color: fill(random(255),random(0),random(230));
+  background-color: transparent;
   border-radius: 50%;
   display: inline-block;
   border-bottom-style: dotted;
@@ -23,20 +40,14 @@ aside  {
   border-right-color: yellow;
 }
 .dotMaster {
-  height: 200px;
-  width: 200px;
-  background-color: red;
+  height: 100px;
+  width: 150px;
+  background-color: transparent;
   border-radius: 50%;
   display: inline-block;
   border-bottom-style: solid;
 }
-/*.info {
-  font-family: monospace;
-  position: absolute;
-  line-height: 20px;
-  font-size: 14px;
-  left: 20px;
-  top: 20px;*/
+
 }
 	.Homepage{
 
@@ -56,7 +67,7 @@ aside  {
   		padding: 20px;
 }
 
-<body>
+
 .dropbtn:hover, .dropbtn:focus {
   background-color: #3e8e41;
 }
