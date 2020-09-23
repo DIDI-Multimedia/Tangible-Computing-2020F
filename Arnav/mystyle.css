@@ -1,0 +1,50 @@
+
+h1{
+	
+font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.disco{
+
+   color: magenta;
+   text-align: center;
+
+}
+
+
+.center{
+
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+}
+.bg{
+
+	background-position: 50% 50%;
+}
+
+.blur{
+	background-size:cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+}
+}
+
+a {
+
+color: #d7593a;
+
+}
+
+body {
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+	background-color: black;
+    padding: 100px;
+
+}
