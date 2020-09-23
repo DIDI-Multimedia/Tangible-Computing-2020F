@@ -1,0 +1,78 @@
+
+/*==edaskdm : #FFEEDB;*/
+
+/*Template*/
+
+
+/* div class based on id */
+
+#content {
+
+	font-family: 'VT323', monospace;
+	padding: 50px;
+
+}
+
+
+p {
+
+	color: black !important; 
+	font-family: 'VT323', monospace;
+}
+body{
+	background-color: #BBCEA8;
+
+}
+aside  {
+  width: 30%;
+  padding-left: 20px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+
+ 	.dot {
+  height: 120px;
+  width: 120px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  border-bottom-style: dotted;
+  border-style: groove;
+  border-left-color: blue;
+  border-top-color: green;
+  border-right-color: yellow;
+}
+.dotMaster {
+  height: 100px;
+  width: 150px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  border-bottom-style: solid;
+}
+
+}
+	.Homepage{
+
+ 		background-color: tomato;
+ 		color: white;
+ 		border: 2px solid black;
+  		margin: 20px;
+  		padding: 20px;
+
+}
+ 	.name{
+
+ 		background-color: green;
+ 		color: white;
+ 		border: 2px solid black;
+  		margin: 20px;
+  		padding: 20px;
+}
+
+
+
+</head>

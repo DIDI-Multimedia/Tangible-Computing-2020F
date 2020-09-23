@@ -1,3 +1,4 @@
+.DS_store
 students/firstname_lastname/examples/03_citygen/procedural-city-js/
 examples/03_citygen/procedural-city-js/
 # students/noor_alfahim
@@ -694,3 +695,5 @@ node_modules/.bin/mime
 labs/wk_09/whatisnode.js
 labs/wk_09/package.json
 labs/wk_09/package-lock.json
+.DS_Store
+.DS_Store
