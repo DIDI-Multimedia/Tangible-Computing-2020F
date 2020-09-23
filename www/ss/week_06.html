@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title> DIDI Tangible Computing - 2019 </title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=Walter+Turncoat&.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/prism/1.2.0/themes/prism.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-twilight.css" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/prism/1.2.0/prism.js"></script>
+  <link rel="stylesheet" type="text/css" href="../style.css"> 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.js"></script>
+
+
+      <!-- <script src="js/SimplexNoise.js"></script> -->
+<!-- 
+
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/shaders/SSAOShader.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/shaders/CopyShader.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/SSAOPass.js"></script -->
+    <!-- <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/shaders/CopyShader.js"></script> -->
+    <!-- <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/shaders/FXAAShader.js"></script> -->
+ <!--    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/ShaderPass.js"></script> -->
+    <script src="assets/three/FirstPersonControls-0.0.0.js"></script>
+
+    <script src = 'examples/6_city.js'></script>
+
+
+</head>
+
+<body>
+
+  <div class="topnav">
+    <h3> MuW201 Tangible Computing &nbsp; &#8226; &nbsp; Fall 2019</h3>
+    <button class="openbtn" onclick= "openNav()" >&#9776;</button> 
+    <!-- <a href="#contact"> Lessons </a>  -->
+
+  </div>
+
+
+  <div id="mySidebar" class="sidebar">
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+    
+
+
+    <a href="syllabus.html" id ="content"> Course Syllabus </a>
+    <a href="Chapter_One.html" id ="content"> Project One </a>
+    <a href="Chapter_Two.html" id ="content"> Project Two </a>
+    <a href="week_01.html" id ="content"> Week 01 - Introduction </a>
+    <a href="week_02.html" id ="content"> Week 02 - Functions </a>
+    <a href="week_03.html" id ="content"> Week 03 - Algorithms </a>
+    <a href="week_04.html" id ="content"> Week 04 - Coupling </a>
+    <a href="week_05.html" id ="content"> Week 05 - Spky Szn </a>
+    <a href="week_05_5.html" id ="content"> Week 05.5 - Patterns </a>
+    <a href="week_06.html" id ="content"> Week 06 - Hyperspace </a>
+    <a href="week_07.html" id ="content"> Week 07 - Refactoring </a>
+    <a href="week_08.html" id ="content"> Week 08 - Mid-Term </a>
+    <a href="week_09.html" id ="content"> Week 09 - Bots </a>
+        <a href="week_11.html" id ="content"> Week 11 - Hardware </a>
+        
+    <a href="students.html" id ="content"> Ghosts and Ghouls </a>
+
+
+  </div>
+
+  <div id="main">
+  <h1> Hyperspace </h1>
+  <div class="threeCity" id="procity"></div>
+<!--  -->
+
+
+  <h2> Summary </h2>
+  <p> This week we will learn about recursion and explore THREE.js. We will review progress on P1. </p>
+
+  <h2> Examples </h2>
+  <ul>
+
+    <li> <a href="https://threejs.org/docs/#manual/en/introduction/Creating-a-scene"> How to create a scene in three.js</a> ?</li> 
+    <li>What is <a href="https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea"> Recursion</a> ?</li> 
+ 
+    <li> <a href= "https://itnext.io/make-your-javascript-elegant-with-recursions-98e006ab380c?source=email-85c875b58f09-1570907771978-digest.reader------0-38------------------e42db4f3_0e92_4056_84f6_e7f3bcf01a75-1-----" > 
+    Make your JavaScript elegant with recursions </a> ?</li> 
+
+
+
+
+  </ul>
+
+
+      <h2> Deliverables </h2>
+
+    <ul  style="list-style-type:disc;">
+    <!-- 
+      <li> <b> Coding Challenge </b> Fun with post digital aesthetics. Using code, try to replicate a small part of one of David Orielly's films (or another animator). Consider the use of color, filters, aliasing, movement, rotations. +1% Bonus Mark </li>
+ -->
+      <li> <b>Daily Practice:</b> Daily Practice: Choose one of your sketches that best aligns with your project proposal. This week you will continue to improve on this sketch each day. On the "Week 6" page on your personal website add links for each day. Here are some suggestions:
+
+        <ul style="list-style-type:hiragana ;">
+
+          <li> Use the "p5 template" file as a starting point</li>
+          <li> Only spend  20 - 40 minutes per sketch</li>
+          <li> Focus on creating <b>simple</b> programs</li>
+          <li> Explore elements of your P1 project</li>
+          <li> If you get stuck ask for help </li>
+          <li> Draw out what you want your program to do, using flow charts before writing a single line of code</li>
+
+        </ul>
+
+      </li>
+
+      <li> <b> Remember the midterm is due in two weeks! </b> </li>
+
+      <br>
+
+
+    </ul>
+
+  <div id="footer">
+    <br>
+    <br>
+    <hr>
+    <br>
+    <img src="assets/didi-logo.png" style="width:200px;align-content: left"></img>
+
+
+  </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>

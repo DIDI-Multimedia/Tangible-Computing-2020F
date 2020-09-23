@@ -30,7 +30,7 @@ let elements = [
             // '<br>',
 '<a href="00_home.html" class ="active"> 00 Tangible Computing </a>',
 '<a href="01.html" class ="active"> 01 Intro to Web </a>',
-'<a href="02.html" class ="disabled"> 02 Functional Programming </a>',
+'<a href="02.html" class ="active"> 02 Functional Programming </a>',
 '<a href="03.html" class ="disabled"> 03 Software Clocks </a>',
 '<a href="04.html" class ="disabled"> 04 Pixel Aesthetics </a>',
 '<a href="05.html" class ="disabled"> 05 Computer Typography </a>',
@@ -40,12 +40,12 @@ let elements = [
 '<a href="09.html" class ="disabled"> 09 API Data </a>',
 '<a href="10.html" class ="disabled"> 10 Coding Secrets </a>',
 '<br>',
-'        <a><b> Projects </b></a>',
+'<a class="disabled"> <b> Projects </b> </a>',
         
-'<a href=".html" class ="disabled"> P1 Messing with Time </a>',
+'<a href="p1.html" class ="active"> P1 Messing with Time </a>',
 '<a href=".html" class ="disabled"> P2 Enchanted Objects </a>',
 '<br>',
-'<a><b> Student Work </b></a>',
+'<a href="students.html"><b> Student Work </b></a>',
         
 ]
 
