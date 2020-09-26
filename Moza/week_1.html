@@ -40,7 +40,7 @@
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			
 			<ul class="navbar-nav m-auto">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="#">HOME</a>
 				</li>
 				<li class="nav-item">
@@ -50,7 +50,7 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WEEKS</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
-						<a class="dropdown-item" href="./week_1.html">WEEK1</a>
+						<a class="dropdown-item active" href="./week_1.html">WEEK1</a>
 						<a class="dropdown-item" href="./week_2.html">WEEK2</a>
 						<a class="dropdown-item" href="./week_3.html">WEEK3</a>
 						<a class="dropdown-item" href="./week_4.html">WEEK4</a>
@@ -110,7 +110,6 @@
 	</div>
 	
 	<div class="featured-panel container mb-5">
-		<h2 class="text-center font-weight-bold">Weeks Update</h2>
 		
 		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center mt-4 p-0">
 			<div class="col mb-2 d-flex justify-content-center align-items-center">
@@ -159,23 +158,59 @@
 			</div>
 		</div>
 		
-		<div class="row row-cols-1 row-cols-md-2 justify-content-center mt-4 p-0">
-			<div class="col mb-2 p-0">
-				<img class="w-100 img-fluid" src="./assets/images/flowers.jpg" alt=""/>
+		<br/>
+		
+		<h2 class="text-center font-weight-bold">Week 1 Update</h2>
+		
+		<div class="row row-cols-1 row-cols-md-2 justify-content-center bg-blue mt-4 mb-4 p-0">
+			<div class="col p-0">
+				<img id="viewimg" class="w-100 img-fluid" src="./assets/images/week_1.jpg" alt=""/>
 			</div>
-			<div class="col mb-2 p-0 bg-theme2 d-flex justify-content-center align-items-center">
-				<div class="p-5 text-center">
+			<div class="col p-0 d-flex justify-content-center align-items-center">
+				<div class="p-5 text-center text-white">
 					<h3 class="mt-3 mb-3">
-						My name is Moza Alqufaidi 
+						An artist that I can relate to is Jaden Christopher Syre Smith
 					</h3>
 					<div class="mb-3">
-						I was born and raised in the UAE 
-						 in this website you’ll be able to learn a few things and get to know me better. I’m excited to visit the wondrous world of multimedia and see what I will be able to accomplish . 
-						I’m looking forward to be able to get a deeper understanding of multi media and how I’ll be able to improve some problem-solving I think with this journey I’ll be able to expand my exploration . I was always fascinated by visuals and would definitely like to share a few of my personal color out there .
+						Jaden‘s music has always uplifted me and inspired me to create.
+						Jaden released an album ‘SYRE’ and made a story based on his album The album is loosely based around the life narrative of a boy as he comes to age and figures out his own legacy The message behind his album was to leave a mark on people’s thinking of him and to think his the person that is always giving back to something or some one . Jaden and I are around the same age and want to deliver the same message I find it reliving to have to share same ambitions . Throughout time I would realize how strongly affected I am by this as I tend to make song lyrics as daily quotes to keep me moving . I base my paintings off of music I listen to I enjoy every minute of it and I’m looking forward for my next painting.
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		
+		<div class="imggrid-panel row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center mt-4 p-0">
+			<div class="col d-flex justify-content-center align-items-center mb-2 p-0">
+				<div class="bg-blue d-flex p-0">
+					<a class="text-white d-block" href="./assets/images/jaden_1.jpg">
+						<img class="img-fluid" src="./assets/images/jaden_1.jpg" alt=""/>
+					</a>
+				</div>
+			</div>
+			<div class="col d-flex justify-content-center align-items-center mb-2 p-0">
+				<div class="bg-blue d-flex p-0">
+					<a class="text-white d-block" href="./assets/images/jaden_2.jpg">
+						<img class="img-fluid" src="./assets/images/jaden_2.jpg" alt=""/>
+					</a>
+				</div>
+			</div>
+			<div class="col d-flex justify-content-center align-items-center mb-2 p-0">
+				<div class="bg-blue d-flex p-0">
+					<a class="text-white d-block" href="./assets/images/jaden_3.jpg">
+						<img class="img-fluid" src="./assets/images/jaden_3.jpg" alt=""/>
+					</a>
+				</div>
+			</div>
+			<div class="col d-flex justify-content-center align-items-center mb-2 p-0">
+				<div class="bg-blue d-flex p-0">
+					<a class="text-white d-block" href="./assets/images/jaden_4.jpg">
+						<img class="img-fluid" src="./assets/images/jaden_4.jpg" alt=""/>
+					</a>
+				</div>
+			</div>
+		</div>
+		
 		
 	</div>
 
@@ -237,5 +272,17 @@
 	</div>
 
 </footer>
+<script>
+	$(document).ready(function(){
+		$('.imggrid-panel').on('click','a', function(e){
+			
+			e.preventDefault();
+			var img = $(this).find('img');
+			$('#viewimg').attr('src', img.attr('src') );
+			
+		});
+	});
+
+</script>
 </body>
 </html>
