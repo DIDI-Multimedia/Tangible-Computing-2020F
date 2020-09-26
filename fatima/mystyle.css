@@ -8,10 +8,26 @@
 --cadet-grey: #829399ff;
 --light-cyan: #d0f4eaff;
 --tea-green: #e8fcc2ff;
+--plum-web: #f9b9f2ff;
+--oxford-blue: #0a2239ff;
+--maximum-blue: #53a2beff;
+--blue-ncs: #1d84b5ff;
+--outer-space-crayola: #132e32ff;
+--blue-sapphire: #176087ff;
+--lilac: #bca0bcff;
+--outer-space-crayola: #2b3d41ff;
+--black-coral: #4c5f6bff;
+--morning-blue: #83a0a0ff;
+--light-periwinkle: #d0cfecff;
+--wintergreen-dream: #6a8e7fff;
+--artichoke: #989572ff;
+--light-french-beige: #c6ae82ff;
+--queen-pink: #edc7cfff;
 --middle-green-yellow: #b1cc74ff; */
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Poppins', sans-serif;
  */
+
 
 
 
@@ -29,8 +45,9 @@ h1 { font-family: 'Oswald', sans-serif;
 color:#545f66ff;}
 
 body {
+background-image: url(sparkle2.gif);
 
-  background-color :#d5c7bcff;
+  background-color :#d0cfecff;;
  font-family: 'Poppins', sans-serif;
   padding-top: 200px
 }
