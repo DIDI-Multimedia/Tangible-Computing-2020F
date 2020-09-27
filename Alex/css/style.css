@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Baloo Tammudu 2', cursive;
+	
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../1.jpg);
+	height: 400vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	text-align: right;
+	list-style-type: right;
+	margin-top: 25px;
+}
+
+ul li{
+	display: table;
+	padding: 7px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #f01f92;
+	padding: 5px 20px;
+	border: 1px solid #transparent; 
+	transition: 0.6s ease; 
+}
+
+ul li a:hover{
+	background-color: #fff570;
+	color: #f01f92;
+}
+
+ul li.active a{
+	background-color: #a582ff;
+	color: #fff570;
+}
+.logo  img{
+	float: left;
+	width: 150px; 
+	height: auto;
+	position: absolute;
+	
+
+}
+
+.main{
+	max-width: 1200px; 
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	margin: 100px;
+	text-align: center;
+
+	
+}
+
+.title h1{
+	color: #5d27ba;
+	font-size: 60px; 
+
+}
+
+p {
+	font-size: 20px;
+	text-indent: 10vw;
+	font-style: normal;
+	font-weight: 100;
+	text-align: left;
+	text-decoration: none;
+	color: #2b0d78;
+}
+
+#selma{
+	width: 600px;
+	height:600px;
+	margin: 50px;
+	position: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
