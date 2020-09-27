@@ -13,6 +13,7 @@ p {
 	color: black !important; 
 	font-family: 'VT323', monospace;
 
+
 }
 
 body {
@@ -45,12 +46,13 @@ ul{
 
 .text-block {
   position: absolute;
-  bottom: 310px;
-  left: 35px;
+  bottom: 200px;
+  left: 26px;
   color: black;
   font-family: 'VT323', monospace;
   padding-left: 50px;
   padding-right: 50px;
+  
 }
 
 .weeks {
@@ -129,3 +131,27 @@ padding-top: -5%px;
 	font-size: 30px;
 
 }
+
+#intropara{
+
+	background-image: url("https://i.pinimg.com/originals/78/dd/32/78dd32a5fab8fba36827d4abca79eda7.gif");
+	
+	background-repeat: no-repeat;
+	
+	background-size: 400px; /*or contain */
+	padding: 70px;
+	
+}	
+.textbg{
+	position:relative; 
+	width:600px;
+} 
+/* .absolute-text{
+	position: absolute;
+  bottom: 310px;
+  left: 35px;
+  color: black;
+  font-family: 'VT323', monospace;
+padding:10px 20px; width:100%; text-align:center;} 
+
+.absolute-text a{font-size:16px; color:#b92b27;} */

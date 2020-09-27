@@ -45,13 +45,13 @@ ul{
 }
 
 .text-block {
-  position: absolute;
-  bottom: 540px;
-  left: 50px;
-  color: black;
-  font-family: 'VT323', monospace;
-  padding-left: 50px;
-  padding-right: 50px;
+	position: relative;
+	top: -20px;
+	left: 10px;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .weeks {
@@ -128,5 +128,20 @@ padding-top: -5%px;
 	top: 20px;
 	right: 50px;
 	font-size: 30px;
+
+}
+
+.textbg{
+	position:relative; 
+	width:600px;
+	bottom: 10px;
+  left: 5px;
+
+}
+.textbg2{
+	position: absolute; 
+	width:600px;
+	bottom: 10px;
+  left: 5px;
 
 }
