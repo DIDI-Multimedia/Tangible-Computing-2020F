@@ -28,7 +28,11 @@
 font-family: 'Poppins', sans-serif;
  */
 
+.day1{background-color :#989572ff;
 
+	background-image: none;
+background-image: url(sparkle2.gif);
+}
 
 
  h1{font-family: 'Oswald', sans-serif;}
