@@ -1,6 +1,9 @@
 /* div class based on id */
 
-<style type="text/css">
+.style{
+	font-size:100px;
+	color:blue;
+}
 		
 		
 	#content {
