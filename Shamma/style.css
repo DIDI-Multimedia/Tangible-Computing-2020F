@@ -1,36 +1,30 @@
 /* div class based on id */
 
-#content {
-
-	font-family: 'helvetica';
-	padding: 5%;
-
+.style{
+	font-size:20px;
+	color:blue;
 }
-body{
-
-	background-color: #5e747fff;
-		color: #e5c1bdff;
+		
+		
 
 
-}
+	body{
 
+		font-family: 'Raleway', sans-serif;
+		background-color: white;
+		border: 10px dashed blue
 
-
-p {
-
-
-	/*color: #5e747fff !important; */
-
-}
+			color: #e5c1bdff;
+			font-size: 50px;
+			padding: 10%
 
 
 
-/*
+	}
+	p {
+		/*color: #5e747fff !important; */
+	}
+	</style>
 
---baby-pink: #e5c1bdff;
---bone: #d2d0baff;
---laurel-green: #b6be9cff;
---morning-blue: #7b9e87ff;
---cadet: #5e747fff;
 
-*/
+	/*font-family: 'Raleway', sans-serif;*/
