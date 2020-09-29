@@ -17,11 +17,12 @@ ul{
 	text-align: right;
 	list-style-type: right;
 	margin-top: 25px;
+
 }
 
 ul li{
 	display: table;
-	padding: 7px;
+	padding: 10px;
 }
 
 ul li a{
@@ -46,8 +47,6 @@ ul li.active a{
 	width: 150px; 
 	height: auto;
 	position: absolute;
-	
-
 }
 
 .main{
@@ -59,14 +58,23 @@ ul li.active a{
 	position: absolute;
 	margin: 100px;
 	text-align: center;
-
-	
 }
 
 .title h1{
 	color: #5d27ba;
 	font-size: 60px; 
+	text-align: left;
 
+}
+
+.intro{
+	font-size: 20px;
+	text-indent: 0vw;
+	font-style: normal;
+	font-weight: 100;
+	margin-right: 200px;
+	text-decoration: none;
+	color: #2b0d78;
 }
 
 p {
@@ -79,15 +87,60 @@ p {
 	color: #2b0d78;
 }
 
+.title h3{
+	font-size: 50px;
+	color: #2b0d78
+}
+
 #selma{
 	width: 600px;
 	height:600px;
-	margin: 50px;
+	margin: 25px;
+	position: auto;
+
+}
+
+#yayoi{
+	width: 600px;
+	height:auto;
+	margin: 25px;
+	position: auto;
+}
+
+#kusama_infinity_room{
+	width: 400px;
+	height:auto;
+	margin: 25px;
+	position: auto;
+}
+
+#gif{
+	width: 400px;
+	height:auto;
+	margin-right: 100px;
 	position: auto;
 }
 
 
-
+div.bounce {
+  width: 100px;
+  padding: 20px;
+  background-color: none;
+  color: yellow;
+  font-size: 20px;
+  position: relative;
+  animation: bounce 2s ease-in 1s 6 alternate none;
+}
+@keyframes bounce {
+  from {
+    top: -1000px;
+    left: 1px;
+    }
+  to {
+    top: 150px;
+    right: 500px;
+  }
+  }
 
 
 
