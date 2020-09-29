@@ -1,0 +1,82 @@
+#content {
+
+    font-family: 'Annie Use Your Telescope', cursive;
+    padding: 0.1%;
+
+}
+
+
+p {
+
+	color: white !important; 
+    font-family: 'Annie Use Your Telescope', cursive;
+    padding-right: 65%;
+    padding-left: 2%;
+    font-size: larger;
+
+}
+
+body {
+	background-color: #1B1B1B;
+}
+
+h2 {
+    color: orange !important; 
+    position: absolute;
+    top: -85px;
+    left: 400px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 80px;
+    text-align: center;
+}
+
+h1 {
+
+	color: gray !important; 
+    font-family: 'Annie Use Your Telescope', cursive;	
+    text-align: left;
+    background-image: url("C:maryambinsuloom/Desktop/   /Workshop/Tangible-Computing-2020F/template/header.png");
+    padding-left: 2%;
+	
+
+}
+
+
+
+h3 {
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+ul{
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.gohome {
+    font-family: 'Annie Use Your Telescope', cursive;
+	text-align: left;
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	font-size: 30px;
+
+}
+
+.text-block {
+    position: absolute;
+    bottom: -300px;
+    left: 726px;
+    color: white;
+    font-family: 'Annie Use Your Telescope', cursive;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.text-block1 {
+    position: absolute;
+    bottom: -300px;
+    left: 926px;
+    color: white;
+    font-family: 'Annie Use Your Telescope', cursive;
+    padding-left: 50px;
+    padding-right: 50px;
+}
