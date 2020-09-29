@@ -1,0 +1,115 @@
+/*--black: #000000ff;
+--dodger-blue: #1098f7ff;
+--white: #ffffffff;
+--silver-pink: #b89e97ff;
+--pale-silver: #deccccff;
+*/
+
+
+/*TITLE*/
+	h1{
+	font-size: 80px
+	}
+
+
+/*SUBTITLE*/
+	h2{
+	font-size: 18px
+	}
+
+/*MENU*/
+.menu button {
+  background-color: #ffffffff; /* White background */
+  border: 0px ; /* White border */
+  color: #000000ff; /* Black text */
+  padding: 10px 100px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  font-size: 16px
+}
+
+.menu button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.menu:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.menu button:hover {
+  background-color: #ffffffff;
+  /*color: #ffffffff*/
+}
+
+
+
+
+/*BODY*/
+body{
+font-family: 'Peddana', serif;
+	background: #ffffffff;
+		color: #000000ff
+
+
+
+
+
+}
+
+h3{
+font-size: 28px
+}
+h4{
+font-size: 20px
+}
+p{
+font-size: 18px
+}
+
+
+
+
+/*EXTRAs*/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-right: 75px;
+
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+

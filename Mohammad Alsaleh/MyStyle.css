@@ -1,5 +1,52 @@
+
 /*==edaskdm : #FFEEDB;*/
 
+/*Template*/
+
+
+/* div class based on id */
+
+#content {
+
+	font-family: 'VT323', monospace;
+	padding: 0.1%;
+
+}
+
+
+p {
+
+	color: black !important; 
+	font-family: 'VT323', monospace;
+}
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
 aside  {
   width: 30%;
   padding-left: 20px;
@@ -13,7 +60,7 @@ aside  {
  	.dot {
   height: 120px;
   width: 120px;
-  background-color: fill(random(255),random(0),random(230));
+  background-color: transparent;
   border-radius: 50%;
   display: inline-block;
   border-bottom-style: dotted;
@@ -23,20 +70,14 @@ aside  {
   border-right-color: yellow;
 }
 .dotMaster {
-  height: 200px;
-  width: 200px;
-  background-color: red;
+  height: 100px;
+  width: 150px;
+  background-color: transparent;
   border-radius: 50%;
   display: inline-block;
   border-bottom-style: solid;
 }
-/*.info {
-  font-family: monospace;
-  position: absolute;
-  line-height: 20px;
-  font-size: 14px;
-  left: 20px;
-  top: 20px;*/
+
 }
 	.Homepage{
 
@@ -49,67 +90,49 @@ aside  {
 }
  	.name{
 
+
  		background-color: green;
  		color: white;
  		border: 2px solid black;
   		margin: 20px;
-  		padding: 20px;
+  		padding: 10px;
 }
+<style>
+body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            background-color: rgb(6, 75, 21); 
+        } 
+.wavy { 
+            position: relative; 
+        } 
+  
+        .wavy span { 
+            position: relative; 
+            display: inline-block; 
+            color: black; 
+            font-size: 2em; 
+            text-transform: uppercase; 
+            animation: animate 2s ease-in-out infinite; 
+            animation-delay: calc(0.1s * var(--i)); 
+        } 
+  
+        @keyframes animate { 
+            0% { 
+                transform: translateY(0px); 
+            } 
+  
+            20% { 
+                transform: translateY(-20px); 
+            } 
+  
+            40%, 
+            100% { 
+                transform: translateY(0px); 
+            } 
+        } 
 
-<body>
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
-}
-
-.dropdown {
-
-  position: relative;
-  display: inline-block;
-
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.show {display:block;}
-
+</style>
 </head>
-
-
-
-body {
-
-
-
-	font-family: 'arial';
-	color: #592C2F;
-	background-color: #FFEEDB;
-	padding: 5%;
-
-	/*padding:  111vw:;
-	background-color: #FFEEDB;
-	color: green; */
-
-}
-
-
-/*body {
-background-image: url('http://dl6.glitter-graphics.net/pub/437/437696eqj3j1ujsm.gif');
-background-attachment: fixed;
-background-repeat: repeat;
-}*/

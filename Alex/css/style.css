@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Baloo Tammudu 2', cursive;
+	
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../1.jpg);
+	height: 400vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	text-align: right;
+	list-style-type: right;
+	margin-top: 25px;
+
+}
+
+ul li{
+	display: table;
+	padding: 10px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #f01f92;
+	padding: 5px 20px;
+	border: 1px solid #transparent; 
+	transition: 0.6s ease; 
+}
+
+ul li a:hover{
+	background-color: #fff570;
+	color: #f01f92;
+}
+
+ul li.active a{
+	background-color: #a582ff;
+	color: #fff570;
+}
+.logo  img{
+	float: left;
+	width: 150px; 
+	height: auto;
+	position: absolute;
+}
+
+.main{
+	max-width: 1200px; 
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	margin: 100px;
+	text-align: center;
+}
+
+.title h1{
+	color: #5d27ba;
+	font-size: 60px; 
+	text-align: left;
+
+}
+
+.intro{
+	font-size: 20px;
+	text-indent: 0vw;
+	font-style: normal;
+	font-weight: 100;
+	margin-right: 200px;
+	text-decoration: none;
+	color: #2b0d78;
+}
+
+p {
+	font-size: 20px;
+	text-indent: 10vw;
+	font-style: normal;
+	font-weight: 100;
+	text-align: left;
+	text-decoration: none;
+	color: #2b0d78;
+}
+
+.title h3{
+	font-size: 50px;
+	color: #2b0d78
+}
+
+#selma{
+	width: 600px;
+	height:600px;
+	margin: 25px;
+	position: auto;
+
+}
+
+#yayoi{
+	width: 600px;
+	height:auto;
+	margin: 25px;
+	position: auto;
+}
+
+#kusama_infinity_room{
+	width: 400px;
+	height:auto;
+	margin: 25px;
+	position: auto;
+}
+
+#gif{
+	width: 400px;
+	height:auto;
+	margin-right: 100px;
+	position: auto;
+}
+
+
+div.bounce {
+  width: 100px;
+  padding: 20px;
+  background-color: none;
+  color: yellow;
+  font-size: 20px;
+  position: relative;
+  animation: bounce 2s ease-in 1s 6 alternate none;
+}
+@keyframes bounce {
+  from {
+    top: -1000px;
+    left: 1px;
+    }
+  to {
+    top: 150px;
+    right: 500px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+

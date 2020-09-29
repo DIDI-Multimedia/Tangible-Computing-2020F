@@ -1,0 +1,19 @@
+#content
+
+	margin: 0;
+	padding: 0;
+	font-family: 'Baloo Tammudu 2', cursive;
+	
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../1.jpg);
+	height: 400vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.selma.jpg img{
+height: 10px;
+
+}

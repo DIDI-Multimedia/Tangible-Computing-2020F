@@ -1,0 +1,106 @@
+ /*CSS HEX */ 
+ /*michelle obama*/
+/*--dark-electric-blue: #636F7Bff;
+--light-gray: #cdd5d1ff;
+--black-shadows: #b4a6abff;
+--mountbatten-pink: #946e83ff;
+--dark-liver: #615055ff;
+*/
+
+/* CSS HEX */
+/*me*/
+/*--coffee: #8B593Fff;
+--van-dyke-brown: #68361Aff;
+--seal-brown: #502712ff;
+--mountbatten-pink: #946e83ff;
+--dark-liver: #615055ff;
+*/
+
+/* CSS HEX */
+/*computer*/
+/*--chinese-red: #B03F26ff;
+--blood-red: #690A01ff;
+--deep-chestnut: #B14D48ff;
+--black-bean: #4B0000ff;
+--bittersweet-shimmer: #BA5953ff;
+*/
+
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.box1{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://static.oprah.com/2020/05/202005-omag-michelle-obama-949x534.jpg");
+   background-size: cover;
+  background-position: center;
+}
+
+.box2{
+  height: 100vh;
+  width: 100%;
+  background-color: #cdd5d1ff;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Nunito Sans', sans-serif; 
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.box3{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://agmaaju.files.wordpress.com/2019/12/whatsapp-image-2019-12-08-at-11.55.40-pm.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box4{
+  height: 100vh;
+  width: 100%;
+  background-color: #502712ff;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+}
+
+.box5{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://i.pinimg.com/originals/bc/f4/9e/bcf49e155ac5b34cd5972e8c18874afd.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.box6{
+  height: 100vh;
+  width: 100%;
+  background-color: #B03F26ff; 
+  background-size: cover;
+  background-position: center;
+  font-family: 'Nunito Sans', sans-serif; 
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+h1
+{
+  font-family: sans-serif;
+  font-size: 48px;
+  color: #fff;
+  margin: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
