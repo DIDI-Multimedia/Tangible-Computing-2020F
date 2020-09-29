@@ -28,11 +28,20 @@
 font-family: 'Poppins', sans-serif;
  */
 
-.day1{background-color :#989572ff;
 
-	background-image: none;
-background-image: url(sparkle2.gif);
+
+
+.weeks {
+	position: absolute;
+  top: 900px;
+  right: 60px;
+text-align: left
+ }
+
+
 }
+
+
 
 
  h1{font-family: 'Oswald', sans-serif;}
