@@ -1,29 +1,47 @@
-// TenThousandX Assignment: // Add to this code to create a drawing // Note: do not delete anything 
 
 
+// function = acomplish task 
+// running 
+// 
+// () = run
+/*
+  declaring 
+  function setup(){
+   
+  }
+*/ 
 function setup() {
+  
+  createCanvas(windowWidth, windowHeight) // size in pixels, resolution 
+  
 
-    // do not change anything in setup 
-    let canvas = createCanvas(800, 800)
-    canvas.parent('p5container');
+  
 
-    TenThousandX()
+
 
 }
 
-
-function TenThousandX() {
-    // add code here 
-
-      stroke(0,255)
-
-    for (var x = 0; x < 1000; x++) {
-
-      let y1 = random(0,height)
-      let y2 = random(0,height)
-
-
-      line(0,y1,width,y2)
-
+function draw() {
+  
+    background(255) // built-in color
+  // fill(random(100,255),0,34)
+  // // ellipse(mouseX, mouseY, 20, 20)
+  // square(mouseX, mouseY, random(55), 20);
+  let step = 1 
+  for (let x = 0; x < width; x+=step ){
+    
+    let val = x/width*255 // maping a value to a new domain
+    stroke(val)
+    line(x,0,x,height)
+    step *=1.15
+  
+  
+    for (let t = 0; t < step; t+=1){ 
+      let val2 = t/step*255 
+      stroke(val, 255-val, 34, val2)
+      line(0,x+t,width,x+t)
     }
+    
+  } 
+
 }
