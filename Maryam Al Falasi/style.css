@@ -159,3 +159,109 @@ padding:10px 20px; width:100%; text-align:center;}
 .custom {
 	cursor: url("https://thumbs.gfycat.com/GenuineBadBagworm-max-1mb.gif"), auto;
   }
+
+  .goback {
+	font-family: 'VT323', monospace;
+	text-align: left;
+	position: absolute;
+	top: 90px;
+	right: 121px;
+  }
+  .next {
+	font-family: 'VT323', monospace;
+	text-align: left;
+	position: absolute;
+	top: 90px;
+	right: 20px;
+  }
+
+  .text-block1 {
+	position: absolute;
+	top: 200px;
+	left: 30px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+  }
+
+  .text-block2 {
+	position: absolute;
+	top: 200px;
+	left: 240px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+  }
+  .text-block3 {
+	position: absolute;
+	top: 200px;
+	left: 440px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+  }
+  .text-block4 {
+	position: absolute;
+	top: 200px;
+	left: 640px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+  }
+  .text-block5 {
+	position: absolute;
+	top: 360px;
+	left: 30px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+  .text-block6 {
+	position: absolute;
+	top: 360px;
+	left: 240px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+  .text-block7 {
+	position: absolute;
+	top: 360px;
+	left: 440px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+  .backtow2 {
+	position: absolute;
+	top: 130px;
+	right: 20px;
+  }
+  .text-block8 {
+	position: absolute;
+	top: 50px;
+	right: 25px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
