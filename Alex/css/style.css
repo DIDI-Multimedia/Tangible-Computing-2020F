@@ -17,6 +17,7 @@ ul{
 	text-align: right;
 	list-style-type: right;
 	margin-top: 25px;
+
 }
 
 ul li{
@@ -46,6 +47,7 @@ ul li.active a{
 	width: 150px; 
 	height: auto;
 	position: absolute;
+
 	
 
 }
@@ -66,8 +68,21 @@ ul li.active a{
 .title h1{
 	color: #5d27ba;
 	font-size: 60px; 
+	text-align: left;
 
 }
+
+.intro{
+	font-size: 20px;
+	text-indent: 0vw;
+	font-style: normal;
+	font-weight: 100;
+	margin-right: 200px;
+	text-decoration: none;
+	color: #2b0d78;
+}
+
+
 
 p {
 	font-size: 20px;
@@ -79,10 +94,37 @@ p {
 	color: #2b0d78;
 }
 
+.title h3{
+	font-size: 50px;
+	color: #2b0d78
+}
+
 #selma{
 	width: 600px;
 	height:600px;
-	margin: 50px;
+	margin: 25px;
+	position: auto;
+
+}
+
+#yayoi{
+	width: 600px;
+	height:auto;
+	margin: 25px;
+	position: auto;
+}
+
+#kusama_infinity_room{
+	width: 400px;
+	height:auto;
+	margin: 25px;
+	position: auto;
+}
+
+#gif{
+	width: 400px;
+	height:auto;
+	margin-right: 100px;
 	position: auto;
 }
 
