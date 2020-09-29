@@ -129,13 +129,63 @@ h6{
     font-size: 18px
 }
 
+
+/*----------------------------------------------------*/
+
+.leftcolumn2 {
+  float: left;
+  width: 40%;
+   font-size: 20px
+
+}
+
+/* Right column */
+.rightcolumn2 {
+  float: right;
+  width: 25%;
+  padding-right: 500px;
+  font-size: 20px
+
+}
+
+
+/* Add a card effect for articles */
+.card2 {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer2 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------*/
 /*EXTRAs*/
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn1 {
   float: left;
-  width: 50%;
+  width: 45%;
    font-size: 20px
 
 }
@@ -152,7 +202,7 @@ h6{
 
 /* Add a card effect for articles */
 .card1 {
-  background-color: white;
+  background-color: #deccccff;
   padding: 20px,
   margin-top: 20px;
 }
@@ -166,6 +216,52 @@ h6{
 
 /* Footer */
 .footer1 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------*/
+.leftcolumn3 {
+  float: left;
+  width: 45%;
+   font-size: 20px
+
+}
+
+/* Right column */
+.rightcolumn3 {
+  float: right;
+  width: 25%;
+  padding-right: 80px;
+  font-size: 20px
+
+}
+
+
+/* Add a card effect for articles */
+.card3 {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer3 {
   padding: 20px;
   text-align: center;
   background: #ddd;
