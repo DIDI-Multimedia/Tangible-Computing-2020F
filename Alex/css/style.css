@@ -22,7 +22,7 @@ ul{
 
 ul li{
 	display: table;
-	padding: 7px;
+	padding: 10px;
 }
 
 ul li a{
@@ -47,9 +47,6 @@ ul li.active a{
 	width: 150px; 
 	height: auto;
 	position: absolute;
-
-	
-
 }
 
 .main{
@@ -61,8 +58,6 @@ ul li.active a{
 	position: absolute;
 	margin: 100px;
 	text-align: center;
-
-	
 }
 
 .title h1{
@@ -81,8 +76,6 @@ ul li.active a{
 	text-decoration: none;
 	color: #2b0d78;
 }
-
-
 
 p {
 	font-size: 20px;
@@ -129,7 +122,25 @@ p {
 }
 
 
-
+div.bounce {
+  width: 100px;
+  padding: 20px;
+  background-color: none;
+  color: yellow;
+  font-size: 20px;
+  position: relative;
+  animation: bounce 2s ease-in 1s 6 alternate none;
+}
+@keyframes bounce {
+  from {
+    top: -1000px;
+    left: 1px;
+    }
+  to {
+    top: 150px;
+    right: 500px;
+  }
+  }
 
 
 
