@@ -1,0 +1,203 @@
+/*
+
+font-family: 'ABeeZee', sans-serif;
+font-family: 'Crimson Text', serif; 
+*/
+
+/*
+--royal-blue-dark: #001853ff;
+--english-violet: #3b3355ff;
+--medium-turquoise: #55dde0ff;
+--blue-bell: #998fc7ff;
+--tufts-blue: #1a8fe3ff;
+--minion-yellow: #fde74cff;
+--dark-spring-green: #04724dff;
+
+*/
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+header
+{
+    background-image: url("https://storage.googleapis.com/cdn.makiplace.com/2018/09/makiplace-abstract-geometric-background-56629-1536467063.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+ }
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a 
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.main-nav li.active a 
+{
+    border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+
+.logo img
+{
+    width: 290px;
+    height: auto;
+    float: left;
+}
+
+body
+{
+    font-family: monospace;
+}
+
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+hero
+{
+    position: absolute;
+    width: 1200px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+h2{
+    font-family: "Roboto", sans-serif; 
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    /*padding: 5px;*/
+    /*color: #001853ff;*/
+    /*font-size: 30px;*/
+}
+
+.button
+{
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 40px;
+}
+
+.btn
+{
+    border: 1px solid white;
+    background: #998fc7ff;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1,.btn2,.btn3,.btn4,.btn5,.btn6,.btn7,.btn8
+{
+  color: solid white;
+}
+
+
+.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover,.btn5:hover,.btn6:hover,.btn7:hover,.btn8:hover
+{
+  color: #fde74cff;
+}
+
+.btn::before
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: solid white;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn1::before,.btn2::before,.btn3::before,.btn4::before,.btn5::before,.btn6::before,.btn7::before,.btn8::before
+{
+  height: 180%;
+}
+
+.btn1:hover::before,.btn2:hover::before,.btn3:hover::before,.btn4:hover::before,.btn5:hover::before,.btn6:hover::before,.btn7:hover::before,.btn8:hover::before
+{
+  height: 0%;
+}
+
+.button1
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.btn9,.btn10,.btn11,.btn12,.btn13,.btn14,.btn15
+{
+  color: solid white;
+}
+
+
+.btn9:hover,.btn10:hover,.btn11:hover,.btn12:hover,.btn13:hover,.btn14:hover,.btn15:hover
+{
+  color: #fde74cff;
+}
+
+.btn::before
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: solid white;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn9::before,.btn10::before,.btn11::before,.btn12::before,.btn13::before,.btn14::before,.btn15::before
+{
+  height: 180%;
+}
+
+.btn9:hover::before,.btn10:hover::before,.btn11:hover::before,.btn12:hover::before,.btn13:hover::before,.btn14:hover::before,.btn15:hover::before
+{
+  height: 0%;
+}
+
+

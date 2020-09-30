@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Tangible Computing 2020 </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;400;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- <script src = 'examples/00.js'></script> -->
+    <script src = 'examples/2_gradient.js'></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+  </head>
+  <body>
+    <div class="topnav">
+      
+      <button class="openbtn" onclick= "openNav()" >&#9776;</button>
+      
+    </div>
+    
+    <div id="mySidebar" class="sidebar">
+      
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+      
+    </div>
+    <div id="main">
+      <h1> 03 Software Clocks </h1>
+      <div id="myContainer"></div>
+      <h2> Summary </h2>
+      <p> This week we will explore how to visualize time in p5js. We will introduce time-based functions, and also transformations.</p>
+      <h2> References </h2>
+      <ul>
+        <li><a href="http://cmuems.com/2016/60212/lectures/lecture-09-09b-clocks/maedas-clocks/"> Maeda's 12 o'clock </a></li>
+        <li><a href="http://cmuems.com/2016/60212/lectures/lecture-09-09b-clocks/maedas-clocks/"> Golan Levin on New Media Clocks </a></li>
+        <li><a href="http://bluegalaxy.info/codewalk/2017/11/29/p5-js-how-to-build-a-clock/
+        "> How to Build a Clock in p5JS </a></li
+        >
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects"> Working with Objects</a></li>
+        <li><a href="https://www.youtube.com/watch?v=-e5h4IGKZRY"> Coding Train, JavaScript Objects - p5.js Tutorial </a></li>
+        <li><a href="https://www.youtube.com/watch?v=wRHAitGzBrg"> Coding Train, Function Basics - p5.js Tutorial </a></li>
+        <li><a href="https://www.youtube.com/watch?v=o9sgjuh-CBM"> Coding Train, Transformations </a></li>
+        <!-- <li><a href="https://www.youtube.com/watch?v=riDVvXZ_Kb4"> Prototypes in JavaScript - FunFunFunction #16</a></li> -->
+      </ul>
+      <!-- <hr> -->
+      <h2> Readings </h2>
+      <ul  style="list-style-type:disc;">
+        <!--
+        <p> Read <a href="http://www.publicseminar.org/2017/02/cognisphere/" target="open">"Citizens of the Cognisphere"</a> by Daniel Sauter (2017).</p> -->
+        <p>Visit verardo Reyes website about <a href="http://ereyes.net/ms/#about" target="open"> Motion Structure</a>. Check out the examples.</p>
+        <p> Read <a href="https://www.academia.edu/14883310/2015_-_Aesthetics_of_temporal_and_spatial_transformations_in_virtual_environments" target="open">"Aesthetics of temporal and spatial transformations in virtual environments"</a> by  Everardo Reyes (2015).</p>
+      </ul>
+      
+      <h2> Deliverables </h2>
+      <b> New Media Research (2%) :</b>
+      <ul  style="list-style-type:disc;">
+        
+        <br>
+        <li>  You will continue to develop your proposal for <a href="Chapter_One.html">Project 1.</a>.</li>
+        <li>  Choose one of the following emergent media that you want to focus on for your project. (You may also combine 2 of them, or propose an alternate) </li>
+        <br>
+        <ul>
+          
+          <li> 02 <b> Interactive Drawing Machine </b> </li>
+          <li> 03 <b> Software Clocks </b> </li>
+          <li> 04 <b> Web-Cam Filters </b> </li>
+          <li> 05 <b> Generative Poetry </b> </li>
+          <li> 06 <b> Music Visualizer </b> </li>
+        </ul>
+        </br>
+        <li>  Compile research and examples your chosen media </li>
+        <li> Write a 500 word summary that answers the following questions: when and where was it invented?, who are the main players in this field, what are the enabling technical developments which make this possible? Using sketches and a couple sentences speculate how your choosen aesthetic from week 2 can collide with this media format to produce something novel </li>
+      </ul>
+      <br>
+      <b>Daily Practice (2%) :</b>
+      <p> Every day you will code a new p5 sketch <b> remagining the format of Software Clock in your chosen aesthetic</b>. This is an opportunity to explore p5.js and practice working time-based functions and transformations. On the "Week 3" page on your personal website add links for each day.</p>
+      <ul>
+        <li> <b>Daily Practice:</b> Every day you will code a new p5 sketch <b>related to your P1 proposal</b>. This is an opportunity to explore p5.js and practice working with objects and animation. On the "Week 3" page on your personal website add links for each day. Here are some suggestion: </li>
+        <ul style="list-style-type:hiragana ;">
+          <li> Use the "p5 template" file as a starting point</li>
+          <li> Review the <a href="https://p5js.org/examples/input-clock.html">p5 Clock Examples</a></li>
+          
+          <li> Only spend  20 - 40 minutes per sketch</li>
+          <li> Focus on creating <b>simple</b> programs</li>
+          <!-- <li> Each day try 10 different p5 functions from this <a href="https://p5js.org/reference/">list</a></li> -->
+          <li> Explore elements that you might like incorperate in P1</li>
+          <li> If you get stuck ask for help </li>
+          <li> Draw out what you want your program to do, using flow charts before writing a single line of code</li>
+        </ul>
+      </li>
+      <br>
+    </ul>
+    <div id="footer">
+      <br>
+      <br>
+      <hr>
+      <br>
+      <img src="assets/didi-logo.png" style="width:200px;align-content: left"></img>
+    </div>
+    <br>
+  </ul>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
