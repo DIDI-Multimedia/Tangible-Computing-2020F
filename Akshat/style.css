@@ -91,3 +91,26 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
+.bio-2{
+
+  border-radius: 10;
+  background-color: rgb(163, 42, 233,0.8);
+  /*padding-left: 10%;
+  padding-right: 10%;*/
+  margin-left: 5%;
+  margin-right: 70%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  z-index: -2;
+}
+.bio-3{
+
+  border-radius: 10;
+  background-color: rgb(163, 42, 233,0.8);
+  /*padding-left: 10%;
+  padding-right: 10%;*/
+  margin-left: 50%;
+  margin-right: 5%;
+  margin-top: 5%;
+  z-index: -1;
+}
