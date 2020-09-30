@@ -80,9 +80,9 @@ aside  {
   border-bottom-style: solid;
 }
 .rectangle {
-  height: 50px;
-  width: 100px;
-  background-color: red;
+  height: 80px;
+  width: 130px;
+  background-color: rgb(110,0,0);
 }
 
 
@@ -105,6 +105,7 @@ aside  {
   		margin: 20px;
   		padding: 10px;
 }
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body { 
             display: flex; 
@@ -142,5 +143,5 @@ body {
             } 
         } 
 
-</style>
+</style>c
 </head>
