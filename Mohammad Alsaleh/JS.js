@@ -7,7 +7,8 @@
 
 (function emojiCursor() {
   
-  var possibleEmoji = ["😀", "😂", "😆", "😊"]
+
+  var possibleEmoji = ["W", "O", "0", "W"]
   var width = window.innerWidth;
   var height = window.innerHeight;
   var cursor = {x: width/2, y: width/2};

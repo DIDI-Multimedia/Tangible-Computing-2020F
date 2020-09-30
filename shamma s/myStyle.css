@@ -1,0 +1,58 @@
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Teko', sans-serif;
+*/
+
+
+/* 
+--rifle-green: #3e442bff;
+--nickel: #6a7062ff;
+--roman-silver: #8d909bff;
+--wild-blue-yonder: #aaadc4ff;
+--beau-blue: #d6eeffff;
+*/
+
+.disco {
+ 
+	color:#aaadc4ff;
+	font-size: 10vw;
+}
+
+.content {
+	padding: 200px;
+	border: solid black;
+	
+}
+
+
+
+
+
+h1{
+	font-family: 'Teko', sans-serif; 
+}
+
+h2{
+	font-family: 'Podkova', serif;
+	color: #3e442bff;
+}
+
+
+p{
+	
+font-family: 'Merriweather', serif;
+color: #3e442bff;
+}
+
+
+body{
+	padding: 100px;
+	background-color: #d6eeffff;
+}
+
+
+
+
+
+
+
