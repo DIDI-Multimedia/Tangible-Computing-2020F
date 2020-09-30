@@ -31,7 +31,7 @@ let elements = [
 '<a href="00_home.html" class ="active"> 00 Tangible Computing </a>',
 '<a href="01.html" class ="active"> 01 Intro to Web </a>',
 '<a href="02.html" class ="active"> 02 Functional Programming </a>',
-'<a href="03.html" class ="disabled"> 03 Software Clocks </a>',
+'<a href="03.html" class ="active"> 03 Software Clocks </a>',
 '<a href="04.html" class ="disabled"> 04 Pixel Aesthetics </a>',
 '<a href="05.html" class ="disabled"> 05 Computer Typography </a>',
 '<a href="06.html" class ="disabled"> 06 3D Internet </a>',
