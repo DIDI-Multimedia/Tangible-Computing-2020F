@@ -1,94 +1,320 @@
-/*
---dark-slate-gray: #3e4e50ff;
---peach-crayola: #facfadff;
---mellow-apricot: #f8bd7fff;
---sandy-brown: #f5ac72ff;
---tumbleweed: #f2aa7eff;
-
-
---black: #000000ff;
+/*--black: #000000ff;
 --dodger-blue: #1098f7ff;
 --white: #ffffffff;
 --silver-pink: #b89e97ff;
 --pale-silver: #deccccff;
-
 */
 
-h1{                            /* Title */
-	color: #deccccff
-	font-size: 0px
+
+/*TITLE*/
+	h1{
+	font-size: 80px
+	}
+
+
+/*SUBTITLE*/
+	h2{
+	font-size: 18px
+	}
+
+/*MENU*/
+.menu button {
+  background-color: #ffffffff; /* White background */
+  border: 0px ; /* White border */
+  color: #000000ff; /* Black text */
+  padding: 0px 100px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  font-size: 18px
 }
 
-.welcome{                     /*Subtitle*/
-	font-size: 24px
+.menu button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
 }
 
-/* The sidebar menu */
-.sidebar {
-  /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 60px; /* Stay at the top */
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+/* Clear floats (clearfix hack) */
+.menu:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-/* The navigation menu links */
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #b89e97ff;
-  display: block;
-  background: #deccccff 
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-/* Style page content */
-.main {
-  margin-left: 250px; /* Same as the width of the sidebar */
-  margin-right: 1050px
-  padding: 0px 10px;
-}
-
-
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+/* Add a background color on hover */
+.menu button:hover {
+  background-color: #ffffffff;
+  /*color: #ffffffff*/
 }
 
 
 
+
+/*BODY*/
 body{
-
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Peddana', serif;
 	background: #ffffffff;
-		color: #3e4e50ff
+		color: #000000ff
+
+
+
+
 
 
 }
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 250px 750px 180px;
-  grid-gap: 10px;
-  
-  padding: 10px;
+h3{
+font-size: 28px
+}
+h4{
+font-size: 20px
+}
+p{
+font-size: 18px
 }
 
-.grid-container > div {
-  border: none;
+
+
+
+/*EXTRAs*/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-right: 75px;
+
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
   text-align: center;
-  font-size: 30px;
+  background: #ddd;
+  margin-top: 20px;
+}
 
 
+
+/*--------------------------------------------------------*/
+/*-------------------WEEKS LAYOUT-------------------------*/
+/*--------------------------------------------------------*/
+
+
+
+h5{
+  font-size: 36px
+}
+
+h6{
+    font-size: 20px
+}
+
+
+/*----------------------------------------------------*/
+
+.leftcolumn2 {
+  float: left;
+  width: 40%;
+   font-size: 20px
+
+}
+
+/* Right column */
+.rightcolumn2 {
+  float: right;
+  width: 25%;
+  padding-right: 500px;
+  font-size: 20px
+
+}
+
+
+/* Add a card effect for articles */
+.card2 {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer2 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------*/
+/*EXTRAs*/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn1 {
+  float: left;
+  width: 45%;
+   font-size: 20px
+
+}
+
+/* Right column */
+.rightcolumn1 {
+  float: right;
+  width: 25%;
+  padding-right: 250px;
+  font-size: 20px
+
+}
+
+
+/* Add a card effect for articles */
+.card1 {
+  background-color: #deccccff;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer1 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------*/
+.leftcolumn3 {
+  float: left;
+  width: 45%;
+   font-size: 20px
+
+}
+
+/* Right column */
+.rightcolumn3 {
+  float: right;
+  width: 25%;
+  padding-right: 80px;
+  font-size: 20px
+
+}
+
+
+/* Add a card effect for articles */
+.card3 {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer3 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+
+/*----------------------------------------------------*/
+
+.leftcolumn4 {
+  float: left;
+  width: 25%;
+   font-size: 20px
+
+}
+/* Center column */
+.centercolumn4 {
+  float: center;
+  font-size: 20px
+
+
+}
+
+/* Right column */
+.rightcolumn4 {
+  float: all;
+width: 500px
+  font-size: 20px
+  padding-right: 10px;
+
+}
+
+
+/* Add a card effect for articles */
+.card4 {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer4 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}

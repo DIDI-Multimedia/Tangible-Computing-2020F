@@ -159,3 +159,171 @@ padding:10px 20px; width:100%; text-align:center;}
 .custom {
 	cursor: url("https://thumbs.gfycat.com/GenuineBadBagworm-max-1mb.gif"), auto;
   }
+
+  .goback {
+	font-family: 'VT323', monospace;
+	text-align: left;
+	position: absolute;
+	top: 90px;
+	right: 121px;
+  }
+  .next {
+	font-family: 'VT323', monospace;
+	text-align: left;
+	position: absolute;
+	top: 90px;
+	right: 20px;
+  }
+
+  .text-block1 {
+	position: absolute;
+	top: 200px;
+	left: 30px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+  }
+
+  .text-block2 {
+	position: absolute;
+	top: 200px;
+	left: 240px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+  }
+  .text-block3 {
+	position: absolute;
+	top: 200px;
+	left: 440px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+  }
+  .text-block4 {
+	position: absolute;
+	top: 200px;
+	left: 640px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+  }
+  .text-block5 {
+	position: absolute;
+	top: 360px;
+	left: 30px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+  .text-block6 {
+	position: absolute;
+	top: 360px;
+	left: 240px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+  .text-block7 {
+	position: absolute;
+	top: 360px;
+	left: 440px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+  .backtow2 {
+	position: absolute;
+	top: 130px;
+	right: 20px;
+  }
+  .text-block8 {
+	position: absolute;
+	top: 50px;
+	right: 25px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+  .text-block9 {
+	position: absolute;
+	top: 360px;
+	left: 640px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+
+.dropbtn {
+	background-color: navy;
+	color: white;
+	font-family: 'VT323', monospace;
+	padding: 5px;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: yellow;
+	color: black;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #d3d3d3;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: 'VT323', monospace;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #e35f5f;
+	color: white;
+	}
+  
+  .show {
+	  display:block;
+	}
+
+  .projectdrop {
+	  position: absolute;
+	  right: 230px;
+	  top: 135px;
+  }
