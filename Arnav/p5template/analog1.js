@@ -11,15 +11,12 @@ function setup() {
 
 	let canvas = createCanvas(600, 600)
 	canvas.parent('p5container');
-
-
 }
 
 
 function draw() {
 
 	background(0)
-
 
 	// define center 
 	let cx = width / 2
@@ -30,35 +27,46 @@ function draw() {
 	let h = hour()
 	let m = minute()
 	let s = second()
-
-	// rotation? 
-
-	// let rotH = radians(h / 60 * 360) // radians 
-	// let rotM = radians(m / 60 * 360) // radians 
-	// let rotS = radians(s / 60 * 360) // radians 
-	// let rotS = s/60*TWO_PI // radians 
-
-	// console.log(rotH)
-	// draw arms 
-
-
-
-	push()
-	translate(cx, cy)
-	stroke(34, 155, 215)
-
-	if(s%2 ==0){
-
-		noFill(0)
-		for(var i =0; i <= d; i += 25){
-			
-			strokeWeight(7)
-			circle(0, 0, i)
-			// strokeWeight(1)
-
-	}
+ 	
+ 	glowArc(cx,cy,d,s,60)
+ 	glowArc(cx*20,cy,d,h,24)
+ 	glowArc(cx+40,cy,d,m,60)
+	
 
 }
+
+ function glowArc(cx,cy,d,t,max){
+
+ 	push()
+	translate(cx, cy)
+	rotate(t/60*TWO_PI)
+	stroke(34+t*5, 155-t, 215-t,10)
+
+	if(frameCount%1 ==0){
+
+		noFill(0)
+		for(var i =0; i <= max; i++){
+			if(i<t ){
+
+			
+			// circle(0, 0, i*width/60)
+			for(var k=1; k<10; k++){
+
+				strokeWeight(k*t/10)	
+				arc(0,0, 400, 400, 0, TWO_PI*t/60)
+			}
+			
+
+			}
+			
+			// strokeWeight(1)
+	}
+	
+
+}
+	pop()
+
+ }
 	// stroke(34, 155, 215)
 	// push()
 	// strokeWeight(1)
@@ -78,6 +86,3 @@ function draw() {
 	// line(0, 0, 0, -d / 8)
 	// pop()
 
-	pop()
-
-}
