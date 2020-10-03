@@ -1,12 +1,13 @@
-# .DS_store
+.DS_store
 students/firstname_lastname/examples/03_citygen/procedural-city-js/
 examples/03_citygen/procedural-city-js/
 # students/noor_alfahim
 template/node template/node_modules
 echo node_modules
-# echo .DS_Store
+echo .DS_Store
 template/node template/node_modules
-
+Mozaalq/
+labs/
 node_modules/
 # students/mona_itani/Week1/week1.png
 labs/wk_09/twitter/node_modules
