@@ -36,12 +36,20 @@ body
 .box1{
   height: 100vh;
   width: 100%;
+  background-image: url("https://agmaaju.files.wordpress.com/2019/12/whatsapp-image-2019-12-08-at-11.55.40-pm.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box2{
+  height: 100vh;
+  width: 100%;
   background-image: url("https://static.oprah.com/2020/05/202005-omag-michelle-obama-949x534.jpg");
    background-size: cover;
   background-position: center;
 }
 
-.box2{
+.box3{
   height: 100vh;
   width: 100%;
   background-color: #cdd5d1ff;
@@ -54,15 +62,7 @@ body
   margin-top: 5px;
 }
 
-.box3{
-  height: 100vh;
-  width: 100%;
-  background-image: url("https://agmaaju.files.wordpress.com/2019/12/whatsapp-image-2019-12-08-at-11.55.40-pm.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-.box4{
+/*.box4{
   height: 100vh;
   width: 100%;
   background-color: #502712ff;
@@ -72,9 +72,9 @@ body
   color: white;
   font-size: 26px;
   text-align: center;
-}
+}*/
 
-.box5{
+.box4{
   height: 100vh;
   width: 100%;
   background-image: url("https://i.pinimg.com/originals/bc/f4/9e/bcf49e155ac5b34cd5972e8c18874afd.gif");
@@ -82,7 +82,7 @@ body
   background-position: center;
 }
 
-.box6{
+.box5{
   height: 100vh;
   width: 100%;
   background-color: #B03F26ff; 
