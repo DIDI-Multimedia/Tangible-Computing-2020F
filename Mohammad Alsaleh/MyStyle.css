@@ -79,13 +79,18 @@ aside  {
   display: inline-block;
   border-bottom-style: solid;
 }
+.rectangle2 {
+	
+  height: 70px;
+  width: 130px;
+  background-color: rgb(110,0,0);
+
+ 
+}
 .rectangle {
   height: 70px;
   width: 130px;
   background-color: rgb(110,0,0);
- 
-}
-
 
 }
 	.Homepage{
