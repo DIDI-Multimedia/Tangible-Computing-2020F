@@ -55,6 +55,13 @@ font-family: 'Kumbh Sans', sans-serif;
 	padding: 20px
 }
 
+.divback{
+
+background-color: black;
+
+
+}
+
 
 .box {
   /*background-color: rgba(255, 255, 255, 0.3);*/
@@ -67,7 +74,7 @@ font-family: 'Kumbh Sans', sans-serif;
   max-width: 100%;
   max-height: 100%;
   padding: 20px;
-  height: 800px;
+  /*height: 1500px;*/
 }
 
 /*.blur{
