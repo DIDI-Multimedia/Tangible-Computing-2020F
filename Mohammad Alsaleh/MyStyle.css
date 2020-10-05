@@ -1,15 +1,7 @@
 
-/*==edaskdm : #FFEEDB;*/
-
-/*Template*/
-
-
-/* div class based on id */
 
 #content {
 
-	font-family: 'VT323', monospace;
-	padding: 0.1%;
 
 }
 
@@ -59,6 +51,7 @@ aside  {
 
 
 
+
  	.dot {
   height: 120px;
   width: 120px;
@@ -79,18 +72,27 @@ aside  {
   display: inline-block;
   border-bottom-style: solid;
 }
+
+ 
+
 .rectangle {
   height: 70px;
   width: 130px;
   background-color: rgb(110,0,0);
- 
+
 }
 
+.rectangleHome {
+  text-align: center;
+  height: 25px;
+  width: 50px;
+  stroke: rgb(255,0,255);
+  background-color: rgb(0,0,25);
 
 }
 	.Homepage{
 
- 		background-color: tomato;
+ 		background-color: rgb(110,0,0);
  		color: white;
  		border: 2px solid black;
   		margin: 20px;
@@ -144,5 +146,57 @@ body {
             } 
         } 
 
-</style>c
+</style>
+.dropbtn {
+	background-color: navy;
+	color: white;
+	font-family: 'VT323', monospace;
+	padding: 5px;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: yellow;
+	color: black;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 15px
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #d3d3d3;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: 'helvatica', monospace;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #e35f5f;
+	color: white;
+	}
+  
+  .show {
+	  display:block;
+	}
+
+  .projectdrop {
+	  position: absolute;
+	  right: 230px;
+	  top: 135px;
+  }
 </head>
