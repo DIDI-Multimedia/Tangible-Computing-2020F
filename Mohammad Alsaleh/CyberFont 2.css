@@ -1,0 +1,12 @@
+
+@font-face{ 
+	font-family: 'cyber';
+	src: url('Cyberpunk.ttf');
+	font-weight: 100;
+}
+.cyber{
+	color: yellow
+	font-family: 'cyber';
+	font-weight: 100;
+
+}

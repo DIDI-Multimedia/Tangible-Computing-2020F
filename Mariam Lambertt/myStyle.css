@@ -22,10 +22,10 @@
   background-color: #ffffffff; /* White background */
   border: 0px ; /* White border */
   color: #000000ff; /* Black text */
-  padding: 10px 100px; /* Some padding */
+  padding: 0px 100px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  font-size: 16px
+  font-size: 18px
 }
 
 .menu button:not(:last-child) {
@@ -58,6 +58,7 @@ font-family: 'Peddana', serif;
 
 
 
+
 }
 
 h3{
@@ -73,24 +74,115 @@ font-size: 18px
 
 
 
-/*EXTRAs*/
+/*----------------------------LAST POSTS-------------------------*/
+.leftcolumn3 {
+  float: left;
+  width: 45%;
+   font-size: 20px
+
+}
+
+/* Right column */
+.rightcolumn3 {
+  float: right;
+  width: 25%;
+  padding-right: 80px;
+  font-size: 20px
+
+}
+
+
+/* Add a card effect for articles */
+.card3 {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer3 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+
+
+
+/*----------------HOME PAGE COMMON GROUND-------------------*/
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
   float: left;
-  width: 50%;
+  width: 60%;
+
 }
 
 /* Right column */
 .rightcolumn {
   float: right;
   width: 25%;
+
   padding-right: 75px;
 
 }
 
 
+.lefty{
+ float: left;
+  width: 40%;
+
+
+
+}
+.lefty1{
+ float: left;
+  width: 40%;
+
+
+}
+
+.lefty2{
+ float: left;
+  width: 40%;
+
+
+}
+
+.righty{
+  float: right;
+  width: 50%;
+
+  padding-right: 20px
+}
+.righty1{
+  float: right;
+  width: 50%;
+
+  padding-right: 20px
+}
+.righty2{
+  float: right;
+  width: 50%;
+
+  padding-right: 20px
+}
+
+.card9 {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
 /* Add a card effect for articles */
 .card {
   background-color: white;
@@ -113,3 +205,161 @@ font-size: 18px
   margin-top: 20px;
 }
 
+
+
+/*--------------------------------------------------------*/
+/*-------------------WEEKS LAYOUT-------------------------*/
+/*--------------------------------------------------------*/
+
+
+
+h5{
+  font-size: 36px
+}
+
+h6{
+    font-size: 20px
+}
+
+
+/*----------------------------------------------------*/
+
+.leftcolumn2 {
+  float: left;
+  width: 40%;
+   font-size: 20px
+
+}
+
+/* Right column */
+.rightcolumn2 {
+  float: right;
+  width: 25%;
+  padding-right: 500px;
+  font-size: 20px
+
+}
+
+
+/* Add a card effect for articles */
+.card2 {
+  background-color: white;
+  padding: 50px,
+  margin-top: 50px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer2 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------*/
+/*EXTRAs*/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn1 {
+  float: left;
+  width: 45%;
+   font-size: 20px
+
+}
+
+/* Right column */
+.rightcolumn1 {
+  float: right;
+  width: 25%;
+  padding-right: 250px;
+  font-size: 20px
+
+}
+
+
+/* Add a card effect for articles */
+.card1 {
+  background-color: #deccccff;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer1 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------*/
+
+.leftcolumn4 {
+  float: left;
+  width: 25%;
+   font-size: 20px
+
+}
+
+
+/* Right column */
+.rightcolumn4 {
+  float: all;
+width: 500px
+  font-size: 20px
+  padding-right: 10px;
+
+}
+
+
+/* Add a card effect for articles */
+.card4 {
+  background-color: white;
+  padding: 20px,
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer4 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
