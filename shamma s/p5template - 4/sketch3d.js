@@ -1,29 +1,19 @@
 function setup() {
 
     // 1. create canvas
-    let canvas = createCanvas(800, 450)
+    let canvas = createCanvas(800, 400)
     // canvas.parent('p5container');
         // 2. background 
 
-
-}
-
-
 function draw(){
-    background('#031926')
+    background('#000000')
 
-  
     // 3. rectangle 
-    noFill()
-        rectMode(CENTER)
-    fill ('#9dbebbff')
-    rect(width/2,height/2,700,400,25)
-    
- 
-
-
- 
-
+    noFill() 
+    stroke('red')
+    strokeWeight(3)
+    rectMode(CENTER)
+    rect(width/2,height/2,700,300,25)
 
     // // 4. get time 
 
@@ -41,27 +31,13 @@ function draw(){
 
     }
 
-    
-   textSize(96)
+    textSize(96)
     // color
     noStroke()
-    fill ('#468189ff')
+
+    fill ('red')
     textAlign(CENTER, CENTER)
     text(time, width/2, height/2 )
 
-
-
 }
 
-
-
-/* CSS HEX 
---rich-black-fogra-29: #031926ff;
---metallic-seaweed: #468189ff;
---green-sheen: #77aca2ff;
---opal: #9dbebbff;
---champagne: #f4e9cdff;
-
-font-family: 'Dawning of a New Day', cursive;
-
-*/
