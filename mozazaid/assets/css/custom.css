@@ -395,6 +395,12 @@ a:focus{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+<<<<<<< HEAD
+=======
+	font-family: 'Bangers', cursive;
+font-family: 'Kalam', cursive;
+
+>>>>>>> 34d9b4b7ebb1a40a4df7201f2c899b80bde0598c
 }
 
 .scaleZoom{
