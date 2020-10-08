@@ -275,27 +275,6 @@ padding:10px 20px; width:100%; text-align:center;}
 	padding-left: 50px;
 	padding-right: 50px;
   }
-  .text-block10 {
-	position: absolute;
-	top: 360px;
-	left: 805px;
-	font-size: x-large;
-	color: black;
-	font-family: 'VT323', monospace;
-	padding-left: 50px;
-	padding-right: 50px;
-  }
- .text-block11 {
-	position: absolute;
-	top: 60px;
-	left: 45px;
-	font-size: large;
-	color: black;
-	font-family: 'VT323', monospace;
-	padding-left: 50px;
-	padding-right: -50px;
-  }
-
 
 .dropbtn {
 	background-color: navy;
@@ -348,11 +327,3 @@ padding:10px 20px; width:100%; text-align:center;}
 	  right: 230px;
 	  top: 135px;
   }
-  h7 {
-	color: #000000 !important; 
-	font-family: 'VT323', monospace;
-	font-size: 25px;
-  } 
-	
-	
-  
