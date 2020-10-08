@@ -4,26 +4,72 @@
 function setup() {
 
     // do not change anything in setup 
-    let canvas = createCanvas(800, 800)
+    let canvas = createCanvas(800, 800, )
     canvas.parent('p5container');
 
-    TenThousandX()
+
 
 }
 
 
-function TenThousandX() {
-    // add code here 
+function draw(){
 
-      stroke(0,255)
+  background(34,155,215)
 
-    for (var x = 0; x < 1000; x++) {
+  for (var x = 0; x < width; x+=200){
 
-      let y1 = random(0,height)
-      let y2 = random(0,height)
+  for (var y = 0; y < width; y+=200){
+
+    drawFlower(x,y,(x*y)/2)
+
+    
+  }
 
 
-      line(0,y1,width,y2)
+  }
 
-    }
+
+
 }
+
+function drawFlower(posX,posY,r){
+
+  // petal 
+  fill('yellow')
+  let numPetals = 24
+  let angle = TWO_PI/numPetals
+  let innerRadius = 100 
+
+  push()
+
+  translate(posX, posY)
+  rotate(frameCount/25)
+
+  let scl = sin(millis()/2000+(posX+posY+r)/4)*2
+
+  scale(scl)
+
+  circle(0,0,innerRadius)
+
+  for (var r = 0; r < TWO_PI; r+=angle){
+
+    push()
+    fill(r*25,r*50,255-r*75)
+    rotate(r)
+    ellipse(0,innerRadius,25,100)
+    pop()
+
+
+
+  }
+  
+
+
+
+  pop()
+
+
+
+}
+
+
