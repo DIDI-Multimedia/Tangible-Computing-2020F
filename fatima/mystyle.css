@@ -1,42 +1,26 @@
-/* CSS HEX 
---white: #ffffffff;
---honeydew: #e9fae3ff;
---honeydew-2: #dee8d5ff;
---pale-silver: #d5c7bcff;
---lilac-luster: #ac92a6ff;
---black-coral: #545f66ff;
---cadet-grey: #829399ff;
---light-cyan: #d0f4eaff;
---tea-green: #e8fcc2ff;
---plum-web: #f9b9f2ff;
---oxford-blue: #0a2239ff;
---maximum-blue: #53a2beff;
---blue-ncs: #1d84b5ff;
---outer-space-crayola: #132e32ff;
---blue-sapphire: #176087ff;
---lilac: #bca0bcff;
---outer-space-crayola: #2b3d41ff;
---black-coral: #4c5f6bff;
---morning-blue: #83a0a0ff;
---light-periwinkle: #d0cfecff;
---wintergreen-dream: #6a8e7fff;
---artichoke: #989572ff;
---light-french-beige: #c6ae82ff;
---queen-pink: #edc7cfff;
---middle-green-yellow: #b1cc74ff; */
-/* font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
- */
+*{margin:0;
+padding: 0;
+font-family: fantasy; 
+font-size: 3vh;
+font-weight: bold;
+}
 
 
+header{
+	background-image: url("tree11.jpg");
+	height:43vh;
+	
+	background-position: center;
+	
+}
 
+h4{background-image: url("white.jpg");
+	height:8.8vh;
+margin-top: -460px;
+margin-right: 900px;}
 
-.weeks {
-	position: absolute;
-  top: 900px;
-  right: 60px;
-text-align: left
- }
+body{background-image: url(sparkle2.gif);
+	background-color: #D4C2D7;
 
 
 }
@@ -44,24 +28,71 @@ text-align: left
 
 
 
- h1{font-family: 'Oswald', sans-serif;}
- h3{font-size: 10px}
+ul{ float: right;
+list-style-type: none; 
 
-.disco {font size: 1000vw;}
-.content{padding: 20px; }
+margin-right: 12px;
 
-a{color:#ffffffff;
+ }
+
+ ul li{display:inline-block; 
+ }
+
+ ul li a{ 
+ text-decoration: none;
+ color:#fff;
+ padding:1px 200px;
+ border:1px solid transparent; 
+transition:0.6s ease;
+margin-right: 400px;
+
+}
+
+  ul li a:hover{ 
+ background-color: #F8EBFB;
+ color: #000;}
+
+  ul li.active a { 
+ background-color:#FFFFFF;
+ color: #000;
+}
+
+
+
+.weeks{max-width: 1200px;
+margin: 123px;
+
+
+}
+
+
+.myname{
+	color: #000000;
+ position: absolute;
+	top:55%;
+	left:50%;
+	transform: translate(-50%,-50%);
+margin-right: : 123px;
+}
+
+
+p{background-color:rgba(255,255,255,0.5);
+ border:20px solid;
+ border-color: #fff;
  }
 
 
-h1 { font-family: 'Oswald', sans-serif;
-color:#545f66ff;}
+.topic{
 
-body {
-background-image: url(sparkle2.gif);
+	color: #000000;
+ position: absolute;
+	margin-top: 1400px;
+	margin-left:1999px;
+	left:70px;
+	transform: translate(-50%,-50%);
+	font-size: 40px;
+	  }
 
-  background-color :#d0cfecff;;
- font-family: 'Poppins', sans-serif;
-  padding-top: 200px
+
+
 }
-body{ padding-left: 200px }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
  <style>
-
+  font-family: 'VT323', monospace;
  	</style>
 <html>
 
@@ -19,28 +19,47 @@
       <div class="name" style="text-align: center">
       <h2>Mohammad Alsaleh</h2>
 
+        </div>
         </div> 
+  
 
-          		<div class="Homepage" style="text-align: center">
+
+<div class="Homepage" style="text-align: left;">
           <h2>Second Week</h2>
 
-           <div style=" text-align: left;"><h2>Cyber Punk 2077</h2></div>
-<br><div class="rectangle">
+           <div class="cyber" style=" text-align: center;">
+            <h2>Cyber Punk 2077</h2></div>
+
+<br><div style="text-align: left;">
 
               <h2>Visual Elements</h2>
-              <h3>1- Neon</h3>
-              <h3>2- Colorful</h3>
-              <h3>3- Sharp/Noise</h3>
-              <h3>4- Glich</h3>
-              <h3>5- Tech</h3>
-              <h3>6- Futuristic</h3>
-              <h3>7- 3D</h3>
-              <h3>8- Complex</h3>
-              <h3>9- foggy</h3>
-              <h3>10- Dim/Dark</h3>
+              <h3>一 - Neon</h3>
+              <h3>二 - Colorful</h3>
+              <h3>三 - Sharp/Noise</h3>
+              <h3>四 - Glich</h3>
+              <h3>五 - Tech</h3>
+              <h3>六 - Futuristic</h3>
+              <h3>七 - 3D</h3>
+              <h3>八 - Complex</h3>
+              <h3>九 - foggy</h3>
+              <h3>十 - Dim/Dark</h3>
+<div  style="text-align: right;" align="right">
+
+              <h2>Dynamic Elements</h2>
+              <h3>Interfaces - 一</h3>
+              <h3>Glowing - 二</h3>
+              <h3>Motion- 三</h3>
+              <h3>Ar- 四 </h3>
+              <h3>Flashing visuals - 五</h3>
+              <h3>Futuristic - 六</h3>
+              <h3>Random - 七</h3>
+              <h3>Sounds - 八</h3>
+              <h3>Slow Motion - 九</h3>
 
             </div>
+            </div>
 
+<div style="text-align: center;" >
 
            <img  src="Project1/0 (0).jpg" alt="Trulli" width="300" height="500">   
            <img  src="Project1/0 (3).jpg" alt="Trulli" width="300" height="500">
@@ -51,30 +70,14 @@
 
            <hr>
            
-           <div style="text-align: right;" >
-             
-<div class="rectangle">
-
-              <h2>Dynamic Elements</h2>
-              <h3>1- Interfaces</h3>
-              <h3>2- Glowing</h3>
-              <h3>3- Motion</h3>
-              <h3>4- Ar</h3>
-              <h3>5- Flashing visuals</h3>
-              <h3>6- Futuristic</h3>
-              <h3>7- Random</h3>
-              <h3>8- Sounds</h3>
-              <h3>9- Slow Motion</h3>
-              
-
-            </div>
-             </div>
+           
 
           <p>-</p>
+          </div>
           </div> 
 
 
-         
+      
 
 
 <div style="text-align: center;" >
@@ -111,9 +114,25 @@
          <span class="dot" style="text-align: center "><br><br><p><a href="Week2.html"> Second Week </a></p></span>
     </div>
 	
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-
-
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+  </script>
 </body>
 
 </html>

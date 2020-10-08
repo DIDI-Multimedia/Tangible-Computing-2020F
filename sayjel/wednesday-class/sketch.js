@@ -37,6 +37,7 @@ function draw(){
 
     let h = nf(hour(),2)
     let m = nf(minute(),2)
+    
     let s = nf(second(),2)
     // print, string 
     console.log(h + ':'+ m + ':' + s)
