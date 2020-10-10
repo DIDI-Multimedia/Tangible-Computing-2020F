@@ -133,6 +133,13 @@ html, body {
     width: 46%;
 }
 
+.img {
+    position: absolute;
+    z-index: 0;
+    top: 24.6%;
+    left: 38%;
+}
+
 .title1 {
     position: fixed;
     font-size: 80px;
@@ -150,24 +157,38 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-  
-.section.bg-static img { 
-    position: absolute;
-    z-index: 0;
-    top: 850px;
-    left:0%;
-    width: 100%;
+.section {
+    position: relative;
+    max-width: 100%;
+    min-height: 125vh;
+    padding: 10px;
+    background-color: no-fill;
+    z-index: -7;
+}
+
+.section.bg-static  { 
+
+  background-image: url("/Users/waleed/Documents/GitHub/Tangible-Computing-2020F/Waleed/New-York.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;	
+  z-index: 3;
 }
 
 
 
-.bg-move img{
+.section .bg-move {
     position: absolute;
-    top: 1400px;
+    top: 800px;
+    bottom: 0;
     right: auto;
-    left: 70px;
-    width: 7%;
-}
+    width: 100%;
+    background-image: url("/Users/waleed/Documents/GitHub/Tangible-Computing-2020F/Waleed/Car.png");
+    background-size: 10%;
+    background-repeat: no-repeat;	
+  }
+  
+  
 
 .line {
     position: absolute;
