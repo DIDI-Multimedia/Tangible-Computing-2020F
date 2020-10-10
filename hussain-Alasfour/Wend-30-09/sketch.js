@@ -2,45 +2,46 @@
 
 function setup() {
 
-    // do not change anything in setup 
+    
     let canvas = createCanvas(800, 400)
-    canvas.parent('p5container');
-  
-
-
+    // canvas.parent('p5container');
+        
 
 
 }
- function draw() {
-//background
-background('black')
-
-//rect
- noFill()
- stroke('red')
- strokeWeight(3)
- rectMode(CENTER)
- rect(width/2,height/2,700,300,25)
-
-//time 
- let h = nf(hour(),2)
- let m = nf(minute(),2)
- let s = nf(second(),2)
 
 
-//print 
- console.log(h + ':' + m + ':' + s)
- let time = h + ':' + m + ':' + s
+function draw(){
+    background('#000000')
 
-// draw Numbers 
+    // 3. rectangle 
+    noFill() 
+    stroke(random(255),random(255),random(255))
+    strokeWeight(3)
+    rectMode(CENTER)
+    rect(width/2,height/2,700,300,25)
 
-textAlign(CENTER,CENTER)
-text (time, width/2, height/2)
+    // // 4. get time 
 
-//size 
-textSize(96)
+    let h = nf(hour(),2)
+    let m = nf(minute(),2)
+    let s = nf(second(),2)
+		
+    // print, string 
+    console.log(h + ':'+ m + ':' + s)
+    let time = h + ':'+ m + ':' + s
 
+    if ( s%2 == 0 ){
+    
 
- }
+    	time = h + ' '+ m + ' ' + s
 
+    }
+
+    textSize(96)
+   
+    textAlign(CENTER, CENTER)
+    text(time, width/2, height/2 )
+
+}
 
