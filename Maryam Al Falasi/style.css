@@ -275,6 +275,26 @@ padding:10px 20px; width:100%; text-align:center;}
 	padding-left: 50px;
 	padding-right: 50px;
   }
+  .text-block10 {
+	position: absolute;
+	top: 360px;
+	left: 800px;
+	font-size: x-large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 50px;
+	padding-right: 50px;
+  }
+  .text-block11 {
+	position: absolute;
+	top: 60px;
+	left: 100px;
+	font-size: large;
+	color: black;
+	font-family: 'VT323', monospace;
+	padding-left: 10px;
+	padding-right: 10px;
+  }
 
 .dropbtn {
 	background-color: navy;

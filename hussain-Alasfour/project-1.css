@@ -1,0 +1,33 @@
+
+	
+
+
+
+#content {
+
+	font-family: 'Martel';
+	padding: 5%;
+
+}
+
+body {
+
+	padding:5% ;
+	color: 	#dad0c0 ;
+	background-color: #145e98 ;
+	font-family: 'Cardo', serif;
+}
+p{
+    color: rgb(200, 176, 41);
+}
+a{
+    color: rgb(200, 176, 41);
+}
+
+h1{
+    color:	#ab5797;
+}
+
+hr{
+    color: #ab5797;
+}
