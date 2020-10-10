@@ -2,3 +2,4 @@ alex/
 .DS_Store.
 www/assets/didi-logo.png
 .icloud
+dir_to_ignore/alex
