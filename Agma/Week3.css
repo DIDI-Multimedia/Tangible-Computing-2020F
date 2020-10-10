@@ -1,0 +1,228 @@
+/*font-family: c*/
+/*font-family: 'Imprima', sans-serif;*/
+
+/* CSS HEX */
+/*--laser-lemon: #fffd77ff;
+--tyrian-purple: #550527ff;
+--violet-blue: #454e9eff;
+--cedar-chest: #cd533bff;
+--spanish-green: #018e42ff;*/
+
+/*CSS HEX */ 
+ /*michelle obama*/
+/*--dark-electric-blue: #636F7Bff;
+--light-gray: #cdd5d1ff;
+--black-shadows: #b4a6abff;
+--mountbatten-pink: #946e83ff;
+--dark-liver: #615055ff;
+*/
+
+/* CSS HEX */
+/*me*/
+/*--coffee: #8B593Fff;
+--van-dyke-brown: #68361Aff;
+--seal-brown: #502712ff;
+--mountbatten-pink: #946e83ff;
+--dark-liver: #615055ff;
+*/
+
+/* CSS HEX */
+/*computer*/
+/*--chinese-red: #B03F26ff;
+--blood-red: #690A01ff;
+--deep-chestnut: #B14D48ff;
+--black-bean: #4B0000ff;
+--bittersweet-shimmer: #BA5953ff;
+*/
+
+
+/*font-family: 'Playfair Display', serif;*/
+
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#151315;
+	
+}
+*{
+	box-sizing:border-box;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+section{
+	
+}
+.layer-container{
+	position: relative;
+	height:100vh;
+	width:100%;
+	transform-style: preserve-3d;
+	overflow: ;
+	
+	
+}
+.layer{
+	position: absolute;
+	left:0;
+	bottom: 0;
+	top:0;
+	right:0;
+	
+}
+.sky{
+	background-image:url("apple3.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	
+}
+.montains{
+	background-image:url("../images/mountains.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	
+}
+.parallex-text{
+	font-size:150px;
+	font-weight:bold;
+	font-family:bebas kai;
+	letter-spacing:15px;
+	position:absolute;
+	left:50%;
+	top:20%;
+	transform:translate(-50%,-20%);
+	color:#FFFFFF;
+ text-shadow:2px 2px 12px rgba(0,0,0,0.1);
+
+}
+nav{
+	position: absolute;
+	top:0px;
+	width: 100%;
+	display: flex;
+	padding:40px 5%;
+	justify-content:space-between;
+	align-items: center;
+}
+.logo{
+	color:#FFFFFF;
+	font-family:RoadTest;
+	font-size:30px;
+	text-shadow:2px 2px 12px rgba(0,0,0,0.1);
+}
+.categories{
+	height:50vh;
+	background-color:#151315;
+}
+button{
+	width:100px;
+	height:34px;
+	outline:none;
+	border:none;
+	background-color:#ffffff;
+	border-radius:30px;
+	color:#000000;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.1);
+}
+button:active{
+	transform: scale(1.1);
+}
+.heading{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.heading h1,h4{
+	font-family: calibri;
+	color:#ffffff;
+	line-height:10px;
+
+font-size:16px;	
+}
+.heading h4{
+	font-size:16px;
+	letter-spacing:10px;
+	opacity:0.9;
+}
+
+.heading h1{
+	font-size:30px;
+}
+.products{
+	display: flex;
+	justify-content: center;
+	margin:40px 5%;
+	
+}
+.box-1,.box-2,.box-3{
+	width:300px;
+	height:400px;
+	margin:10px;
+	position: relative;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.5);
+	
+	
+}
+.box-1::after{
+	content:'';
+	position: absolute;
+	bottom:0px;
+	background:linear-gradient(0deg,#000000 20%,transparent);
+}
+.box-1{
+	background-image: url("https://media0.giphy.com/media/dvUo59WwAJssIXKT6v/giphy.gif");
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.box-2{
+	background-image: url("https://arts.unl.edu/images/carson-center/carson-center-hero.jpg");
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.box-3{
+	background-image: url("clock3.jpg");
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.box-1 font,.box-2 font,.box-3 font{
+	position: absolute;
+	bottom:0px;
+	color:#FCFCFC;
+	width: 100%;
+	letter-spacing:10px;
+	text-align: center;
+	background:linear-gradient(0deg,#151315 0%,transparent);
+	height:30px;
+	
+}
+.line {
+  align-self: end;
+  width: 50%;
+  border-right: 1px solid white;
+  height: 20%;
+  margin-bottom: 4em;
+  position: absolute;
+	bottom:5px;
+}
+.line::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 11px 0 11px;
+  border-color: white transparent transparent transparent;
+  right: -.7em;
+  bottom: -2px;
+}
+
