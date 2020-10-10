@@ -52,18 +52,39 @@ html, body {
     padding: 16px 0 0 0;
     width: 40px;
     bottom: 40px;
-    cursor: grab;
+    cursor: pointer;
 }
+
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.menu-btn:hover .dropup-content {
+    display: block;
+  }
 
 .one, .two {
     position: absolute;
     background: #000;
     width: 30px;
-    height: 2px;
+    height: 3px;
 }
 
 .two {
-    margin-top: 12px;
+    margin-top: 5px;
 }
 
 
@@ -163,6 +184,7 @@ object-fit: cover;
     top: 350px;
     left: 400px;
     font-family: 'Times New Roman', Times, serif;
+    z-index: -3;
 }
 
 .title2 {
@@ -173,32 +195,27 @@ object-fit: cover;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.section.bg-static img {
-
-width: 67%;
-}
-
-.section.bg-static { 
+  
+.section.bg-static img { 
     position: absolute;
     z-index: 0;
-    top: 1000px;
-    left: 24.78%;
-}
-
-.bg-move img {
-    width: 5%;
-}
-
-.bg-move {
-    position: absolute;
-    top: 1300px;
-    right: auto;
-    left: 370px;
+    top: 850px;
+    left:0%;
     width: 100%;
 }
 
+
+
+.bg-move img{
+    position: absolute;
+    top: 1400px;
+    right: auto;
+    left: 70px;
+    width: 7%;
+}
+
 .line {
-    position: fixed;
+    position: absolute;
     left: 360px;
     top: 200px;
     background: #000;

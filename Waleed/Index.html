@@ -42,15 +42,15 @@
 
                   <li>
                         <div class="menu-btn">
-                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Dropdown
                               <span class="one"></span>
-                              <span class="two"></span>
-                              </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="week02.html"> Week 2 </a></li>
-                                    <li><a href="week03.html"> Week 3 </a></li>
-                                  </ul>
+							  <span class="two"></span>
+							  
+							  <div class="dropup-content">
+								<a href="Week02.html">Week 2</a>
+								<a href="Week03.html">Week 3</a>
+								<a href="Week04.html">Week 4</a>
+							  </div>
+                        
                               
                         </div>
                   </li>
@@ -75,35 +75,9 @@
             </div>
 
             <div class="img">
-                  <div class="column active">
-                        <div class="hero-img">
                               <img src="hero.png" alt="">
-                        </div>
-                  </div>
 
-                  <div class="column">
-                        <div class="hero-img">
-                              <img src="1.png" alt="">
-                        </div>
-                  </div>
-
-                  <div class="column">
-                        <div class="hero-img">
-                              <img src="2.png" alt="">
-                        </div>
-                  </div>
-
-                  <div class="column">
-                        <div class="hero-img">
-                              <img src="3.png" alt="">
-                        </div>
-                  </div>
-
-                  <div class="column">
-                        <div class="hero-img">
-                              <img src="4.png" alt="">
-                        </div>
-                  </div>
+                  
 
             </div>
             
@@ -141,12 +115,12 @@
 
 
 $(window).on("load resize scroll", function() {
-  $(".section bg-static img").each(function() {
+  $(".section bg-static").each(function() {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
     var leftPosition = windowTop - elementTop;
       $(this)
-        .find(".bg-move img")
+        .find(".bg-move")
         .css({ left: leftPosition });
   });
 });
