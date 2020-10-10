@@ -1,11 +1,6 @@
-<<<<<<< Updated upstream
-=======
 /// for future reference:- 
 /// push() starts drawing settings
 /// pop() ends it
-/// push and pop can be nested. They will derive settings in a heirarchy similar to the way a div would
-/// newMaterial gives the spheres a gradient 
-/// 
 function setup() {
 	createCanvas(1000, 1000, WEBGL);
   //canvas.parent('p5container')
@@ -16,6 +11,7 @@ function draw() {
 	h = h + 4
 	let m = minute()
 	let s = second()
+	//start new drawing setting
 	background('black')
 	
 	// seconds
@@ -65,4 +61,3 @@ function draw() {
 pop()
 	
 }
->>>>>>> Stashed changes
