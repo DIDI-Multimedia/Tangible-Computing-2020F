@@ -7,17 +7,17 @@ function setup() {
     // body...
     let canvas = createCanvas(600, 600)
     canvas.parent('p5container')
-    // capture = createCapture()
-        // capture.hide()
+    capture = createCapture()
+        capture.hide()
 
 }
 
 function draw() {
 
-    // background('green')
+    background('green')
 
-    // background(capture.get())
-    // image(capture,0,0)
+    background(capture.get())
+    image(capture,0,0)
 
     let step = 50
 
@@ -34,8 +34,8 @@ function draw() {
             if (val < 50) {
 
                 fill(val)
-                // textSize(step)
-                // rect(i, j, step, step)
+                textSize(step)
+                rect(i, j, step, step)
 
                 text(val, i, j)
 
