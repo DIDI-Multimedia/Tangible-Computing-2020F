@@ -5,6 +5,10 @@
 
 }
 
+.color{
+
+	color: rgb(0,200,0);
+}
 .pics{
 	max-width: 40%;
 }
