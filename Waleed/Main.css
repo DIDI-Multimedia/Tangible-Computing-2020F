@@ -116,16 +116,16 @@ html, body {
 }
 
 .year {
-    position: fixed;
+    position: absolute;
     top: 556px;
-    left: 152px;
+    left: 410px;
     padding: 10px 30px;
 }
 
 .add {
     position: absolute;
-    top: 556px;
-    left: 382px;
+    top:350px;
+    left: 950px;
     font-size: 20px;
     padding: 10px 30px;
 }
@@ -169,7 +169,7 @@ html, body {
 
 .section.bg-static  { 
 
-  background-image: url("/Users/waleed/Documents/GitHub/Tangible-Computing-2020F/Waleed/New-York.png");
+  background-image: url("New-York.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;	
@@ -184,7 +184,7 @@ html, body {
     bottom: 0;
     right: auto;
     width: 100%;
-    background-image: url("/Users/waleed/Documents/GitHub/Tangible-Computing-2020F/Waleed/Car.png");
+    background-image: url("Car.png");
     background-size: 10%;
     background-repeat: no-repeat;	
   }
@@ -198,15 +198,6 @@ html, body {
     background: #000;
     width: 180px;
     height: 1px;
-}
-
-
-.tag-line {
-    position: fixed;
-    top: 490px;
-    left: 692px;
-    padding: 10px 30px;
-    color: grey;
 }
 
 .media ul {
