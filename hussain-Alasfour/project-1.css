@@ -1,33 +1,35 @@
 
+
 	
 
 
+    /* https://www.urbanfonts.com/fonts/Stone_Walls.font */
+    /* font was taken from this website */
+@font-face {
+    font-family: 'Stonewalls';
+    src: URL('StoneWalls.ttf') format('truetype');
+  }
 
 #content {
 
-	font-family: 'Martel';
-	padding: 5%;
+	font-family: 'Stonewalls';
+	padding: 3%;
 
 }
 
 body {
 
-	padding:5% ;
-	color: 	#dad0c0 ;
+
+	padding:3% ;
+	color: #ab5797 ;
 	background-color: #145e98 ;
-	font-family: 'Cardo', serif;
+    font-family: 'Stonewalls';
+    font-size: 100%;
 }
+
 p{
-    color: rgb(200, 176, 41);
+	color: rgb(200, 176, 41);
 }
 a{
-    color: rgb(200, 176, 41);
-}
-
-h1{
-    color:	#ab5797;
-}
-
-hr{
-    color: #ab5797;
+	color:#ab5797
 }
