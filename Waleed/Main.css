@@ -164,7 +164,7 @@ html, body {
     min-height: 125vh;
     padding: 10px;
     background-color: no-fill;
-    z-index: -7;
+    z-index: -8;
 }
 
 .section.bg-static  { 
