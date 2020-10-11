@@ -2,15 +2,16 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 1000vh;
+    height: 400vh;
     cursor: cell;
+    overflow-x: hidden;
     font-family: helvetica neue ultralight;
 }
 
 .s-one {
     position: absolute;
     width: 1px;
-    height: 1000vh;
+    height: 300vh;
     background: rgba(0, 0, 0, 0.2);
     left: 25%;
 }
@@ -18,7 +19,7 @@ html, body {
 .s-two {
     position: absolute;
     width: 1px;
-    height: 1000vh;
+    height: 300vh;
     background: rgba(0, 0, 0, 0.2);
     left: 50%;
 }
@@ -26,7 +27,7 @@ html, body {
 .s-three {
     position: absolute;
     width: 1px;
-    height: 1000vh;
+    height: 300vh;
     background: rgba(0, 0, 0, 0.2);
     left: 75%;
 }
@@ -115,22 +116,29 @@ html, body {
 }
 
 .year {
-    position: fixed;
+    position: absolute;
     top: 556px;
-    left: 152px;
+    left: 410px;
     padding: 10px 30px;
 }
 
 .add {
     position: absolute;
-    top: 556px;
-    left: 382px;
+    top:350px;
+    left: 950px;
     font-size: 20px;
     padding: 10px 30px;
 }
 
 .img img {
     width: 46%;
+}
+
+.img {
+    position: absolute;
+    z-index: 0;
+    top: 24.6%;
+    left: 38%;
 }
 
 .title1 {
@@ -150,24 +158,38 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-  
-.section.bg-static img { 
-    position: absolute;
-    z-index: 0;
-    top: 850px;
-    left:0%;
-    width: 100%;
+.section {
+    position: relative;
+    max-width: 100%;
+    min-height: 125vh;
+    padding: 10px;
+    background-color: no-fill;
+    z-index: -8;
+}
+
+.section.bg-static  { 
+
+  background-image: url("New-York.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;	
+  z-index: 3;
 }
 
 
 
-.bg-move img{
+.section .bg-move {
     position: absolute;
-    top: 1400px;
+    top: 800px;
+    bottom: 0;
     right: auto;
-    left: 70px;
-    width: 7%;
-}
+    width: 100%;
+    background-image: url("Car.png");
+    background-size: 10%;
+    background-repeat: no-repeat;	
+  }
+  
+  
 
 .line {
     position: absolute;
@@ -176,15 +198,6 @@ html, body {
     background: #000;
     width: 180px;
     height: 1px;
-}
-
-
-.tag-line {
-    position: fixed;
-    top: 490px;
-    left: 692px;
-    padding: 10px 30px;
-    color: grey;
 }
 
 .media ul {

@@ -75,9 +75,8 @@
             </div>
 
             <div class="img">
-                              <img src="hero.png" alt="">
 
-                  
+                  <img src="hero.png" alt="">
 
             </div>
             
@@ -93,18 +92,18 @@
 
             <div class="line"></div>
 
-            <div class="section bg-static">
-                  <img src="New-York.png" alt="">
+            <div class="section">
             </div>
-
-            <div class="bg-move">
-            <img src="Car.png" alt="">
+            <div class="section bg-static">
+              <div class="bg-move"></div>
+            </div>
+            <div class="section">
             </div>
 
             <div class="media">
                   <ul>
                         <li><i class="fa fa-facebook"></i></li>
-                        <li><i class="fa fa-instagram"></i></li>
+                        <li><a href="https://www.instagram.com/_wal._.eed_/"><i class="fa fa-instagram"></i></li></a>
                         <li><i class="fa fa-twitter"></i></li>
                   </ul>
             </div>
@@ -115,7 +114,7 @@
 
 
 $(window).on("load resize scroll", function() {
-  $(".section bg-static").each(function() {
+  $(".bg-static").each(function() {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
     var leftPosition = windowTop - elementTop;
@@ -124,6 +123,7 @@ $(window).on("load resize scroll", function() {
         .css({ left: leftPosition });
   });
 });
+
 
 
       TweenMax.from(".logo", 1.6, {
