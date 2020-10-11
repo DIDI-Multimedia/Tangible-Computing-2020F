@@ -206,4 +206,13 @@ body {
 	  right: 230px;
 	  top: 135px;
   }
+
+
+  .align{
+  	  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+  }
 </head>
