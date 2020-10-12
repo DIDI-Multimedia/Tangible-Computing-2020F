@@ -126,9 +126,31 @@ html, body {
     position: absolute;
     top:350px;
     left: 950px;
-    font-size: 20px;
     padding: 10px 30px;
 }
+ .add .slider {
+     position: absolute;
+     bottom: 5px;
+     left: 50px;
+     width: 0px;
+     background: gainsboro;
+     text-align: center;
+     line-height: 10px;
+     border-radius: 3px;
+     transition: all 0.5s ease;
+ }
+
+ .slider p{
+     font-size: 15px;
+     opacity: 0;
+     transition: all 0.5s ease;
+     display: block
+ }
+
+ .add:hover .slider p {
+     opacity: 1;
+     display: block;
+ }
 
 .img img {
     width: 46%;
@@ -190,6 +212,18 @@ html, body {
   }
   
   
+.txt-container {
+    position: absolute;
+    top: 2000px;
+    background-color:gainsboro;
+    width: 10%;
+    left: 360px;
+    font-size: 20px;
+    padding: 50px;
+    z-index: 1;
+
+}
+
 
 .line {
     position: absolute;
@@ -206,6 +240,7 @@ html, body {
     right: 20px;
     top: 70%;
     padding: 10px 10px;
+    cursor: grab;
 }
 
 .media ul li {
