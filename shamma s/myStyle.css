@@ -33,8 +33,13 @@ background-color: #fbf7f5;
 
 }
 
+@font-face {
+	font-family: 'Quavo';
+	src: url(shamma s/Quavo.otf)
+}
+
 h1{
-font-family: 'Piazzolla', serif;
+font-family: 'Quavo', serif;
 color: #3e442bff;
 font-size: 5vw;
 }
