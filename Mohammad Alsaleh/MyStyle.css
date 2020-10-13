@@ -5,6 +5,17 @@
 
 }
 
+.color{
+
+	color: rgb(0,200,0);
+}
+.pics{
+	max-width: 40%;
+}
+.openprocess{
+	max-width: 100%;
+	max-height: 100%;
+}
 
 p {
 
@@ -55,7 +66,7 @@ aside  {
  	.dot {
   height: 120px;
   width: 120px;
-  background-color: transparent;
+  background-color: rgba(255,255,255,0.5);
   border-radius: 50%;
   display: inline-block;
   border-bottom-style: dotted;
@@ -198,5 +209,14 @@ body {
 	  position: absolute;
 	  right: 230px;
 	  top: 135px;
+  }
+
+
+  .align{
+  	  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
   }
 </head>
