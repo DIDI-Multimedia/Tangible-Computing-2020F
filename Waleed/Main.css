@@ -214,10 +214,12 @@ html, body {
   
 .txt-container {
     position: absolute;
-    top: 2000px;
-    background-color:gainsboro;
-    width: 10%;
-    left: 360px;
+    top: 1945px;
+    background-color: whitesmoke ;
+    font-family: "Helvetica";
+    font-weight: "Bold";
+    width: 1/2 width;
+    left: 1/2 width;
     font-size: 20px;
     padding: 50px;
     z-index: 1;
@@ -325,7 +327,7 @@ img {
     left: 0;
     width: 0%;
     height: 100%;
-    background: #b68c70;
+    background: gainsboro;
     position: absolute;
     animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 1s;
