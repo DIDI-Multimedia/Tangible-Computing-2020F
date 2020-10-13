@@ -1,0 +1,78 @@
+<!--  -->
+
+<!-- HTML Example -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> Introduction </title>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../MyStyle.css"> 
+
+</head>
+
+<body>
+
+    <div id="content">
+
+        <h1> MuW201 Tangible Computing </h1>
+
+        <hr>
+
+        <div style="text-align: left;" class="dropdown" >
+        <button onclick="myFunction()" class="dropbtn">Projects</button>
+        <div id="myDropdown" class="dropdown-content">
+        	<a href="../index.html"> Home</a>
+          <a href="filter1.html"> filter 1</a>
+          <a href="filter2.html"> filter 2</a>
+          <a href="filter3.html"> filter 3</a>
+          <a href="filter4.html"> filter 4</a>
+          <a href="filter5.html"> filter 5</a>
+          <a href="filter6.html"> filter 6</a>
+        </div>
+    
+        <h3 class="color" > My amazing Webcam Filter . </h3>
+
+        <br>
+
+        <div id = "p5container"></div>
+        
+        
+        <br>
+
+        <p><a href="sketch2page.html"> Go Home  </a></p>
+
+    </div>
+
+    <script src ="filter5.js"></script>
+    
+    <!-- <script style="text-align: center;" src ="sketch2.js"></script> -->
+
+<script>
+      function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+  </script>
+
+</body>
+
+</html>
