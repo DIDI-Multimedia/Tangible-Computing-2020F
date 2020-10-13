@@ -16,7 +16,10 @@ function setup() {
 function draw() {
 
     background('green')
-
+push()
+fill(85,155,215)
+    circle(100,100,50)
+pop()
     //background(capture.get())
 
     push()
@@ -29,37 +32,37 @@ function draw() {
 
     textAlign(CENTER, CENTER)
 
-    for (var i = -capture.width; i < capture.width; i += step) {
+    // for (var i = -capture.width; i < capture.width; i += step) {
 
-        for (var j = -capture.height; j < capture.height; j += step) {
+    //     for (var j = -capture.height; j < capture.height; j += step) {
 
-            let col = capture.get(i, j)
-            let val = brightness(col)
+    //         let col = capture.get(i, j)
+    //         let val = brightness(col)
 
-            if (val < 50) {
+    //         if (val < 50) {
 
-                //fill(val)
-              textSize(step)
+    //             //fill(val)
+    //           textSize(step)
                 
-               //rect(i, j, step, step)
+    //            //rect(i, j, step, step)
 
-                text("Mo", i, j)
+    //             text("Mo", i, j)
 
-            } else {
+    //         } else {
 
-                fill(255,0,0)
-                rect(i, j, step, step)
-            }
-
-
+    //             fill(255,0,0)
+    //             rect(i, j, step, step)
+    //         }
 
 
 
 
-        }
 
 
-    }
+    //     }
+
+
+    // }
 pop()
     stroke(0)
     strokeWeight(20)
