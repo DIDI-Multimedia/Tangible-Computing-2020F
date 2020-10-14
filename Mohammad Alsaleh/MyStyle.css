@@ -75,6 +75,19 @@ aside  {
   border-top-color: green;
   border-right-color: yellow;
 }
+
+.dott {
+  height: 50px;
+  width: 90px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10%;
+  display: inline-block;
+  border-bottom-style: dotted;
+  border-style: groove;
+  border-left-color: blue;
+  border-top-color: green;
+  border-right-color: yellow;
+}
 .dotMaster {
   height: 100px;
   width: 150px;
