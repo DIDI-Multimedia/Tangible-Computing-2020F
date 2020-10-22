@@ -8,6 +8,7 @@ function setup() {
     capture = createCapture(VIDEO)
     capture.hide()
     noStroke()
+   background('black')
 
 
 }
@@ -27,23 +28,21 @@ function draw() {
             let col = capture.get(i, j)
 
 
-            fill(i,j)
-            rect(i, j, spacing,spacing)
+            stroke(i,j,spacing)
+            line(i,j,i+spacing,j)
+            line(i,j,i,j+spacing)
 
 
             if (brightness(col) < second()){
               col = 255
-              fill(255,100)
+              fill(0,0,0)
               circle(i,j,spacing*4)
+        
+              
             }
 
-             
-
         
-
-
         }
 
     }
-
 }
