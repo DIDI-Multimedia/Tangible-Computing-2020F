@@ -139,31 +139,3 @@ let c = get(70, 100)
                 circle(800,150,50)
 
         pop()
-// let b = get(200, 455)
-// textSize(24)
-// text(b, 800, 100)
-// let d = get(250, 455)
-// textSize(24)
-// text(d, 800, 130)
-//fill(0, 255, 0)
-//let black = color(0, 0, 0, 255)
-// console.log(c)
-// console.log(black)
-// if (c[0] === 50 ) {
-//     fill(c)
-//     console.log('Turn Blue')
-//     }
-//    // circle(mouseX, mouseY, 10, 10)
-//    // if (c[0] === 255 ) {
-//    //  fill(255,0,0)
-//    //  console.log('Turn Red')
-//    //  }
-//    //  if (c[0] === 20 ) {
-//    //  fill(0,215,0)
-//    //  console.log('Turn Green')
-//    //  }
-//     //  if (c[0] === 255 && c[1] === 255 ) {
-//     // fill(0,255,255)
-//     // console.log('Turn white')
-//     // }
-}
