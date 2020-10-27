@@ -16,7 +16,7 @@ function draw() {
 
     background(218, 208, 192)
     background(capture.get())
-    image(capture,0,0)
+    //image(capture,0,0)
     filter(INVERT);
 
     let step = 35
