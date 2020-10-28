@@ -11,7 +11,7 @@ function setup() {
 
 
     let canvas = createCanvas(800, 400)
-    canvas.parent('p5container')
+    canvas.parent('p5Container')
     background(0)
 
     for (var i = 0; i < names.length; i++) {
