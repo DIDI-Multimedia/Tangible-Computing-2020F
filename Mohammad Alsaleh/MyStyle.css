@@ -5,7 +5,11 @@
 
 }
 
-.color{
+.sss{
+      color: blue
+    }
+
+.gcolor{
 
 	color: rgb(0,200,0);
 }
@@ -75,11 +79,21 @@ aside  {
   border-top-color: green;
   border-right-color: yellow;
 }
+.weeks{
 
+  height: 500px;
+  width: 300px;
+  /*background-color: rgb(48, 147, 177);*/
+ 
+display: inline-table;
+  text-align: center;
+  
+
+}
 .dott {
 
   margin: auto;
-  width: 10%;
+  width: 30%;
   border: 3px solid #73AD21;
   padding: 10px;
   background-color: rgba(255,255,255,0.5);
@@ -130,14 +144,17 @@ aside  {
   		margin: 20px;
   		padding: 20px;
 
+
 }
+
+
  	.name{
 
 
  		background-color: green;
  		color: white;
  		border: 2px solid black;
-  		margin: 20px;
+  		height: 50px;
   		padding: 10px;
 }
 <meta name="viewport" content="width=device-width, initial-scale=1">
