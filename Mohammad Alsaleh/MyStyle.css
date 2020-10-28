@@ -77,16 +77,24 @@ aside  {
 }
 
 .dott {
-  height: 50px;
-  width: 90px;
+
+  margin: auto;
+  width: 10%;
+  border: 3px solid #73AD21;
+  padding: 10px;
   background-color: rgba(255,255,255,0.5);
+  
+
+ /* height: 70px;
+  width: 90px;
+  
   border-radius: 10%;
   display: inline-block;
   border-bottom-style: dotted;
   border-style: groove;
   border-left-color: blue;
   border-top-color: green;
-  border-right-color: yellow;
+  border-right-color: yellow;*/
 }
 .dotMaster {
   height: 100px;
