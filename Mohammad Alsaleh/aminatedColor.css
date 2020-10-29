@@ -18,12 +18,13 @@
       width:100%;
       
       margin: 0 auto;
-      /*text-align: center;
-      */
+      text-align: ;
+      
+
       color:#313131;
       font-size:45px;
       font-weight: bold;
-      position: absolute;
+     /* position: absolute;*/
       -webkit-animation:colorchange 20s infinite alternate;
       
       

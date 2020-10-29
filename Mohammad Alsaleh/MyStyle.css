@@ -49,10 +49,7 @@ p {
 }
 
 body {
-    -webkit-animation: bgcolor 20s infinite;
-    animation: bgcolor 10s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+    
 }
 aside  {
   width: 30%;
@@ -157,14 +154,19 @@ display: inline-table;
   		height: 50px;
   		padding: 10px;
 }
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+
 body { 
-            display: flex; 
+            display: block; 
             justify-content: center; 
             align-items: center; 
             min-height: 100vh; 
             background-color: rgb(6, 75, 21); 
+
+
+            -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
         } 
 .wavy { 
             position: relative; 
@@ -250,11 +252,5 @@ body {
   }
 
 
-  .align{
-  	  /* This centers our sketch horizontally. */
-  justify-content: center;
 
-  /* This centers our sketch vertically. */
-  align-items: center;
-  }
 </head>
