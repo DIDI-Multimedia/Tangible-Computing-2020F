@@ -3,12 +3,11 @@
 // 1. Create canvas 
 function setup() {
   createCanvas(800, 800);
-	
+	background(255,255,255)
 	
 	
 	
 }
-
 
 function draw() {
 //time
@@ -25,8 +24,10 @@ function draw() {
 		
 	stroke(3)
 		textSize(25)
+
 	noFill()
 		text(m,475,130+m*20 )
+		
 	stroke(1)
 		rect(random(225,475),80+m*20,c+15,c+15);
 		text(h,475,50+h*30 )

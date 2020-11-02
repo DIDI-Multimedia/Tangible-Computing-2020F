@@ -2,6 +2,10 @@
   font-size: 30;
   font-weight: 100;
 }
+@font-face{
+  font-family: "Prototype";
+  src: url("Prototype.ttf")
+}
 .header{
     font-family: 'Alice', serif;
     padding-left: 30%;
@@ -32,7 +36,7 @@
 }
 .content{
   
-  font-family: 'arial';
+  font-family: 'Prototype';
   padding-top: 5%;
   padding-left:2%;
   padding-right:3%;
