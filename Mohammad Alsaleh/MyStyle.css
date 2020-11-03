@@ -5,7 +5,11 @@
 
 }
 
-.color{
+.sss{
+      color: blue
+    }
+
+.gcolor{
 
 	color: rgb(0,200,0);
 }
@@ -45,10 +49,7 @@ p {
 }
 
 body {
-    -webkit-animation: bgcolor 20s infinite;
-    animation: bgcolor 10s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+    
 }
 aside  {
   width: 30%;
@@ -74,6 +75,37 @@ aside  {
   border-left-color: blue;
   border-top-color: green;
   border-right-color: yellow;
+}
+.weeks{
+
+  height: 500px;
+  width: 300px;
+  /*background-color: rgb(48, 147, 177);*/
+ 
+display: inline-table;
+  text-align: center;
+  
+
+}
+.dott {
+
+  margin: auto;
+  width: 30%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.5);
+  
+
+ /* height: 70px;
+  width: 90px;
+  
+  border-radius: 10%;
+  display: inline-block;
+  border-bottom-style: dotted;
+  border-style: groove;
+  border-left-color: blue;
+  border-top-color: green;
+  border-right-color: yellow;*/
 }
 .dotMaster {
   height: 100px;
@@ -109,24 +141,32 @@ aside  {
   		margin: 20px;
   		padding: 20px;
 
+
 }
+
+
  	.name{
 
 
  		background-color: green;
  		color: white;
  		border: 2px solid black;
-  		margin: 20px;
+  		height: 50px;
   		padding: 10px;
 }
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+
 body { 
-            display: flex; 
+            display: block; 
             justify-content: center; 
             align-items: center; 
             min-height: 100vh; 
             background-color: rgb(6, 75, 21); 
+
+
+            -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
         } 
 .wavy { 
             position: relative; 
@@ -212,11 +252,5 @@ body {
   }
 
 
-  .align{
-  	  /* This centers our sketch horizontally. */
-  justify-content: center;
 
-  /* This centers our sketch vertically. */
-  align-items: center;
-  }
 </head>
