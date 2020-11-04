@@ -1,71 +1,101 @@
-// collision detection 
-
-let capture
+let video
 
 let pixelsGrid = []
 
-let cx = 0 
-let cy = 0 
+let cx = 0
+let cy = 0
+
+let poseNet;
+let pose;
 // distance attractor filed 
 // use nose eyes mouth as attractor points
 
 function preload() {
-
-    capture = createCapture()
-    capture.hide()
+    bg = loadImage("https://i.ytimg.com/vi/bAJ6eyjI_ZY/maxresdefault.jpg")
+        //    doll = loadImage("https://i.pinimg.com/originals/1c/be/fa/1cbefadabbdd69ab07c7c87b74222821.png")
 }
 
 function setup() {
 
 
-    let canvas = createCanvas(1280, 720)
+    let canvas = createCanvas(640, 480)
         // pixelsGrid = initGrid(10, 10)
 
-    console.log('pixels grid loaded')
+    video = createCapture(VIDEO)
+    video.hide()
+        // console.log('pixels grid loaded')
+    poseNet = ml5.poseNet(video, modelLoaded);
+    poseNet.on('pose', gotPoses);
 
 }
+
+// function mousePressed() {
+//     fill (200,0,0)
+//     circle(mouseX, mouseY, 0, 0)
+// }
+
+function gotPoses(poses) {
+    if (poses.length > 0) {
+        pose = poses[0].pose;
+    }
+}
+
+function modelLoaded() {
+    console.log('poseNet ready');
+}
+
 
 function draw() {
 
     // console.log('draw!')
+    // translate(video.width, 0);
+    // scale(-1, 1);
+    // image(video, 0, 0);
 
-    background(34,155,215)
+    if (video && pose) {
 
-    let spacing = 5
-    noStroke()
 
-    if (capture) {
+
+
+        background(bg)
+        tint(0, 153, 204);
+
+
+        let spacing = 3
+        noStroke()
 
         // image(capture.get(),0,0)
 
-        console.log('capture available')
+        console.log('video available')
 
-        for (var x = 0; x < capture.width; x += spacing) {
+        for (var x = 0; x < video.width; x += spacing) {
 
-            for (var y = 0; y < capture.height; y += spacing) {
+            for (var y = 0; y < video.height; y += spacing) {
 
-                let col = capture.get(x, y)
+                let col = video.get(x, y)
 
                 let dx = x - mouseX
                 let dy = y - mouseY
 
-                let offX = dx / 5
-                let offY = dy / 5
+                // let offX = dx / 5
+                // let offY = dy / 5
+                let offX = 0
+                let offY = 0
 
-                let d = dist(mouseX, mouseY, x, y)
+                let d = dist(pose.rightEye.x, pose.rightEye.y, x, y)
 
-                let radius = width/8
+                let radius = width / 5
 
                 if (d < radius) {
 
-                    let alpha = (1-d/radius)*255
+                    let alpha = (1 - d / radius) * 255
 
-                    let circleRadius = (1-d/radius)*50
+                    let circleRadius = (1 - d / radius) * 50
 
                     // stroke(255)
+                    fill(brightness(col) * 2, alpha)
 
-                    fill(brightness(col)*2,alpha)
-                    circle(x + offX+cx, y + offY + sin(frameCount/100)*height/4, circleRadius)
+                    circle(x,y,spacing*2,spacing*2)
 
 
 
@@ -79,136 +109,43 @@ function draw() {
 
         }
 
+
+        eyes()
+
     }
-
-    cx++
-    cy++ 
-
-    if (cx > width) cx = 0 
-    if (cy > height) cy = 0
-
-
 
 }
 
-// let capture
+function eyes() {
+    // background(VIDEO);
 
-// let pixelsGrid = []
+    // translate(video.width, 0);
+    // scale(-1, 1);
+    // image(video, 0, 0);
 
-// function preload() {
+    if (pose) {
+        let eyeR = pose.rightEye;
+        let eyeL = pose.leftEye;
+        let d = dist(eyeR.x, eyeR.y, eyeL.x, eyeL.y);
 
-//     capture = createCapture()
-//     capture.hide()
-// }
+        //Outer Eye
+        fill(0);
+        ellipse(eyeR.x, eyeR.y, d / 2, (d / 2));
+        ellipse(eyeL.x, eyeR.y, d / 2, d / 2);
 
-// function setup() {
+        // Inner Eye
+        fill(255);
+        ellipse(eyeR.x + 8, eyeR.y + 8, d / 15, d / 15);
+        ellipse(eyeR.x - 8, eyeR.y - 8, d / 15, d / 15);
+        ellipse(eyeR.x - 8, eyeR.y + 8, d / 15, d / 15);
+        ellipse(eyeR.x + 8, eyeR.y - 8, d / 15, d / 15);
 
-
-//     let canvas = createCanvas(1280, 720)
-//     pixelsGrid = initGrid(10, 10)
-
-//     console.log('pixels grid loaded')
-
-// }
-
-// function draw() {
-
-//     if (capture) {
-
-//         for (var i = 0; i < pixelsGrid.length; i++) {
-//             let row = pixelsGrid[i]
-//             for (var j = 0; j < row.length; j++) {
-
-//                 let w = capture.width/pixelsGrid.length
-//                 let h = capture.height/row.length
-//                 let x = w*i
-//                 let y = j*j
-
-//                 let pixel = pixelsGrid[i][j]
-//                 pixel.col = capture.get(x,y)
-
-//                 fill(pixel.col)
-//                 rectangle(x,y,w,j)
+        ellipse(eyeL.x + 8, eyeR.y + 8, d / 15, d / 15);
+        ellipse(eyeL.x - 8, eyeR.y - 8, d / 15, d / 15);
+        ellipse(eyeL.x - 8, eyeR.y + 8, d / 15, d / 15);
+        ellipse(eyeL.x + 8, eyeR.y - 8, d / 15, d / 15);
 
 
+    }
 
-
-//             }
-//         }
-
-
-//     }
-
-
-
-// }
-
-// function initGrid(numX, numY) {
-
-//     let arr = []
-
-//     for (var i = 0; i < numX; i++) {
-//         let row = []
-//         for (var j = 0; j < numY; j++) {
-
-//             let obj = {}
-//             obj.col = [0,0,0]
-//             row.push(obj)
-//         }
-//         arr.push(row)
-//     }
-
-//     return arr
-// }
-
-// function initializePixelsGrid(feed, numX, numY) {
-
-//     // console.log('initializePixelsGrid', numX,numY,feed.width,feed.height)
-
-//     // let grid = []
-
-//     // let xoff = feed.width/numX 
-//     // let yoff = feed.height/numY 
-
-//     // console.log('xoff',xoff,'yoff',yoff)
-
-//     // for (var i = 0; i < capture.width; xoff ){
-
-//     //     let row = []
-
-//     //     for (var j  = 0; j < capture.height; yoff){
-
-
-
-//     //         row.push(setPixel(i, j, xoff, yoff))
-
-
-//     //     }
-
-//     //     grid.push(row)
-
-//     // }
-
-//     // return grid 
-
-// }
-
-// function setPixel(x, y, w, h) {
-
-//     // let obj = {}
-//     // obj.x = x 
-//     // obj.y = y 
-//     // obj.w = w 
-//     // obj.h = h 
-
-//     // obj.display = function(img){
-
-//     //     let col = img.get(this.x,this.y)
-//     //     fill(col)
-//     //     rect(this.x, this.y, this.w, this.h)
-
-//     // }
-
-//     return obj
-
-// }
+}
