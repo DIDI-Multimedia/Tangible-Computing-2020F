@@ -4,7 +4,8 @@
 }
 @font-face{
   font-family: "Prototype";
-  src: url("Prototype.ttf")
+  src: url("Prototype.ttf");
+  color: white;
 }
 .header{
     font-family: 'Alice', serif;
