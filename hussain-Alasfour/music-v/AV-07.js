@@ -3,11 +3,10 @@ let fft
 let voxells = [] 
 let a = 0
 let s = 0
-let canvas= createCanvas()
+let canvas = createCanvas()
 function setup() {
 
 	createCanvas(windowWidth, windowHeight, WEBGL);
-    canvas.parent('p5container'); 
     background(100);
 	mic = new p5.AudioIn() 
 	mic.start() 
