@@ -1,8 +1,7 @@
 let mic
 let fft 
 let voxells = [] 
-Let canvas= createCanvas(...,)
-
+let canvas= createCanvas()
 
 function setup() {
 

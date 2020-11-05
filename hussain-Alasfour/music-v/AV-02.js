@@ -1,7 +1,7 @@
 
 let mic, fft;
-Let canvas= createCanvas(...,)
 
+let canvas= createCanvas()
 function setup() {
 createCanvas(windowWidth, windowHeight, WEBGL);
 canvas.parent('p5container');	
