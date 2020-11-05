@@ -3,6 +3,7 @@ let fft
 let voxells = [] 
 let a = 0
 let s = 0
+Let canvas= createCanvas(...,)
 
 function setup() {
 

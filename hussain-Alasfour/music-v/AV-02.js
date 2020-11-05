@@ -1,5 +1,6 @@
 
 let mic, fft;
+Let canvas= createCanvas(...,)
 
 function setup() {
 createCanvas(windowWidth, windowHeight, WEBGL);

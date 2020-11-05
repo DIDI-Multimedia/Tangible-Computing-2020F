@@ -1,6 +1,6 @@
 let mic
 let fft 
-
+Let canvas= createCanvas(...,)
 let voxells = [] 
 let a = 0
 let s = 0
