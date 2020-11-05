@@ -6,8 +6,9 @@ let voxells = []
 function setup() {
 
 	createCanvas(windowWidth, windowHeight, WEBGL);
-	background(100);
-	canvas.parent('p5container');
+    canvas.parent('p5container');
+    background(100);
+	
 	
 	mic = new p5.AudioIn()
 	mic.start() 

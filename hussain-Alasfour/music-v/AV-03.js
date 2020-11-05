@@ -3,8 +3,8 @@ let mic, fft;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL);
-  noFill();
-canvas.parent('p5container');
+    canvas.parent('p5container'); 
+    noFill();
   mic = new p5.AudioIn();
   mic.start();
   fft = new p5.FFT();
