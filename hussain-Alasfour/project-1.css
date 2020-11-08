@@ -24,7 +24,7 @@ body {
 	color: #ab5797 ;
 	background-color: #145e98 ;
     font-family: 'Stonewalls';
-    font-size: 100%;
+    font-size: 120%;
 }
 
 p{
@@ -32,6 +32,10 @@ p{
 }
 a{
 	color:#ab5797
+}
+img{
+	align-self: top
+	;
 }
 
 .week-1-13 {

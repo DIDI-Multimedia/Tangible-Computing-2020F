@@ -153,21 +153,70 @@ html, body {
  }
 
 .img img {
-    width: 46%;
+    width: 55%;
 }
 
 .img {
     position: absolute;
     z-index: 0;
-    top: 24.6%;
-    left: 38%;
+    top: 18%;
+    left: 30%;
 }
 
-.img-2 {
+.ref-1 img {
+    width: 20%;
+}
+
+.ref-1 {
+    position: absolute;
+    z-index: 1;
+    top: 875px;
+    left: 55px;
+}
+
+.ref-2 img {
+    width: 84%;
+}
+
+.ref-2 {
     position: absolute;
     z-index: 0;
-    top: 1%;
-    left: 6%;
+    top: 875px;
+    left: 1130px;
+}
+
+.ref-4 img {
+    width: 70%;
+}
+
+.ref-4 {
+    position: absolute;
+    z-index: 1;
+    top: 820px;
+    left: 775px;
+}
+
+.ref-5 img {
+    width: 38%;
+}
+
+.ref-5 {
+    position: absolute;
+    z-index: 1;
+    top: 820px;
+    left: 425px;
+}
+
+.ref-3 img {
+    width: 75%;
+}
+
+.ref-3 {
+    position: absolute;
+    z-index: 0;
+    top: 2500px;
+    left: 290px;
+    z-index: 3;
 }
 
 .title1 {
@@ -190,7 +239,7 @@ html, body {
 .title3 {
     position: fixed;
     font-size: 80px;
-    top: 450px;
+    top: 375px;
     left: 430px;
     font-family: 'Times New Roman', Times, serif;
     z-index: -3;
@@ -199,7 +248,7 @@ html, body {
 .title4 {
     position: fixed;
     font-size: 80px;
-    top: 450px;
+    top: 375px;
     left: 800px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -216,8 +265,8 @@ html, body {
 
 .section.bg-static  { 
 
-  background-image: url("New-York.png");
-  background-size: 100%;
+  background-image: url("System.png");
+  background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;	
   z-index: 3;
@@ -227,19 +276,19 @@ html, body {
 
 .section .bg-move {
     position: absolute;
-    top: 800px;
+    top: 590px;
     bottom: 0;
     right: auto;
     width: 100%;
-    background-image: url("Car.png");
-    background-size: 10%;
+    background-image: url("SATURN.png");
+    background-size: 15%;
     background-repeat: no-repeat;	
   }
   
   
 .txt-container {
     position: absolute;
-    top: 1945px;
+    top: 1990px;
     background-color: whitesmoke ;
     font-family: "Helvetica";
     font-weight: "Bold";
