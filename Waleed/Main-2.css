@@ -1,0 +1,432 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400vh;
+    cursor: cell;
+    overflow-x: hidden;
+    font-family: helvetica neue ultralight;
+}
+
+.s-one {
+    position: absolute;
+    width: 1px;
+    height: 300vh;
+    background: rgba(0, 0, 0, 0.2);
+    left: 25%;
+}
+
+.s-two {
+    position: absolute;
+    width: 1px;
+    height: 300vh;
+    background: rgba(0, 0, 0, 0.2);
+    left: 50%;
+}
+
+.s-three {
+    position: absolute;
+    width: 1px;
+    height: 300vh;
+    background: rgba(0, 0, 0, 0.2);
+    left: 75%;
+}
+
+.top-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-bar ul li {
+    list-style: none;
+    line-height: 46px;
+    padding: 16px 32px;
+    margin: 0 16px;
+}
+
+
+.menu-btn {
+    position: fixed;
+    left: 50px;
+    padding: 16px 0 0 0;
+    width: 40px;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.menu-btn:hover .dropup-content {
+    display: block;
+  }
+
+.one, .two {
+    position: absolute;
+    background: #000;
+    width: 30px;
+    height: 3px;
+}
+
+.two {
+    margin-top: 5px;
+}
+
+
+.logo span {
+    margin-left: 8px;
+}
+
+.logo {
+    position: fixed;
+    left: 40px;
+    font-size: 20px;
+    font-family: "Helvetica Neue";
+    font-weight: "Ultralight";
+
+}
+
+.search {
+    position: fixed;
+    right: 160px;
+}
+
+
+.tag {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+  
+}
+
+.year {
+    position: absolute;
+    top: 556px;
+    left: 410px;
+    padding: 10px 30px;
+}
+
+.add {
+    position: absolute;
+    top:350px;
+    left: 950px;
+    padding: 10px 30px;
+}
+ .add .slider {
+     position: absolute;
+     bottom: 5px;
+     left: 50px;
+     width: 0px;
+     background: gainsboro;
+     text-align: center;
+     line-height: 10px;
+     border-radius: 3px;
+     transition: all 0.5s ease;
+ }
+
+ .slider p{
+     font-size: 15px;
+     opacity: 0;
+     transition: all 0.5s ease;
+     display: block
+ }
+
+ .add:hover .slider p {
+     opacity: 1;
+     display: block;
+ }
+
+.img img {
+    width: 55%;
+}
+
+.img {
+    position: absolute;
+    z-index: 0;
+    top: 18%;
+    left: 30%;
+}
+
+.ref-1 img {
+    width: 20%;
+}
+
+.ref-1 {
+    position: absolute;
+    z-index: 1;
+    top: 875px;
+    left: 55px;
+}
+
+.ref-2 img {
+    width: 84%;
+}
+
+.ref-2 {
+    position: absolute;
+    z-index: 0;
+    top: 875px;
+    left: 1130px;
+}
+
+.ref-4 img {
+    width: 70%;
+}
+
+.ref-4 {
+    position: absolute;
+    z-index: 1;
+    top: 820px;
+    left: 775px;
+}
+
+.ref-5 img {
+    width: 38%;
+}
+
+.ref-5 {
+    position: absolute;
+    z-index: 1;
+    top: 820px;
+    left: 425px;
+}
+
+.ref-3 img {
+    width: 75%;
+}
+
+.ref-3 {
+    position: absolute;
+    z-index: 0;
+    top: 2500px;
+    left: 290px;
+    z-index: 3;
+}
+
+.title1 {
+    position: fixed;
+    font-size: 80px;
+    top: 350px;
+    left: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: -3;
+}
+
+.title2 {
+    position: fixed;
+    font-size: 80px;
+    top: 450px;
+    left: 700px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title3 {
+    position: fixed;
+    font-size: 80px;
+    top: 375px;
+    left: 430px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: -3;
+}
+
+.title4 {
+    position: fixed;
+    font-size: 80px;
+    top: 375px;
+    left: 800px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.section {
+    position: relative;
+    max-width: 100%;
+    min-height: 125vh;
+    padding: 10px;
+    background-color: no-fill;
+    z-index: -8;
+}
+
+.section.bg-static  { 
+
+  background-image: url("System.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;	
+  z-index: 3;
+}
+
+
+
+.section .bg-move {
+    position: absolute;
+    top: 590px;
+    bottom: 0;
+    right: auto;
+    width: 100%;
+    background-image: url("SATURN.png");
+    background-size: 15%;
+    background-repeat: no-repeat;	
+  }
+  
+  
+.txt-container {
+    position: absolute;
+    top: 1990px;
+    background-color: whitesmoke ;
+    font-family: "Helvetica";
+    font-weight: "Bold";
+    width: 1/2 width;
+    left: 1/2 width;
+    font-size: 20px;
+    padding: 50px;
+    z-index: 1;
+
+}
+
+.Linelinks (
+    
+    
+)
+
+.line {
+    position: absolute;
+    left: 360px;
+    top: 200px;
+    background: #000;
+    width: 180px;
+    height: 1px;
+}
+
+.media ul {
+    list-style: none;
+    position: fixed;
+    right: 20px;
+    top: 70%;
+    padding: 10px 10px;
+    cursor: grab;
+}
+
+.media ul li {
+    font-size: 18px;
+    margin: 24px 0;
+}
+
+/* animations */
+
+.title span {
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 2s;
+}
+
+.title:after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1.4s;
+}
+
+.tag-line span {
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 2.2s;
+}
+
+.tag-line:after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes rev-block {
+    0% {
+          left: 0%;
+          width: 0%;
+    }
+
+    50% {
+          left: 0;
+          width: 100%;
+    }
+
+    100% {
+          left: 100%;
+          width: 0%;
+    }
+}
+
+@keyframes appear-text {
+    0% {
+          opacity: 0;
+    }
+
+    100% {
+          opacity: 1;
+    }
+}
+
+img {
+    opacity: 0;
+    animation: appear-text 1s linear forwards;
+    animation-delay: 1.4s;
+}
+
+.img:after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: gainsboro;
+    position: absolute;
+    animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+}
+
+@keyframes rev-img {
+    0% {
+          left: 0%;
+          width: 0%;
+    }
+
+    50% {
+          left: 0;
+          width: 46%;
+    }
+
+    100% {
+          left: 46%;
+          width: 0%;
+    }
+}
+
+
+

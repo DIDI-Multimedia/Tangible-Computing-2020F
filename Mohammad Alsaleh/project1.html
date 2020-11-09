@@ -8,6 +8,10 @@
 	
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="MyStyle.css">
    <link rel="stylesheet" type="text/css" href="aminatedColor.css" >
     <link rel="stylesheet" type="text/css" href="newstyle.css" >
@@ -32,21 +36,36 @@
       
       
       
+      
         </div>
       </div> 
 
 
 
-<div class="Homepage" >
-          
+<div class="HomepageP1" >
+         <!-- <script src ="project1.js"></script> -->
 <h3 ; ><a style="font-size: 30px" class="awesome" href="index.html">  Home </a></h3>
 
-           <h2 style="text-align: right;" >Second Week</h2>
-            <p text-align="center" class = "awesome" style="  font-family: CyberPunk; text-align: center;">Cyber Punk <span style="color: yellow" ><br> 2077</span></p>
-            <br>
-<br><div style=" float: left; text-align: left;">
+<!-- <div id="content">
 
-              <h2 style="color: blue" >Visual Elements</h2>
+    <div id = "p5container"></div>
+</div>
+<script type="cyberpunkT.js"></script>
+
+ -->
+<!--            <h2 style="text-align: right;" >Second Week</h2>-->  
+
+  <img  src="CyberTitle.gif" alt="" 
+  style="   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;"> 
+
+           <!-- <p text-align="center" class = "awesome" style="  font-family: CyberPunk; text-align: center;">Cyber Punk <span style="color: yellow" ><br> 2077</span></p> -->
+            <br>
+<br><div class="inOrangeHomepageP1"  style=" float: left; text-align: left;">
+
+              <h2 class = "inTitleHomepageP1" style="color: blue" >Visual Elements</h2>
               <h3>一 - Neon</h3>
               <h3>二 - Colorful</h3>
               <h3>三 - Sharp/Noise</h3>
@@ -58,9 +77,9 @@
               <h3>九 - Foggy</h3>
               <h3>十 - Dim/Dark</h3>
       </div>
-<div  style=" float: right; text-align: right;">
+<div class="inOrangeHomepageP1"  style=" float: right; text-align: right;">
 
-              <h2 style="color: blue">Dynamic Elements</h2>
+              <h2 class = "inTitleHomepageP1" style="color: blue">Dynamic Elements</h2>
               <h3>Interfaces - 一</h3>
               <h3>Glowing - 二</h3>
               <h3>Motion- 三</h3>
@@ -74,19 +93,51 @@
             </div>
         
 
-<div style="text-align: center;" >
+<div  style="text-align: center;" >
 <br><br>
-           <img  src="Project1/Pics/0 (0).jpg" alt="" width="300" height="500">   
-           <img  src="Project1/Pics/0 (3).jpg" alt="" width="300" height="500"><br>
-           <img  src="Project1/Pics/0 (2).jpg" alt="" width="700" height="500">
-           <img  src="Project1/Pics/0 (1).png" alt="" width="700" height="500">
-           <img  src="Project1/Pics/0 (4).png" alt="" width="700" height="500">
+           <img  class="inHomepageP1" src="Project1/Pics/0 (0).jpg" alt="" width="300" height="500">   
+           <img class="inHomepageP1" src="Project1/Pics/0 (3).jpg" alt="" width="300" height="500"><br>
+
+           <iframe style="float: left;" src="https://www.openprocessing.org/sketch/1005245/embed/?plusEmbedHash=ZTNlMzk4NzYwNDFiZjQyNjJlOTY1ZDhkM2Y0MmI1ZDhhYWE1YzRjODI4ZGY1YmQxY2YyZGI2MzBmNTFlZjJiODJkYzliYTU1ZTllNzAwNWVjMTlkN2NhNzllZDRhNzNlNTg0MTI5ZWJlYjc0NzI1NzhjYjM1NTM3ZTJiNGJjNzNVQU5BbmdZTG1CK2lIOW1vaVNMVVBqeHQ3N0prYVFxTmNMbUd5YWdVMVQwNnU5TTlRQVUwYXRQY3dPcUptT1lhOC9mSzJqN0p3c2E4ZnlHb0NpRjRRdz09&plusEmbedFullscreen=true" width="120" height="500"></iframe>
+           <iframe style="float: right;" src="https://www.openprocessing.org/sketch/1005245/embed/?plusEmbedHash=ZTNlMzk4NzYwNDFiZjQyNjJlOTY1ZDhkM2Y0MmI1ZDhhYWE1YzRjODI4ZGY1YmQxY2YyZGI2MzBmNTFlZjJiODJkYzliYTU1ZTllNzAwNWVjMTlkN2NhNzllZDRhNzNlNTg0MTI5ZWJlYjc0NzI1NzhjYjM1NTM3ZTJiNGJjNzNVQU5BbmdZTG1CK2lIOW1vaVNMVVBqeHQ3N0prYVFxTmNMbUd5YWdVMVQwNnU5TTlRQVUwYXRQY3dPcUptT1lhOC9mSzJqN0p3c2E4ZnlHb0NpRjRRdz09&plusEmbedFullscreen=true" width="120" height="500"></iframe>
+
+           <img class="inHomepageP1" src="Project1/Pics/0 (2).jpg" alt="" width="700" height="500">
+           <img class="inHomepageP1" src="Project1/Pics/0 (1).png" alt="" width="700" height="500">
+           <img class="inHomepageP1" src="Project1/Pics/0 (4).png" alt="" width="700" height="500">
 
            <hr>
            
-           
+           <!-- <div id = "p5container"> -->
+        
+<!-- </div> -->
+
+
 
           <p>-</p>
+
+        <h1 style=" color: rgb(0,255,255); font-size: 55px" >Sketches</h1>
+
+
+          <img class="inHomepageP1" src="./Project1/Pics/All.jpg">
+          <img class="inHomepageP1" src="./Project1/Pics/all2.jpg">
+          <img class="inHomepageP1" src="./Project1/Pics/collision.jpg">
+
+          <img class="inHomepageP1" src="./Project1/Pics/drawing.jpg">
+          <div class="wavy" style="text-align: center;">
+      <br>
+      <span style="--i:17"> VIDEO </span> </div>
+<br><br>
+          <iframe width="1000" height="800" src="https://www.youtube.com/embed/EnOod7jioa0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <img class="inHomepageP1"  src="CyberT.gif"  alt="" 
+
+  style="   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;">
+
+<h1 style=" font-family: 'helvetica'; padding-right: 20%; padding-left: 20%;" >After choosing Cyberpunk as the theme of my project, I decided to work on creating an interactive webcam filter. I chose webcam filters because it depends on the person in front of the screen; although it existed years ago, it can carry substantial value through coding and modification. Cyberpunk 2077 is a futuristic game that is still in the development phase, and it will be published in December 2020. I chose it because it haves powerful elements and colors that I can build on for my project. Starting by researching and collecting some visuals about it and ending up with decoding and analyzing the elements and the colors was used in the game. After that, I was trying to bring the game experience into my website through colors, font, and motion. Having a look at similar applications and websites gave me a lot of inspiration. Snapchat was one of the first companies that used filters in a new intelligent and interactive way to make their users fall in love with the app. I started by brainstorming the ideas I wanted to include in my filter, and then I began transforming it into codes. I worked with p5.js; it’s a library for JavaScript that is simple and clear to use, p5.js also haves a website where they explain all of the library functions and include examples too ! which help to make it easier for everyone to learn. In my filter, I used face/body tracking feature using the webcam, and I assigned some lines to draw a skeleton on the screen based on the data the webcam receives.// ..... more words are on the way </h1>
+
           </div>
           </div> 
 
@@ -98,7 +149,8 @@
 <div class="wavy" style="text-align: center;">
       
       <span style="--i:17"> 02 Functional Programming </span> </div>
-<h2> Day 1 </h2>
+
+<!-- <h2> Day 1 </h2>
         <iframe src="https://www.openprocessing.org/sketch/974078/embed/?plusEmbedHash=MWI3MmQ3NGM3NjNkYTQ2ODZhOGY4ZDcwMmY4MjE2NTI2YzI2NDFlY2ZiZjNiMTUxYmUwNDBkZWQ4ZTliOWNjOTExZmY1YzU5ZWRhNWNmOWIzZjk3NjIyNjAzOGVkODdjMjI2M2Q0MzQ3ODcxNDMyZjNhMTU1OTMwMTllYzUxNzliYndPWEVvaGh1TDM3VmlqZHlXTlh4emoyeDdIbG55QmR0NWtjdXRaWmNNUXJRRGJaYWtLMTZaZlRxSktiUkIvWGZpYTVjeTBHSzk3VUprNjRJN2FoZz09&plusEmbedFullscreen=true" width="800" height="800"></iframe>
         <iframe src="https://www.openprocessing.org/sketch/974097/embed/?plusEmbedHash=Njg4MjVhYTQyNzhmNTNiNmQyNzRhYjc3MDBmZmIzMGMyYzAxNzZkMTJhMzZmYzYyYTY5MDY4YTM4Mzg4NDBmZGYyZDg2ZTM1MGQ0Zjc5YWVkNmRlMGM5NThiNDMzOThhOTYzNjM3MTQ1Y2ZjOTBmNDAwOTIxZWFlNGZjMWQ0OTZkV00zd2hYYlFrZlk3Ly9nckgrc0RBUmRxQytlL2M1cGh5dGVsVmdLdm5Gb0ZRNUFxRlg2TVNWeitHTjBscEUyanE1UkxGV05QKzZQbHVxaGtNdE5lZz09&plusEmbedFullscreen=true" width="800" height="800"></iframe>
         <h2>Day 2</h2>
@@ -113,7 +165,8 @@
         <iframe src="https://www.openprocessing.org/sketch/974397/embed/?plusEmbedHash=MjFjZmI4OTFiZjkyNDQxNGM2ZWM3NDQ2NWVhM2M2NmNiMmU0ZGRkMGQzMGZmZjk1N2ExOThiYmEyYTMwNTQyY2IwNzg3ZDk1NDA2YWQ3YWU5ZjkxOTEwZTNhNGZhZTJlZjVjYzM5ZTJlMTFmZGYxNTE4ZGU1NmNkMjg4YmVkNWJQaGUwNWpHSVNoY2kxKzdHU0V2TUtmTUE5U1dmc0tWL1FOY3NBQzZiblRFT1laYmQxZGYzQ2ErekdpZEU5eFdwS2dRR1R1UzJ6MGNrNVczUThqR3R1dz09&plusEmbedFullscreen=true" width="800" height="800="></iframe>
         <iframe src="https://www.openprocessing.org/sketch/974410/embed/?plusEmbedHash=MWQ0NjhlZDRjYTNjMzAwMDdlYmZmZDQ5Mzg3NWZmNjkyZDY2OWNmYzdkOWNkNTczMWE1ODhkYWRiNjIyMDExMTFiM2I2NzdjMDI3M2E5ZDk4MGIxNWNjZTRhYmRhZDA1MTU5YWZjZGE0M2ZjZjlmYTEyMDYxOTVlODFjZWFkNWE0Qlh6ZVM0MWx4L1FPY2lhbzZGL29pdkRkTXE4VXFhb2N3dVcyS0RieXFVaG4xWnI0aEJUSDFZUHBFeUZqVjNtYXJIZ2lKOFBlTTRVZm00OFJSM0kwUT09&plusEmbedFullscreen=true" width="800" height="800"></iframe>
         <h2>Day 7</h2>
-        <iframe src="https://www.openprocessing.org/sketch/974515/embed/?plusEmbedHash=Mzg3OGYxNzVlM2M2NzcxYmIwNzAwMDhjNzgwODg5ZTE0ODdjZmI1ZWQ3NjE3MjEyNzQ3Y2E0OGQxMDQzZDAzZDI0MmZjMWFmMGEzNTg4OWU1NmM1YmQ2YWQ4ZTUxMjY2ZWNkNzZiNzdhODQ0OGI3Y2Q2N2FmNjA0NjlhMTgwNzlhZjFKUkcyc1FSZTkwK2Y1a2FYczR2WHR5WCtHdUxERXpGNjJqS2NmTWJRMlJ6SEhRRGFzdHpEV2dhWFdBbHpRb1Fqc21ZQTRQTk5KaGNEejQrTk1sZz09&plusEmbedFullscreen=true" width="800" height="800"></iframe>
+        <iframe src="https://www.openprocessing.org/sketch/974515/embed/?plusEmbedHash=Mzg3OGYxNzVlM2M2NzcxYmIwNzAwMDhjNzgwODg5ZTE0ODdjZmI1ZWQ3NjE3MjEyNzQ3Y2E0OGQxMDQzZDAzZDI0MmZjMWFmMGEzNTg4OWU1NmM1YmQ2YWQ4ZTUxMjY2ZWNkNzZiNzdhODQ0OGI3Y2Q2N2FmNjA0NjlhMTgwNzlhZjFKUkcyc1FSZTkwK2Y1a2FYczR2WHR5WCtHdUxERXpGNjJqS2NmTWJRMlJ6SEhRRGFzdHpEV2dhWFdBbHpRb1Fqc21ZQTRQTk5KaGNEejQrTk1sZz09&plusEmbedFullscreen=true" width="800" height="800"></iframe> -->
+
 
 </div>
     <div style="text-align:center;">
@@ -148,6 +201,7 @@ window.onclick = function(event) {
   }
 }
   </script> -->
+  
 </body>
 
 </html>

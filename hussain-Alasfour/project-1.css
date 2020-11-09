@@ -24,7 +24,7 @@ body {
 	color: #ab5797 ;
 	background-color: #145e98 ;
     font-family: 'Stonewalls';
-    font-size: 100%;
+    font-size: 120%;
 }
 
 p{
@@ -32,4 +32,50 @@ p{
 }
 a{
 	color:#ab5797
+}
+img{
+	align-self: top
+	;
+}
+
+.week-1-13 {
+	font-size: 1vw ;
+	color:#031926ff;
+	background-color: rgb(106, 165, 243);
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	border-width: 10 ;
+	width: 33%;
+    margin-right: 2px;
+}
+
+.week-2-14{
+	font-size: 1vw ;
+	color:#031926ff;
+	background-color:#44e5e7ff;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	border-width: 10 ;
+	width: 33.3%;
+}
+
+.week-3-15{
+	font-size: 1vw ;
+	color:#031926ff;
+	background-color: #59d2feff;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	border-width: 10 ;
+	width: 33%;
+	margin-left: 2px;
+
 }
