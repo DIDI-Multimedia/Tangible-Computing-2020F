@@ -1,15 +1,13 @@
 // web cam filter 
-let capture
+let img;
 
 function setup(){
-	
-	let canvas = createCanvas(640,480) 
-	capture = createCapture(VIDEO) 
-	capture.hide()
+	img = loadImage('Hatta/Hatta.JPG');
+}
 	
 
 	
-}
+
 
 
 function draw() {
