@@ -23,7 +23,7 @@
 
 p {
 
-	color: black !important; 
+	color: black ; 
 	font-family: 'VT323', monospace;
 }
 @keyframes bgcolor {
