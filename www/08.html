@@ -24,101 +24,15 @@
     </div>
     <div id="main">
         
-        <h1> 06 3D Internet </h1>
+        <h1> 08 Connected Devices </h1>
 
         <div id="myContainer"></div>
         <h2> Summary </h2>
         
-        <p> We will talk about the rules of 3D graphics. We will also explore Javascript Objects and array. We will create an example of a 3D fractal using recursion. And finally review progress on P1</p>
+        <p> We will talk about the basics of threeJS and show how it can be used to make an AR app.</p>
         
         <h2> Examples </h2>
-        <pre><code class="language-javascript">
-
-    // make your own creature using this code, share via whatsapp  
-
-    let critter = {
-
-      name: "name", 
-      posX: random(width), 
-      posY: random(height),
-      rot: 0,  
-      size: 10, 
-      color: [215,155,214] 
-    
-    }
-
-
-    function drawCreature(c){
      
-      push()
-    
-      // fill in code here, draw a funny face
-
-      translate(c.posX,c.posY)
-      text(c.name 0,0)
-      ellipse(0,0,c.size,c.zie)
-
-      pop()
-
-
-    }
-
-    drawCreature(critter)
-
-  </code></pre>
-        <h2> Examples </h2>
-        <p> Arrays <p>
-                <li> <a href="https://www.w3schools.com/js/js_arrays.asp" target="open">Review of Arrays</a></li>
-<li><a href="
-https://www.w3schools.com/js/js_objects.asp" target="open">Review of Arrays</a></li>
-<li><a href="
-https://p5js.org/reference/#/p5/map" target="open">Review of Map function</a></li>
-
-
-
-                </h3>
-                <pre><code class="language-javascript">
-
-    // arrays are used to store multiple values 
-    var cars = ["Saab", "Volvo", "BMW"];
-
-    // retrieving a value from an array using an index 
-
-    console.log(cars[0]) // prints 'Saab' to console 
-
-
-    // changing an array element
-    cars[0] = "Lamborghini"
-    console.log(cars[0]) // prints 'Lamborghini' to console 
-
-    // arrays are a special type of javascript object 
-    var personArr = ["John", "Doe", 46];
-    // or
-    var personObj = {firstName:"John", lastName:"Doe", age:46};
-
-    console.log(personArr[0]) // "John"
-
-    // objects use names to access its properties rather than indices 
-
-    console.log(personObj.firstName) // "John"
-    console.log(personObj['firstName']) // "John"
-
-  </code></pre>
-                <h3> <a href="https://www.w3schools.com/js/js_this.asp" target="open">What is "THIS"</a></h3>
-                <pre><code class="language-javascript">
-
-    var person = {
-      firstName: "John",
-      lastName : "Doe",
-      id       : 5566,
-      fullName : function() {
-        return this.firstName + " " + this.lastName;
-      }
-    };
-
-    person.fullName() // prints 'John Doe'
-
-  </code></pre>
                 <ul>
                     <!--       <li> <a href="https://www.openprocessing.org/sketch/979742"> Pixel Grid </a> </li>
         <li> <a href="https://www.openprocessing.org/sketch/983148"> Webcam Numbers </a> </li>
@@ -132,22 +46,22 @@ https://p5js.org/reference/#/p5/map" target="open">Review of Map function</a></l
                     <p> Sound </p>
                     <ul>
 
-                      <li><a href="https://p5js.org/examples/sound-mic-input.html">  Mic Input </a></li>
-                      <li><a href="https://p5js.org/examples/sound-frequency-spectrum.html"> Frequency Spectrum </a></li>
+       <!--                <li><a href="https://p5js.org/examples/sound-mic-input.html">  Mic Input </a></li>
+                      <li><a href="https://p5js.org/examples/sound-frequency-spectrum.html"> Frequency Spectrum </a></li> -->
 
                     </ul>
 
                     <p> 3D </p>
                     <ul>
 
-                        <li><a href="https://www.youtube.com/watch?v=6TPVoB4uQCU"> WEBGL and p5JS </a></li>
-                        <li><a href="https://www.youtube.com/watch?v=IKB1hWWedMk"> Coding Challenge #11: 3D Terrain Generation with Perlin Noise in Processing </a></li>
+<!--                         <li><a href="https://www.youtube.com/watch?v=6TPVoB4uQCU"> WEBGL and p5JS </a></li>
+                        <li><a href="https://www.youtube.com/watch?v=IKB1hWWedMk"> Coding Challenge #11: 3D Terrain Generation with Perlin Noise in Processing </a></li> -->
                     </ul>
                     <!-- <hr> -->
                     <h2> Readings </h2>
                     <ul style="list-style-type:disc;">
                         
-          <p> Read <a href="https://www.teachmeaudio.com/mixing/techniques/audio-spectrum" target="open">"Audio Spectrum"</a> on <i>teach me audio </i></p> 
+          <p> Read <a href="https://trackr-media.tangiblemedia.org/publishedmedia/Papers/331-Tangible%20Bits%20Towards%20Seamless/Published/PDF" target="open">"Tangible Bits: Towards Seamless Interfaces between People, Bits and Atoms"</a> by Hiroshi Ishii (1997)</p> 
                         <!--         <p>Visit verardo Reyes website about <a href="http://ereyes.net/ms/#about" target="open"> Motion Structure</a>. Check out the examples.</p>
           <p> Read <a href="https://www.academia.edu/14883310/2015_-_Aesthetics_of_temporal_and_spatial_transformations_in_virtual_environments" target="open">"Aesthetics of temporal and spatial transformations in virtual environments"</a> by  Everardo Reyes (2015).</p> -->
                     </ul>
