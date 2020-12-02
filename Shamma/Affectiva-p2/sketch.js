@@ -152,6 +152,6 @@ function updateData(data){
 	image(capture.get(),width-64,0,128,96)
 
 	  var x = document.getElementById("app");
-	  x.style.display = "none"
+	  x.style.display = "none"	
 
 }	

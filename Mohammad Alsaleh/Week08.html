@@ -22,8 +22,87 @@
         </div> 
 
           		<div class="Homepage" style="text-align: center">
-          <h2>Second Week</h2>
-          <p>-</p>
+          <h2 style="float: right;" >Week 8 </h2>
+          <br><br><br>
+          <h1>Here i started expermenting with all of the libries I chose, then i started to transform the sketches i did to a real working version </h1>
+
+          <img style="width: 70%" src="Project2/week8/IMG_0402.jpg">
+          <br><br>
+          <img style="width: 70%" src="Project2/week8/IMG_0403.jpg">
+           <br><br>
+          <img style="width: 70%" src="Project2/week8/IMG_0450.jpg">
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/whOwQKFhuqo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hjHiUOaAjHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+          <img style="width: 70%" src="Project2/week8/IMG_0450.jpg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rdBHjtG3sxY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <!-- <pre style="width: 50%"><code class="code">
+let express = require('express');
+let app = express();
+let host = 3000
+let server = app.listen(host)
+
+var five = require("johnny-five");
+
+const { Board, Led } = require("johnny-five");
+const board = new Board(
+
+  {
+  port: "COM9"  
+  }
+
+  );
+
+board.on("ready", () => {
+
+var servo1  = new five.Servo.Continuous(10);
+var servo2  = new five.Servo.Continuous(3);
+const led   = new Led(13);
+
+ process.stdin.resume();
+  process.stdin.setEncoding("utf8");
+  process.stdin.setRawMode(true);
+
+
+
+
+app.use(express.static('public'));
+
+console.log("Socket server is running. localhost:" + host)
+
+let socket = require('socket.io')
+let io = socket(server);
+
+io.sockets.on('connection', newConnection)
+
+function newConnection(socket){
+  console.log('connection:',  socket.id);
+  socket.on('mouse', mouseMsg);
+  
+  function mouseMsg(data) {
+    socket.broadcast.emit('mouse', data)
+    console.log(data)
+    // led.blink(50);
+
+  if (data.x <= 600) {
+      console.log("Left")
+      servo1.ccw();
+      servo2.ccw();
+      led.on()
+    } else {
+     console.log("Right")
+      servo1.cw();
+      servo2.cw();
+      led.off()
+
+    }
+
+  }
+}
+
+});</code></pre> -->
           </div> 
 
     <div style="text-align:center;">
