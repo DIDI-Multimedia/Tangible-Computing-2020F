@@ -108,6 +108,7 @@ function addFloorPlane(scene, markerGroup) {
   plane.position.y = -0.2;
 
   markerGroup.add(plane);
+  
 }
 
 function addLights(scene, markerGroup) {
