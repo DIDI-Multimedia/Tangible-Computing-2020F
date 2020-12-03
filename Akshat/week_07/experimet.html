@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title></title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.js" integrity="sha512-8Yom5spEjD3HeZTNoDiOm4Y4Rn3RVKUFpiqTM4I3RIIO0u8e2m7XjT5rG1GQNHJlVcD9EZrzn+itENl4C6112A==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.module.js" integrity="sha512-omJFHbfVMUjzeyFovfrnxJutHDsfdqa+LH35klRkmNHhTmSSRsewe/hJXRrbkCh9Qrml7PgeIGrzP5rWuK+ktw==" crossorigin="anonymous"></script>
+            
+    </head>
+    <body>
+    <script>
+        //makes scene
+        var scene = new THREE.Scene()
+
+        //makes camera
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight,  0.1, 1000 )
+
+        //makes renderer antialias: to not have jagged edges
+        var renderer = new THREE.WebGLRenderer({antialias: TRUE})
+        renderer.setClearColor('black')
+        renderer.setSize(window.innerWidth,window.innerHeight)
+
+        //fancy way of saying fill the scene with renderer output
+        document.body.appendChild(renderer.domElement)
+
+    </script>
+    </body>
+</html>
