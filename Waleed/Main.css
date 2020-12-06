@@ -163,6 +163,13 @@ html, body {
     left: 38%;
 }
 
+.img-2 {
+    position: absolute;
+    z-index: 0;
+    top: 1%;
+    left: 6%;
+}
+
 .title1 {
     position: fixed;
     font-size: 80px;
@@ -179,6 +186,24 @@ html, body {
     left: 700px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.title3 {
+    position: fixed;
+    font-size: 80px;
+    top: 450px;
+    left: 430px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: -3;
+}
+
+.title4 {
+    position: fixed;
+    font-size: 80px;
+    top: 450px;
+    left: 800px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 .section {
     position: relative;
@@ -226,6 +251,10 @@ html, body {
 
 }
 
+.Linelinks (
+    
+    
+)
 
 .line {
     position: absolute;

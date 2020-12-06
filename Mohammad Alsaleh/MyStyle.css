@@ -23,9 +23,24 @@
 
 p {
 
-	color: black !important; 
+	color: black ; 
 	font-family: 'VT323', monospace;
 }
+.code {
+  color: blue;
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
 @keyframes bgcolor {
     0% {
         background-color: #45a3e5
@@ -155,6 +170,17 @@ display: inline-table;
 border-radius: 25px;
 
 }
+.HomepageP2{
+
+    background-color: rgb(8, 145, 69);
+    color: white;
+    border: 10px solid red;
+
+      margin: 20px;
+      padding: 20px;
+border-radius: 25px;
+
+}
 .inHomepageP1{
 
     background-color: rgb(255, 0, 255);
@@ -166,7 +192,21 @@ border-radius: 25px;
       padding: 20px;
 
 
+
 }
+.inHomepageP2{
+
+    background-color: rgb(90, 188, 144);
+    color: white;
+    border: 10px solid rgb(5, 90, 51);
+    border-radius: 25px;
+
+      margin: 20px;
+      padding: 20px;
+
+
+}
+
 .inTitleHomepageP1{
 
     background-color: rgb(77,238,234);
@@ -264,7 +304,7 @@ body {
   
   .dropbtn:hover, .dropbtn:focus {
 	background-color: yellow;
-	color: black;
+	color: red;
   }
   
   .dropdown {
