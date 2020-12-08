@@ -30,7 +30,7 @@ function setup() {
 // frame should go in here
 function calculate() {
   counter += 0.1;
-  rotateX(1000+frameCount/100)
+ 
   
 }
 
@@ -50,6 +50,8 @@ function draw() {
     
 	a = a + 0.003;
 	s = cos(a) * 2;
+	rotateX(100)
+	rotateY(counter);
   
 	push() 
 	
