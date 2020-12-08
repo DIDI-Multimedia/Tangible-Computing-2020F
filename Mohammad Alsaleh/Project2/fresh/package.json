@@ -1,0 +1,19 @@
+{
+  "name": "fresh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "johnny-five": "^2.0.0",
+    "port": "^0.8.1",
+    "serial": "0.0.9",
+    "serialport": "^9.0.3",
+    "socket.io": "^3.0.4"
+  }
+}
