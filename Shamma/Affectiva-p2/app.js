@@ -1,3 +1,5 @@
+console.log('app.js')
+
 const app = document.querySelector("#app");
 // const startBtn = document.querySelector("#start-button");
 // const stopBtn = document.querySelector("#stop-button");
@@ -77,26 +79,28 @@ const data = [];
 
 detector.addEventListener("onImageResultsSuccess", function (faces, image, timestamp) {
 
+    console.log('face detected')
+
     if (faces.length) {
 
         const face = faces[0];
 
 
 
-        // myChart.data.datasets.forEach((dataset) => {
+        myChart.data.datasets.forEach((dataset) => {
 
-        //     dataset.data = [
+            dataset.data = [
 
-        //         face.emotions.anger,
-        //         face.emotions.disgust,
-        //         face.emotions.fear,
-        //         face.emotions.joy,
-        //         face.emotions.sadness,
-        //         face.emotions.surprise
+                face.emotions.anger,
+                face.emotions.disgust,
+                face.emotions.fear,
+                face.emotions.joy,
+                face.emotions.sadness,
+                face.emotions.surprise
 
-        //     ];
+            ];
 
-        // });
+        });
 
         let data = [
 
@@ -109,7 +113,7 @@ detector.addEventListener("onImageResultsSuccess", function (faces, image, times
 
             ];
 
-        // myChart.update();
+        myChart.update();
 
         const now = new Date();
 
@@ -236,40 +240,40 @@ detector.addEventListener("onImageResultsFailure", function (image, timestamp, e
 //     }
 // }
 
-// var ctx = document.getElementById('myChart');
-// var myChart = new Chart(ctx, {
-//     type: 'bar',
-//     data: {
-//         labels: ['Anger', 'Disgust', 'Fear', 'Joy', 'Sadness', 'Surprise'],
-//         datasets: [{
-//             label: 'Probability on the scale of 0-100',
-//             data: [0, 0, 0, 0, 0, 0],
-//             backgroundColor: [
-//                 'rgba(255, 99, 132, 0.2)',
-//                 'rgba(54, 162, 235, 0.2)',
-//                 'rgba(255, 206, 86, 0.2)',
-//                 'rgba(75, 192, 192, 0.2)',
-//                 'rgba(153, 102, 255, 0.2)',
-//                 'rgba(255, 159, 64, 0.2)'
-//             ],
-//             borderColor: [
-//                 'rgba(255, 99, 132, 1)',
-//                 'rgba(54, 162, 235, 1)',
-//                 'rgba(255, 206, 86, 1)',
-//                 'rgba(75, 192, 192, 1)',
-//                 'rgba(153, 102, 255, 1)',
-//                 'rgba(255, 159, 64, 1)'
-//             ],
-//             borderWidth: 1
-//         }]
-//     },
-//     options: {
-//         scales: {
-//             yAxes: [{
-//                 ticks: {
-//                     beginAtZero: true
-//                 }
-//             }]
-//         }
-//     }
-// });
+var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Anger', 'Disgust', 'Fear', 'Joy', 'Sadness', 'Surprise'],
+        datasets: [{
+            label: 'Probability on the scale of 0-100',
+            data: [0, 0, 0, 0, 0, 0],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});

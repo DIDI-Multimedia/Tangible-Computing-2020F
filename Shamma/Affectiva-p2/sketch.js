@@ -1,7 +1,9 @@
 console.log('shamma sketch')
 
-var milliseconds =0;
-var seconds =0;
+var allData = []
+
+var milliseconds = 0;
+var seconds = 0;
 var bp;
 
 
@@ -15,7 +17,7 @@ function setup() {
 }
 
 //function preload(){
-	//soundFormats('mp3');
+//soundFormats('mp3');
 //bp=loadSound('Beep.mp3');
 //}
 
@@ -50,23 +52,23 @@ function draw() {
                 if (darkness > 0.5) {
                     fill('#1919a6');
                     square(sX, sY, step);
-									
-									//start and end points to place curser
-								
-									
-									fill(0,255,0);
-									ellipse(610,70,50,50);
-									
-									fill(222, 161, 133);
-									ellipse(40,420,50,50);
-							
-							
+
+                    //start and end points to place curser
+
+
+                    fill(0, 255, 0);
+                    ellipse(610, 70, 50, 50);
+
+                    fill(222, 161, 133);
+                    ellipse(40, 420, 50, 50);
+
+
                 }
             }
         }
 
 
-    checkCollision(mouseX, mouseY,step) // calling a new function 
+        checkCollision(mouseX, mouseY, step) // calling a new function 
 
     }
 
@@ -75,7 +77,7 @@ function draw() {
 
 
 
-function checkCollision(x, y,r) {
+function checkCollision(x, y, r) {
 
 
 
@@ -86,72 +88,88 @@ function checkCollision(x, y,r) {
     let c = get(x, y)
 
     milliseconds = millis();
-		text(30-int(seconds), width/20, height/4-95);
-	if(seconds >= 30){ 
-		seconds = 30;
-	}
-	else{	seconds = milliseconds/1000;}
-	
-	
-	text('start here', width/2-300, height/2+230); 
-	text('end here',width/4-(-430), height/4-90);
-	
-	
+    text(30 - int(seconds), width / 20, height / 4 - 95);
+    if (seconds >= 30) {
+        seconds = 30;
+    } else {
+        seconds = milliseconds / 1000;
+    }
+
+
+    text('start here', width / 2 - 300, height / 2 + 230);
+    text('end here', width / 4 - (-430), height / 4 - 90);
+
+
 
     // let blue = color(25, 25, 166)
 
 
-    if (c[1] === 0){
+    if (c[1] === 0) {
 
-			
-		
-			fill('red');
-      circle(x,y,r);
-			text('GAME OVER', width/2-50, height/2+50); 
-			//bp.play();
-		}
-			
-			else if (c[1] === 255){
-				
-				text('you win!', width/2-50, height/2+50)
-			}
-	
-	
-	
-    if (second()<1){
-		text('times up!', width/2-50, height/2+50)
-        
 
-    } 
+
+        fill('red');
+        circle(x, y, r);
+        text('GAME OVER', width / 2 - 50, height / 2 + 50);
+        //bp.play();
+    } else if (c[1] === 255) {
+
+        text('you win!', width / 2 - 50, height / 2 + 50)
+    }
+
+
+
+    if (second() < 1) {
+        text('times up!', width / 2 - 50, height / 2 + 50)
+
+
+    }
+
+}
+
+function resetGame(output){
+
+saveStaticDataToFile(output)
 
 }
 
 
-function updateData(data){
+       function saveStaticDataToFile(output) {
+            var blob = new Blob(output,
+                { type: "text/plain;charset=utf-8" });
+            saveAs(blob, "static.txt");
+        }
 
-	console.log('update data')
+function updateData(data) {
 
-	background(34,155,215)
+    console.log('update data')
+    console.log(JSON.stringify(data, null, 4))
 
-	fill(255)
-	let spacing = height/Object.keys(data).length
-	textSize(spacing)
-	
-	let y = spacing
+    allData.push(data)
 
-	for (item in data){
-		str = item + ': ' + data[item]
-		text(str, 10 ,y)
+    background(34, 155, 215)
 
-		y+= spacing*2
-	
-	}
+    fill(255)
+    let spacing = height / Object.keys(data).length
+    textSize(spacing)
 
-	
+    let y = spacing
 
-	image(capture.get(),width-64,0,128,96)
+    for (item in data) {
+        str = item + ': ' + data[item]
+        text(str, 10, y)
 
-	  var x = document.getElementById("app");
-	  x.style.display = "none"
+        y += spacing * 2
 
-}	
+    }
+
+
+    document.getElementById("data-stream").innerText = JSON.stringify(data,null,4);
+
+
+    // image(capture.get(),width-64,0,128,96)
+
+    // var x = document.getElementById("app");
+    // x.style.display = "none"	
+
+}
