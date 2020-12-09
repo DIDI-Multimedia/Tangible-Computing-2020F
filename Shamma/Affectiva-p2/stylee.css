@@ -1,0 +1,30 @@
+/* div class based on id */
+
+.style{
+	font-size:20px;
+	color:blue;
+}
+		
+		
+
+
+	body{
+
+		font-family: 'Raleway', sans-serif;
+		background-color: white;
+		border: 10px dashed blue
+
+			color: #e5c1bdff;
+			font-size: 50px;
+			padding: 10%
+
+
+
+	}
+	p {
+		/*color: #5e747fff !important; */
+	}
+	</style>
+
+
+	/*font-family: 'Raleway', sans-serif;*/
