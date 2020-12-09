@@ -5,8 +5,8 @@ var allData = []
 var milliseconds = 0;
 var seconds = 0;
 var bp;
-let gameStart=false
-var startTime=0
+let gameStart = false
+var startTime = 0
 
 let capture;
 
@@ -29,13 +29,13 @@ function draw() {
 
     background(0);
 
-if (gameStart){
-    checkCollisions()
-    checkTime()
-}
+    if (gameStart) {
+        checkCollisions()
+        checkTime()
+    }
 }
 
- function checkCollisions(){    
+function checkCollisions() {
     noStroke();
     fill(177);
 
@@ -82,17 +82,18 @@ if (gameStart){
 
     }
 
- }
-
-function checkTime (){
-    let time= millis()-startTime 
-    if (time/1000>30) {
-
-    
-        text('times up!', width / 2 - 50, height / 2 + 50)
-resetGame(allData)
 }
 
+function checkTime() {
+    let time = millis() - startTime
+    if (time / 1000 > 30) {
+
+
+        text('times up!', width / 2 - 50, height / 2 + 50)
+        resetGame(allData)
+    }
+
+}
 
 function checkCollision(x, y, r) {
 
@@ -104,7 +105,7 @@ function checkCollision(x, y, r) {
 
     let c = get(x, y)
 
-    
+
 
 
     milliseconds = millis();
@@ -139,37 +140,39 @@ function checkCollision(x, y, r) {
 
 
 
-   
 
-    
+
+
 
 }
 
-function resetGame(output){
+function resetGame(output) {
 
-saveStaticDataToFile(output)
+    console.log('RESET GAME')
+    startTime = millis()
+    saveStaticDataToFile(output)
 
 }
 
 
-       function saveStaticDataToFile(output) {
-            var blob = new Blob(output,
-                { type: "text/plain;charset=utf-8" });
-            saveAs(blob, "static.txt");
-        }
+function saveStaticDataToFile(output) {
+    var blob = new Blob(output, { type: "text/plain;charset=utf-8" });
+    saveAs(blob, "static.txt");
+}
 
-function updateData(data) { 
-    
-    if(!gameStart){
-        startTime=millis()
-         gameStart=true
+function updateData(data) {
+
+    if (!gameStart) {
+        startTime = millis()
+        gameStart = true
     }
 
     console.log('update data')
-    console.log(JSON.stringify(data, null, 4))
 
-   var myJSON = JSON.stringify(data);
-allData.push(myJSON)
+    var myJSON = JSON.stringify(data);
+    allData.push(myJSON)
+
+    resetGame(allData)
 
 
     background(34, 155, 215)
@@ -189,12 +192,12 @@ allData.push(myJSON)
     }
 
 
-    document.getElementById("data-stream").innerText = JSON.stringify(data,null,4);
+    document.getElementById("data-stream").innerText = JSON.stringify(data, null, 4);
 
 
     // image(capture.get(),width-64,0,128,96)
 
     // var x = document.getElementById("app");
-    // x.style.display = "none"	
+    // x.style.display = "none" 
 
 }
