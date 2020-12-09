@@ -27,9 +27,15 @@ function setCubeMap() {
     var path = 'textures/cube/clouds/';
     var format = '.png';
 
-    var urls = ['textures/cube/clouds/2.png', 'textures/cube/clouds/4.png', 'textures/cube/clouds/top.png', 'textures/cube/clouds/white.png',
+    // var urls = ['textures/cube/clouds/2.png', 'textures/cube/clouds/4.png', 'textures/cube/clouds/top.png', 'textures/cube/clouds/white.png',
+    //     'textures/cube/clouds/1.png', 'textures/cube/clouds/3.png'
+    // // ];
+
+
+    var urls = ['textures/cube/clouds/3-1.png', 'textures/cube/clouds/4.png', 'textures/cube/clouds/top.png', 'textures/cube/clouds/white.png',
         'textures/cube/clouds/1.png', 'textures/cube/clouds/3.png'
     ];
+
 
     return new THREE.CubeTextureLoader().load(urls);
 
