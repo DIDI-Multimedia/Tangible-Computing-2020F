@@ -5,7 +5,8 @@ var allData = []
 var milliseconds = 0;
 var seconds = 0;
 var bp;
-
+let gameStart=false
+var startTime=0
 
 let capture;
 
@@ -25,7 +26,16 @@ function setup() {
 
 function draw() {
 
+
     background(0);
+
+if (gameStart){
+    checkCollisions()
+    checkTime()
+}
+}
+
+ function checkCollisions(){    
     noStroke();
     fill(177);
 
@@ -72,9 +82,16 @@ function draw() {
 
     }
 
+ }
+
+function checkTime (){
+    let time= millis()-startTime 
+    if (time/1000>30) {
+
+    
+        text('times up!', width / 2 - 50, height / 2 + 50)
+resetGame(allData)
 }
-
-
 
 
 function checkCollision(x, y, r) {
@@ -86,6 +103,9 @@ function checkCollision(x, y, r) {
     noStroke()
 
     let c = get(x, y)
+
+    
+
 
     milliseconds = millis();
     text(30 - int(seconds), width / 20, height / 4 - 95);
@@ -119,11 +139,9 @@ function checkCollision(x, y, r) {
 
 
 
-    if (second() < 1) {
-        text('times up!', width / 2 - 50, height / 2 + 50)
+   
 
-
-    }
+    
 
 }
 
@@ -140,12 +158,19 @@ saveStaticDataToFile(output)
             saveAs(blob, "static.txt");
         }
 
-function updateData(data) {
+function updateData(data) { 
+    
+    if(!gameStart){
+        startTime=millis()
+         gameStart=true
+    }
 
     console.log('update data')
     console.log(JSON.stringify(data, null, 4))
 
-    allData.push(data)
+   var myJSON = JSON.stringify(data);
+allData.push(myJSON)
+
 
     background(34, 155, 215)
 
