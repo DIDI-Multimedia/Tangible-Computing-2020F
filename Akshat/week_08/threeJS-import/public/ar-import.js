@@ -73,8 +73,8 @@ function initialize() {
     let path = 'obj/foetus/'
     let filename = 'obj1.obj'
     
-    //var muhcube = new THREE.object()
-    
+    //var muhcube = new THREE.object() 
+
     addMarkerObject(path,filename,hiroMarker)
     addLights(scene, hiroMarker)
     
@@ -96,8 +96,8 @@ function addMarkerObject(path, filename, marker) {
 
         const object1 = object.children[0];
 
-        // object.scale.multiplyScalar(15); // changes scale 
-        // object.position.y = -500; //  change position
+       object1.scale.multiplyScalar(0.01); // changes scale 
+        //object.position.y = 0; //  change position
 
         object.material = material;
         marker.add(object1);
