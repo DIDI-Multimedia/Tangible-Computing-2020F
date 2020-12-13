@@ -70,6 +70,7 @@ function initialize() {
 
 
 
+
     let path = 'obj/foetus/'
     let filename = 'obj1.obj'
     
