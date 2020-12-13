@@ -12,6 +12,8 @@
 	<script src="threex/threex-artoolkitcontext.js"></script>
 	<script src="threex/threex-arbasecontrols.js"></script>
 	<script src="threex/threex-armarkercontrols.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="OBJLoader.js"></script>
 </head>
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
@@ -107,6 +109,16 @@ function initialize()
 
 	let loader = new THREE.TextureLoader();
 	let texture = loader.load( 'images/border.png' );
+
+	let path = 'obj/foetus/'
+    let filename = 'obj1.obj'
+    
+    //var muhcube = new THREE.object() 
+
+    addMarkerObject(path,filename,hiroMarker)
+    addLights(scene, hiroMarker)
+    
+    scene.add(hiroMarker); // add Marker to the scene
 		
 	let patternArray = ["letterA", "letterB", "letterC", "letterD", "letterF", "kanji", "hiro"];
 	let colorArray   = [0xff0000, 0xff8800, 0xffff00, 0x00cc00, 0x0000ff, 0xcc00ff, 0xcccccc];
@@ -127,6 +139,33 @@ function initialize()
 	}
 }
 
+
+function addMarkerObject(path, filename, marker) {
+    //materials
+    var material = new THREE.MeshBasicMaterial({
+        color: 0x00ff00
+    })
+
+
+    const objLoader = new THREE.OBJLoader();
+    objLoader.setPath(path);
+    objLoader.load(filename, function(object) {
+
+        const object1 = object.children[0];
+
+       object1.scale.multiplyScalar(0.01); // changes scale 
+        //object.position.y = 0; //  change position
+
+        object1.material = material;
+        marker.add(object1);
+
+        console.log('object loaded')
+
+    
+      
+    });
+
+}
 
 function update()
 {

@@ -14,6 +14,7 @@ var vidHeight = 480
 const hiro = "https://djcldy.github.io/DDW-AR/data/hiro.patt";
 const kanji = "https://djcldy.github.io/DDW-AR/data/kanji.patt";
 
+
 // kanji marker: ""https://djcldy.github.io/DDW-AR/data/kanji.patt""
 let sceneMarkers = [hiro, kanji];
 
@@ -72,7 +73,7 @@ function initialize() {
 
 
     let path = 'obj/foetus/'
-    let filename = 'obj1.obj'
+    let filename = 'obj3.obj'
     
     //var muhcube = new THREE.object() 
 
@@ -81,23 +82,24 @@ function initialize() {
     
     scene.add(hiroMarker); // add Marker to the scene
     
+
 }
 
 
 function addMarkerObject(path, filename, marker) {
     //materials
-    var material = new THREE.MeshBasicMaterial({
-        color: 0x00ff00
-    })
-
-
+    
+    // var material = new THREE.MeshBasicMaterial({
+    //     color: 0x00ff00
+    // })
+    
     const objLoader = new THREE.OBJLoader();
     objLoader.setPath(path);
     objLoader.load(filename, function(object) {
 
         const object1 = object.children[0];
 
-       object1.scale.multiplyScalar(0.01); // changes scale 
+       object1.scale.multiplyScalar(0.5); // changes scale 
         //object.position.y = 0; //  change position
 
         object.material = material;
@@ -108,7 +110,20 @@ function addMarkerObject(path, filename, marker) {
     
       
     });
+    const matLoader = new THREE.MaterialLoader()
+   var material = matLoader.load('obj/foetus/obj3.mtl' , mat(), progress(),error());
+    
 
+}
+function mat(){
+  material.setMaterialOptions()
+}
+function progress(){
+console.log(' progress ')
+}
+
+function error(){
+    console.log('error loading mtl')
 }
 
 
