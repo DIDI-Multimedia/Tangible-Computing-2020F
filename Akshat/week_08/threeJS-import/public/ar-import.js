@@ -13,7 +13,7 @@ var vidHeight = 480
     // scene markers
 const hiro = "https://djcldy.github.io/DDW-AR/data/hiro.patt";
 const kanji = "https://djcldy.github.io/DDW-AR/data/kanji.patt";
-
+const loader = new THREE.TextureLoader();
 
 // kanji marker: ""https://djcldy.github.io/DDW-AR/data/kanji.patt""
 let sceneMarkers = [hiro, kanji];
@@ -89,9 +89,7 @@ function initialize() {
 function addMarkerObject(path, filename, marker) {
     //materials
     
-    // var material = new THREE.MeshBasicMaterial({
-    //     color: 0x00ff00
-    // })
+    var material = new THREE.MeshBasicMaterial(loader.load('textures/brick_diffuser.jpg'))
     
     const objLoader = new THREE.OBJLoader();
     objLoader.setPath(path);
@@ -110,9 +108,30 @@ function addMarkerObject(path, filename, marker) {
     
       
     });
-    const matLoader = new THREE.MaterialLoader()
-   var material = matLoader.load('obj/foetus/obj3.mtl' , mat(), progress(),error());
     
+    
+
+// load a resource
+loader.load(
+	// resource URL
+	'textures/land_ocean_ice_cloud_2048.jpg',
+
+	// onLoad callback
+	function ( texture ) {
+		// in this example we create the material when the texture is loaded
+		const material = new THREE.MeshBasicMaterial( {
+			map: texture
+		 } );
+	},
+
+	// onProgress callback currently not supported
+	undefined,
+
+	// onError callback
+	function ( err ) {
+		console.error( 'An error happened.' );
+	}
+);
 
 }
 function mat(){
