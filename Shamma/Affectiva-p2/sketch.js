@@ -132,10 +132,12 @@ function checkCollision(x, y, r) {
         fill('red');
         circle(x, y, r);
         text('GAME OVER', width / 2 - 50, height / 2 + 50);
+        resetGame(allData)
         //bp.play();
     } else if (c[1] === 255) {
 
-        text('you win!', width / 2 - 50, height / 2 + 50)
+        text('you win!', width / 2 - 50, height / 2 + 50);
+        resetGame(allData)
     }
 
 
@@ -150,15 +152,14 @@ function resetGame(output) {
 
     console.log('RESET GAME')
     startTime = millis()
-    saveStaticDataToFile(output)
+   saveStaticDataToFile(output)
 
 }
 
 
 function saveStaticDataToFile(output) {
     var blob = new Blob(output, { type: "text/plain;charset=utf-8" });
-    saveAs(blob, "static.txt");
-}
+    saveAs(blob, "static.txt");}
 
 function updateData(data) {
 
@@ -169,10 +170,10 @@ function updateData(data) {
 
     console.log('update data')
 
-    var myJSON = JSON.stringify(data);
+ var myJSON = JSON.stringify(data);
     allData.push(myJSON)
 
-    resetGame(allData)
+  //  resetGame(allData)
 
 
     background(34, 155, 215)
