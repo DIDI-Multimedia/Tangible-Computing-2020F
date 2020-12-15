@@ -1,7 +1,7 @@
 /* div class based on id */
 
 .style{
-	font-size:10px;
+	font-size:20px;
 	color:blue;
 }
 		
@@ -15,7 +15,7 @@
 		border: 10px dashed blue
 
 			color: #e5c1bdff;
-			font-size: 15px;
+			font-size: 25px;
 			padding: 10%
 
 
