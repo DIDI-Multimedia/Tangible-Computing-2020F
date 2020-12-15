@@ -16,10 +16,24 @@ function draw() {
   strokeWeight(0);
   fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 1 , 100, 100);
+  fill(0,0,0);
+  text('car-chasis', windowWidth/2 -25 , windowHeight/6);
+  fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 2 , 100, 100);
+  fill(0,0,0);
+  text('chandelier', windowWidth/2 -25 , windowHeight/6*2);
+  fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 3 , 100, 100);
+  fill(0,0,0);
+  text('raindeer', windowWidth/2 - 25 , windowHeight/6*3);
+  fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 4 , 100, 100);
+  fill(0,0,0);
+  text('skeleton', windowWidth/2 - 25 , windowHeight/6*4);
+  fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 5 , 100, 100);
+  fill(0,0,0);
+  text('delorean', windowWidth/2 -25 , windowHeight/6*5);
   
 
 
