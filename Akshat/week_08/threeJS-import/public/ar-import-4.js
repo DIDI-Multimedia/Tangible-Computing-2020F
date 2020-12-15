@@ -71,9 +71,9 @@ function initialize() {
 
 
 
-///put the car here
-    let path = 'obj/94-neon/'
-    let filename = 'KOLECO.obj'
+    /// put the raindeer here
+    let path = 'obj/raindeer/'
+    let filename = 'obj1.obj'
     
     //var muhcube = new THREE.object() 
 
@@ -97,7 +97,7 @@ function addMarkerObject(path, filename, marker) {
 
         const object1 = object.children[0];
 
-       object1.scale.multiplyScalar(0.1); // changes scale 
+       object1.scale.multiplyScalar(0.05); // changes scale 
         object.position.y = 5; //  change position
 
         object.material = material;

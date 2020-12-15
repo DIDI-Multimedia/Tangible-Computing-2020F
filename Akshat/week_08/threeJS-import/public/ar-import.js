@@ -89,8 +89,8 @@ function initialize() {
 function addMarkerObject(path, filename, marker) {
     //materials
     
-    // var material = new THREE.MeshBasicMaterial({map: new loader.load('textures/brick_diffuse.jpg') })
-    var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
+     var material = new THREE.MeshBasicMaterial({map: new loader.load('textures/brick_diffuse.jpg') })
+    //var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
     
     const objLoader = new THREE.OBJLoader();
     objLoader.setPath(path);
