@@ -39,17 +39,17 @@ function mousePressed(  ) {
   }
 
   if(e<100){
-    window.location.href = "../ar-import2.html"
+    window.location.href = "../ar-import-2.html"
   }
   
   if(f<100){
-    window.location.href = "../ar-import3.html"
+    window.location.href = "../ar-import-3.html"
   }
 
   if(g<100){
-    window.location.href = "../ar-import5.html"
+    window.location.href = "../ar-import-5.html"
   }
   if(h<100){
-    window.location.href = "../ar-import6.html"
+    window.location.href = "../ar-import-6.html"
   }
 }

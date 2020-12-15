@@ -99,7 +99,7 @@ function addMarkerObject(path, filename, marker) {
 
        object1.scale.multiplyScalar(0.05); // changes scale 
         object.position.y = 5; //  change position
-
+        
         object.material = material;
         marker.add(object1);
 
