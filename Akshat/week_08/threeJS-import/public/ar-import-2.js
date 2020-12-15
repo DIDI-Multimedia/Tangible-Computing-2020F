@@ -71,7 +71,7 @@ function initialize() {
 
 
 
-
+    //chandeliar
     let path = 'obj/94-neon/'
     let filename = 'KOLECO.obj'
     
