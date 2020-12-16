@@ -72,8 +72,8 @@ function initialize() {
 
 
 ///put the car here
-    let path = 'obj/94-neon/'
-    let filename = 'KOLECO.obj'
+    let path = 'obj/car/'
+    let filename = 'obj2.obj'
     
     //var muhcube = new THREE.object() 
 
