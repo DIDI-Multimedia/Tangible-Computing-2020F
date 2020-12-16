@@ -97,7 +97,7 @@ function addMarkerObject(path, filename, marker) {
 
         const object1 = object.children[0];
 
-       object1.scale.multiplyScalar(0.1); // changes scale 
+       object1.scale.multiplyScalar(0.2); // changes scale 
         object1.position.y = 0; //  change position
         object1.position.x = 0.5;
 

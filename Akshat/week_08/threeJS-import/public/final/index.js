@@ -25,15 +25,15 @@ function draw() {
   fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 3 , 100, 100);
   fill(0,0,0);
-  text('Delorean', windowWidth/2 - 25 , windowHeight/6*3);
+  text('raindeer', windowWidth/2 - 25 , windowHeight/6*3);
   fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 4 , 100, 100);
   fill(0,0,0);
-  text('skeleton', windowWidth/2 - 25 , windowHeight/6*4);
-  fill(140,0,211);
-  ellipse( windowWidth/2 , windowHeight/6 * 5 , 100, 100);
-  fill(0,0,0);
-  text('delorean', windowWidth/2 -25 , windowHeight/6*5);
+  text('raindeer', windowWidth/2 - 25 , windowHeight/6*4);
+  // fill(140,0,211);
+  // ellipse( windowWidth/2 , windowHeight/6 * 5 , 100, 100);
+  // fill(0,0,0);
+  // text('raindeer', windowWidth/2 -25 , windowHeight/6*5);
   
 
 
@@ -46,7 +46,7 @@ function mousePressed(  ) {
   let e = dist(mouseX, mouseY, windowWidth/2, windowHeight/6 * 2);
   let f = dist(mouseX, mouseY, windowWidth/2, windowHeight/6 * 3);
   let g = dist(mouseX, mouseY, windowWidth/2, windowHeight/6 * 4);
-  let h = dist(mouseX, mouseY, windowWidth/2, windowHeight/6 * 5);
+  //let h = dist(mouseX, mouseY, windowWidth/2, windowHeight/6 * 5);
  
   if (d < 100) {
    window.location.href = "../ar-import.html"
@@ -61,9 +61,9 @@ function mousePressed(  ) {
   }
 
   if(g<100){
-    window.location.href = "../ar-import-5.html"
+    window.location.href = "../ar-import-4.html"
   }
-  if(h<100){
-    window.location.href = "../ar-import-6.html"
-  }
+  // if(h<100){
+  //   window.location.href = "../ar-import-6.html"
+  // }
 }
