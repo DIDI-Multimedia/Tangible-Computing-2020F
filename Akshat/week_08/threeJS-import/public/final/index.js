@@ -17,7 +17,7 @@ function draw() {
   fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 1 , 100, 100);
   fill(0,0,0);
-  text('car-chasis', windowWidth/2 -25 , windowHeight/6);
+  text('skateboard', windowWidth/2 -25 , windowHeight/6);
   fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 2 , 100, 100);
   fill(0,0,0);
