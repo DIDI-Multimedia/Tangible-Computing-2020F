@@ -72,7 +72,7 @@ function initialize() {
 
 
     /// put the raindeer here
-    let path = 'obj/raindeer/'
+    let path = 'obj/neon-sign/'
     let filename = 'obj1.obj'
     
     //var muhcube = new THREE.object() 
@@ -97,10 +97,10 @@ function addMarkerObject(path, filename, marker) {
 
         const object1 = object.children[0];
 
-       object1.scale.multiplyScalar(0.03); // changes scale 
-        object.position.y = 5; //  change position
+       object1.scale.multiplyScalar(0.05); // changes scale 
+        object1.position.y = 0; //  change position
         
-        object.material = material;
+        object1.material = material;
         marker.add(object1);
 
         console.log('object loaded')

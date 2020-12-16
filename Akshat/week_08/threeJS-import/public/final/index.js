@@ -21,7 +21,7 @@ function draw() {
   fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 2 , 100, 100);
   fill(0,0,0);
-  text('chandelier', windowWidth/2 -25 , windowHeight/6*2);
+  text('floating-led', windowWidth/2 -25 , windowHeight/6*2);
   fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 3 , 100, 100);
   fill(0,0,0);
@@ -29,7 +29,7 @@ function draw() {
   fill(140,0,211);
   ellipse( windowWidth/2 , windowHeight/6 * 4 , 100, 100);
   fill(0,0,0);
-  text('raindeer', windowWidth/2 - 25 , windowHeight/6*4);
+  text('neon-sign', windowWidth/2 - 25 , windowHeight/6*4);
   // fill(140,0,211);
   // ellipse( windowWidth/2 , windowHeight/6 * 5 , 100, 100);
   // fill(0,0,0);
